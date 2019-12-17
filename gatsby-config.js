@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hurry Up Print | Large Format, Digital Printing, and Web Development`,
+    description: `Need a banner, business cards, flyers, t-shirts or other garments printed? Need a website or application built? Hurry Up Print can help you out!`,
+    author: `Sean Pheneger`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
