@@ -5,20 +5,20 @@ const appState = {
   loginModalOpen: false
 }
 
-const navUser = document.querySelector('.nav-login');
-const form = document.getElementById('form')
-const formSubmit = document.getElementById('form-submit')
+// NAVBAR
+  $(document).ready(function() {
+    // Init nav dropdowns
+    $('.dropdown-button').dropdown({
+      belowOrigin: true,
+      hover: true,
+      alignment: 'left'
+    })
 
-const axios = require('axios')
+    $('.button-collapse').sideNav({
+      hover: true
+    });
 
-
-function LoginNavHandle() {navUser.textContent = appState.loggedIn ? "LOGOUT" : "LOGIN"}
-LoginNavHandle()
-
-
-navUser.addEventListener('click', handleLoginClick) 
-
-form.addEventListener('submit', handleFormSubmit)
+  });
 
 function handleLoginClick(ev) {
   console.log(ev)
@@ -55,12 +55,9 @@ function handleFormSubmit(event) {
   const URL = "http://localhost:8080/api/auth/register"
   const registerBody = {"username": "samwise@email.com", "password": "pass"}
   
- axios.post(URL, registerBody)
-  .then(res => console.log("RES", res))
-  .catch(err => console.log("ERR", err))
+  axios.post(URL, registerBody)
+    .then(res => console.log("RES", res))
+    .catch(err => console.log("ERR", err))
 }
-const h1 = document.createElement('h1')
-
-h1.textContent = "INJECTED HEADER";
 
 
