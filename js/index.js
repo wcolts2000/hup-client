@@ -10,7 +10,6 @@ const appState = {
     // Init nav dropdowns
     $('.dropdown-button').dropdown({
       belowOrigin: true,
-      hover: true,
       alignment: 'left'
     })
 
