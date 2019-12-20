@@ -5,8 +5,8 @@ const appState = {
   loginModalOpen: false
 }
 
-// NAVBAR
-  $(document).ready(function() {
+$(document).ready(function() {
+  // NAVBAR
     // Init nav dropdowns
     $('.dropdown-button').dropdown({
       belowOrigin: true,
@@ -16,6 +16,16 @@ const appState = {
     $('.button-collapse').sideNav({
       hover: true
     });
+
+    // PARALLAX
+    $('.parallax').parallax();
+    
+    // COLLAPSIBLE
+    $('.collapsible').collapsible()
+
+    // CAROUSEL
+    $('.carousel').carousel();
+    $('.carousel-slider').carousel({ fullWidth: true});
 
   });
 

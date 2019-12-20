@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hurry Up Print | Websites, Banners, Business Cards, Flyers, Vehicle Wraps, Garment Printing</title>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- RESPONSIVE WITH SIDE MENU -->
-    <nav class="yellow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Hurry Up Print | Websites, Banners, Business Cards, Flyers, Vehicle Wraps,
+      Garment Printing
+    </title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" sizes="32x32">
+  </head>
+  <body>
+    <!-- RESPONSIVE NAV WITH SIDE MENU -->
+    <nav class="yellow darken-2">
       <div class="container">
         <div class="nav-wrapper">
-          <a class="button-collapse black-text" data-activates="mobile-nav" href="#">
+          <a
+            class="button-collapse black-text"
+            data-activates="mobile-nav"
+            href="#"
+          >
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-  
             <!-- DROPDOWN TRIGGER -->
             <li>
-              <a data-activates="lf-dropdown" class="dropdown-button black-text" href="#!">Large Format
+              <a
+                data-activates="lf-dropdown"
+                class="dropdown-button black-text"
+                href="#!"
+                >Large Format
                 <i class="material-icons right">arrow_drop_down</i>
               </a>
             </li>
 
             <li>
-              <a data-activates="off-dropdown" class="dropdown-button black-text" href="#!">Offset
+              <a
+                data-activates="off-dropdown"
+                class="dropdown-button black-text"
+                href="#!"
+                >Offset
                 <i class="material-icons right">arrow_drop_down</i>
               </a>
             </li>
 
             <li>
-              <a data-activates="gar-dropdown" class="dropdown-button black-text" href="#!">Garments
+              <a
+                data-activates="gar-dropdown"
+                class="dropdown-button black-text"
+                href="#!"
+                >Garments
                 <i class="material-icons right">arrow_drop_down</i>
               </a>
             </li>
 
             <li>
-              <a data-activates="web-dropdown" class="dropdown-button black-text" href="#!">Websites
+              <a
+                data-activates="web-dropdown"
+                class="dropdown-button black-text"
+                href="#!"
+                >Websites
                 <i class="material-icons right">arrow_drop_down</i>
               </a>
             </li>
             <!-- BUTTON LINK -->
             <li>
-              <a id="login" class="btn btn-small waves-effect waves-light">Login</a>
+            <a id="login" class="btn black waves-effect waves-light"
+                >Login</a
+              >
             </li>
             <!-- ICON LINK -->
             <li>
@@ -58,20 +89,30 @@
           </ul>
 
           <!-- Side Nav -->
-          <ul class="side-nav" id="mobile-nav"> <!-- must init in js -->
+          <ul class="side-nav" id="mobile-nav">
+            <!-- must init in js -->
             <ul class="collapsible collapsible-accordion">
-              <li><div class="user-view">
-                <div class="background">
-                  <img src="img/bg.jpg">
-                </div>
-                <a href="#user">
-                  <i class="material-icons black-text">person</i>
-                </a>
-                <a href="#name"><span class="black-text name">John Doe</span></a>
-                <a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
-              </div></li>
               <li>
-                <a class="black-text collapsible-header" href="#!">Large Format
+                <div class="user-view">
+                  <div class="background">
+                    <img src="img/bg.jpg" />
+                  </div>
+                  <a href="#user">
+                    <i class="material-icons black-text">person</i>
+                  </a>
+                  <a href="#name"
+                    ><span class="black-text name">John Doe</span></a
+                  >
+                  <a href="#email"
+                    ><span class="black-text email"
+                      >jdandturk@gmail.com</span
+                    ></a
+                  >
+                </div>
+              </li>
+              <li>
+                <a class="black-text collapsible-header" href="#!"
+                  >Large Format
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
                 <div class="collapsible-body">
@@ -103,12 +144,12 @@
                   </ul>
                 </div>
               </li>
-
             </ul>
-            
+
             <ul class="collapsible collapsible-accordion">
               <li>
-                <a class="black-text collapsible-header" href="#!">Offset
+                <a class="black-text collapsible-header" href="#!"
+                  >Offset
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
                 <div class="collapsible-body">
@@ -131,12 +172,12 @@
                   </ul>
                 </div>
               </li>
-
             </ul>
-            
+
             <ul class="collapsible collapsible-accordion">
               <li>
-                <a class="black-text collapsible-header" href="#!">Garments
+                <a class="black-text collapsible-header" href="#!"
+                  >Garments
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
                 <div class="collapsible-body">
@@ -153,16 +194,20 @@
                   </ul>
                 </div>
               </li>
-            </ul> 
+            </ul>
             <ul class="collapsible collapsible-accordion">
               <li>
-                <a class="black-text collapsible-header" href="#!">Websites
+                <a class="black-text collapsible-header" href="#!"
+                  >Websites
                   <i class="material-icons right">arrow_drop_down</i>
                 </a>
                 <div class="collapsible-body">
                   <ul>
                     <li>
                       <a href="#">Static Websites</a>
+                    </li>
+                    <li>
+                      <a href="#">Dynamic Websites</a>
                     </li>
                     <li>
                       <a href="#">E-commerce Sites</a>
@@ -179,11 +224,15 @@
                   </ul>
                 </div>
               </li>
-
             </ul>
             <!-- BUTTON LINK -->
             <li>
-              <a id="login" class="btn btn-small waves-effect waves-light">Login</a>
+              <a
+                id="login"
+                class="btn btn-small waves-effect waves-light"
+                style="margin: 0 15px;"
+                >Login</a
+              >
             </li>
             <!-- ICON LINK -->
             <li>
@@ -196,7 +245,7 @@
         </div>
       </div>
     </nav>
-  
+
     <!-- DROPDOWN MENUS -->
     <ul id="lf-dropdown" class="dropdown-content">
       <li>
@@ -260,6 +309,9 @@
         <a href="#">Static Websites</a>
       </li>
       <li>
+        <a href="#">Dynamic Websites</a>
+      </li>
+      <li>
         <a href="#">E-commerce Sites</a>
       </li>
       <li>
@@ -273,19 +325,110 @@
       </li>
     </ul>
 
-  <main class="home-main">
-    <form id="form">
-      <label><input type="email" autocomplete="on">email</label>
-      <label><input type="password" autocomplete="current-password">password</label>
-      <input id="form-submit" type="submit" value="submit">
-    </form>
-  </main>
+    <section class="home-hero">
+      <div class="parallax-container valign-wrapper col s12">
+        <div class="parallax"><img src="img/reno.png" /></div>
+        <img
+          class="responsive-img"
+          style="padding: 0 2.4rem;"
+          src="img/hup_logo.png"
+          width="400"
+          alt="Hurry Up Print logo"
+        />
+      </div>
+    </section>
+    <main class="home-main white container">
+      <div class="row">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header  active">
+              <i class="material-icons">panorama</i>Large Format
+            </div>
+            <div class="collapsible-body">
+              <p class="row">For those big jobs, our large format division has you handled.<p>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Banners</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Magnets</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Decals</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Vehicle Wraps</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Window Perf</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Displays</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Signage</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Posters</a>
+            </div>
+          </li>
+          <li>
+            <!-- pre-select -->
+            <div class="collapsible-header">
+              <i class="material-icons">insert_photo</i>Offset
+            </div>
+            <div class="collapsible-body">
+              <p>For all your smaller business advertising needs</p>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Business Cards</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Postcards</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Flyers</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Invitations</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Menus</a>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">color_lens</i>Garments
+            </div>
+            <div class="collapsible-body">
+              <p>For all your garment customizations</p>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Silk Screen Printing</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Embroidery</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Vinyl</a>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">devices</i>Websites
+            </div>
+            <div class="collapsible-body">
+              <p>For all your website and app needs</p>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Static Sites</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Dynamic Sites</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">E-commerce Sites</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Restaurant Sites</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Blog Sites</a>
+              <a href="#!" class="chip pink white-text waves-effect waves-light">Apps</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+      
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/index.js"></script>
-</body>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/maps.jpg" alt="a table of old maps"></div>
+
+        <div class="container">
+
+          <form class="white" id="form">
+            <div class="input-field">
+              <input id="email" type="email" autocomplete="on" />
+              <label for="email">email</label>
+            </div>
+            <div class="input-field">
+              <input id="password"  type="password" autocomplete="on" />
+              <label for="password">password</label>
+            </div>
+            
+            <input id="form-submit" type="submit" value="submit" />
+          </form>
+        </div>
+      </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
