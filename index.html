@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- RESPONSIVE NAV WITH SIDE MENU -->
-    <nav class="yellow darken-2">
+    <nav class="yellow darken-1">
       <div class="container">
         <div class="nav-wrapper">
           <a
@@ -76,13 +76,13 @@
             </li>
             <!-- BUTTON LINK -->
             <li>
-            <a id="login" class="btn black waves-effect waves-light"
+            <a id="login" href="login.html" class="btn black waves-effect waves-light"
                 >Login</a
               >
             </li>
             <!-- ICON LINK -->
             <li>
-              <a href="#" class=" black-text" id="avatar">
+              <a href="dashboard.html" class=" black-text" id="avatar">
                 <i class="material-icons tiny">person</i>
               </a>
             </li>
@@ -97,13 +97,13 @@
                   <div class="background">
                     <img src="img/bg.jpg" />
                   </div>
-                  <a href="#user">
+                  <a href="dashboard.html">
                     <i class="material-icons black-text">person</i>
                   </a>
-                  <a href="#name"
+                  <a href="dashboard.html"
                     ><span class="black-text name">John Doe</span></a
                   >
-                  <a href="#email"
+                  <a href="dashboard.html"
                     ><span class="black-text email"
                       >jdandturk@gmail.com</span
                     ></a
@@ -117,8 +117,14 @@
                 </a>
                 <div class="collapsible-body">
                   <ul>
+                    <li class="cyan lighten-4">
+                      <a href="large_format.html">Large Format</a>
+                    </li>
                     <li>
-                      <a href="#">Banners</a>
+                      <div class="divider"></div>
+                    </li>
+                    <li>
+                      <a href="large_format/banners.html">Banners</a>
                     </li>
                     <li>
                       <a href="#">Magnets</a>
@@ -154,6 +160,12 @@
                 </a>
                 <div class="collapsible-body">
                   <ul>
+                    <li class="cyan lighten-4">
+                      <a href="#">Offest</a>
+                    </li>
+                    <li>
+                      <div class="divider"></div>
+                    </li>
                     <li>
                       <a href="#">Business Cards</a>
                     </li>
@@ -182,6 +194,12 @@
                 </a>
                 <div class="collapsible-body">
                   <ul>
+                    <li class="cyan lighten-4">
+                      <a href="#">Garments</a>
+                    </li>
+                    <li>
+                      <div class="divider"></div>
+                    </li>
                     <li>
                       <a href="#">Silk Screen</a>
                     </li>
@@ -203,6 +221,12 @@
                 </a>
                 <div class="collapsible-body">
                   <ul>
+                    <li class="cyan lighten-4">
+                      <a href="#">Websites</a>
+                    </li>
+                    <li>
+                      <div class="divider"></div>
+                    </li>
                     <li>
                       <a href="#">Static Websites</a>
                     </li>
@@ -248,6 +272,9 @@
 
     <!-- DROPDOWN MENUS -->
     <ul id="lf-dropdown" class="dropdown-content">
+      <li class="cyan lighten-4">
+        <a href="#">Large Format</a>
+      </li>
       <li>
         <a href="#">Banners</a>
       </li>
@@ -275,6 +302,9 @@
     </ul>
 
     <ul id="off-dropdown" class="dropdown-content">
+      <li class="cyan lighten-4">
+        <a href="#">Offset</a>
+      </li>
       <li>
         <a href="#">Business Cards</a>
       </li>
@@ -293,6 +323,9 @@
     </ul>
 
     <ul id="gar-dropdown" class="dropdown-content">
+      <li class="cyan lighten-4">
+        <a href="#">Garments</a>
+      </li>
       <li>
         <a href="#">Silk Screen</a>
       </li>
@@ -305,6 +338,9 @@
     </ul>
 
     <ul id="web-dropdown" class="dropdown-content">
+      <li class="cyan lighten-4">
+        <a href="#">Websites</a>
+      </li>
       <li>
         <a href="#">Static Websites</a>
       </li>
@@ -325,9 +361,13 @@
       </li>
     </ul>
 
-    <section class="home-hero">
-      <div class="parallax-container valign-wrapper col s12">
-        <div class="parallax"><img src="img/under_construction_web_banner.jpg" /></div>
+    <div class="home container">
+
+
+
+    <section class="home-hero row">
+      <div class="valign-wrapper">
+          <img class="responsive-img" src="img/HUP web banner OFFSET.jpg" />
         <!-- <img
           class="responsive-img"
           style="padding: 0 2.4rem;"
@@ -337,20 +377,25 @@
         /> -->
       </div>
     </section>
-    <main class="home-main white container">
+
+
+    <main class="home-main white">
       <div class="row">
 
-      
+      <h3>Handle all your printing needs here</h3>
+      <div class="divider"></div>
+      <br>
 
       <!-- CARDS -->
       <div class="col s12 m6 l3">
+        <a class="black-text" href="large_format.html">
         <!-- CARD WITH IMAGE -->
         <div class="card">
           <div class="card-image">
             <img src="img/street-signage-3.jpg" alt="card image">
-            <span class="card-title white-text grey">Large Format</span>
           </div>
           <div class="card-content">
+            <span class="card-title">Large Format</span>
             
             <ul>
               <li>Banners</li>
@@ -359,19 +404,23 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action amber darken-3">
+          <div class="card-action yellow darken-1">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
+      </a>
       </div>
+
+
       <div class="col s12 m6 l3">
+<a class="black-text" href="offset.html">
         <!-- CARD WITH IMAGE -->
         <div class="card">
           <div class="card-image">
             <img src="img/bcards.jpg" alt="card image">
-            <span class="card-title white-text grey">Offset</span>
           </div>
           <div class="card-content">
+            <span class="card-title">Offset</span>
             
             <ul>
               <li>Business Cards</li>
@@ -380,19 +429,21 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action amber darken-3">
+          <div class="card-action yellow darken-1">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
+        </a>
       </div>
       <div class="col s12 m6 l3">
+        <a class="black-text" href="garments.html">
         <!-- CARD WITH IMAGE -->
         <div class="card">
           <div class="card-image">
             <img src="img/embroidery-machine.jpg" alt="card image">
-            <span class="card-title white-text grey">Garments</span>
           </div>
           <div class="card-content">
+            <span class="card-title">Garments</span>
             
             <ul>
               <li>Silk Screening</li>
@@ -401,19 +452,21 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action amber darken-3">
+          <div class="card-action yellow darken-1">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
+        </a>
       </div>
       <div class="col s12 m6 l3">
+        <a class="black-text" href="websites.html">
         <!-- CARD WITH IMAGE -->
         <div class="card">
           <div class="card-image">
             <img src="img/web-design.jpg" alt="card image">
-            <span class="card-title white-text grey">Websites</span>
           </div>
           <div class="card-content">
+            <span class="card-title">Websites</span>
             
             <ul>
               <li>Static Sites</li>
@@ -422,12 +475,12 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action amber darken-3">
+          <div class="card-action yellow darken-1">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
+      </a>
       </div>
-
     </div>
 
       <!-- collapsibles -->
@@ -513,6 +566,38 @@
           </form>
         </div>
       </div>
+
+    </div> <!--END CONTAINER -->
+
+    <!-- FOOTER -->
+    <footer class="page-footer cyan darken-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2019 Copyright | Hurry Up Print
+        <a class="grey-text text-lighten-4 right" href="mailto:sales@hurryupprint.com">
+          <i class="material-icons left">email</i>
+          sales@hurryupprint.com
+        </a>
+        </div>
+      </div>
+    </footer>
 
     <!--Import jQuery before materialize.js-->
     <script
