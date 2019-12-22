@@ -23,7 +23,11 @@
   </head>
   <body>
 
-    <?php include 'header.php';?>
+    <?php include 'header.php';
+    require __DIR__ . '/vendor/autoload.php';
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+    ?>
 
 
     <div class="home container">
