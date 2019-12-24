@@ -35,8 +35,11 @@
 
 
     <section class="home-hero row">
-      <div class="center-align wrapper">
-          <img class="responsive-img" src="img/HUP web banner OFFSET.jpg" />
+      <div class="wrapper">
+        <h5 class="home-hero-header">Premium Business Cards</h5>
+          <img class="responsive-img" src="img/premium-business-card-1.png" />
+          <img class="responsive-img" src="img/premium-business-card-2.png" />
+          <button class="hero-btn btn waves-effect waves light yellow darken-2 black-text">Shop Now</button>
         <!-- <img
           class="responsive-img"
           style="padding: 0 2.4rem;"
@@ -49,6 +52,24 @@
 
 
     <main class="home-main white">
+      <div class="row yellow darken-2">
+        <div class="col s4 center-align p2">
+          <i class="material-icons small">access_time</i>
+          <h5>Fast Turnarounds</h5>
+        </div>
+        <div class="col s4 center-align p2">
+          <i class="material-icons small">grade</i>
+          <i class="material-icons small">grade</i>
+          <i class="material-icons small">grade</i>
+          <i class="material-icons small">grade</i>
+          <i class="material-icons small">grade</i>
+          <h5>Premium Products</h5>
+        </div>
+        <div class="col s4 center-align p2">
+          <i class="material-icons small">thumb_up</i>
+          <h5>Quality Assurance</h5>
+        </div>
+      </div>
       <div class="row">
 
       <h3>Handle all your printing needs here</h3>
@@ -73,7 +94,7 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action yellow darken-1">
+          <div class="card-action yellow darken-2">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
@@ -98,7 +119,7 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action yellow darken-1">
+          <div class="card-action yellow darken-2">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
@@ -121,7 +142,7 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action yellow darken-1">
+          <div class="card-action yellow darken-2">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
@@ -144,7 +165,7 @@
               <li>and more...</li>
             </ul>
           </div>
-          <div class="card-action yellow darken-1">
+          <div class="card-action yellow darken-2">
             <a href="#" class="black-text">Shop here &rarr;</a>
           </div>
         </div>
@@ -157,13 +178,15 @@
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header  active">
-              <i class="material-icons">panorama</i>Large Format
+              <i class="material-icons">panorama</i>
+              Large Format
+              <i class="material-icons right">arrow_drop_down</i>
             </div>
             <div class="collapsible-body">
               <p class="row">For those big jobs, our large format division has you handled.<p>
-              <a href="#!" class="chip pink white-text waves-effect waves-light">Banners</a>
-              <a href="#!" class="chip pink white-text waves-effect waves-light">Magnets</a>
-              <a href="#!" class="chip pink white-text waves-effect waves-light">Decals</a>
+                <a href="#!" class="chip pink white-text waves-effect waves-light">Banners</a>
+                <a href="#!" class="chip pink white-text waves-effect waves-light">Magnets</a>
+                <a href="#!" class="chip pink white-text waves-effect waves-light">Decals</a>
               <a href="#!" class="chip pink white-text waves-effect waves-light">Vehicle Wraps</a>
               <a href="#!" class="chip pink white-text waves-effect waves-light">Window Perf</a>
               <a href="#!" class="chip pink white-text waves-effect waves-light">Displays</a>
@@ -174,7 +197,9 @@
           <li>
             <!-- pre-select -->
             <div class="collapsible-header">
-              <i class="material-icons">insert_photo</i>Offset
+              <i class="material-icons">insert_photo</i>
+              Offset
+              <i class="material-icons right">arrow_drop_down</i>
             </div>
             <div class="collapsible-body">
               <p>For all your smaller business advertising needs</p>
@@ -187,7 +212,9 @@
           </li>
           <li>
             <div class="collapsible-header">
-              <i class="material-icons">color_lens</i>Garments
+              <i class="material-icons">color_lens</i>
+              Garments
+              <i class="material-icons right">arrow_drop_down</i>
             </div>
             <div class="collapsible-body">
               <p>For all your garment customizations</p>
@@ -198,7 +225,9 @@
           </li>
           <li>
             <div class="collapsible-header">
-              <i class="material-icons">devices</i>Websites
+              <i class="material-icons">devices</i>
+              Websites
+              <i class="material-icons right">arrow_drop_down</i>
             </div>
             <div class="collapsible-body">
               <p>For all your website and app needs</p>
@@ -239,20 +268,25 @@
     </div> <!--END CONTAINER -->
 
     <!-- FOOTER -->
-    <footer class="page-footer cyan darken-1">
+    <footer class="page-footer cyan darken-2">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <h5 class="white-text">High Quality Printing in the Reno Area</h5>
+            <p class="grey-text text-lighten-4">Providing Reno Sparks and Carson City with high quality printing.</p>
+            <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Large Format</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Offset</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Garments</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Websites</a></li>
+            </ul>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
+            <h5 class="white-text">Info</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Terms & Conditions</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
             </ul>
           </div>
         </div>

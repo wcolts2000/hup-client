@@ -17,3 +17,38 @@
     font-size: 20px;
   }
 }
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,.1));
+  position: relative;
+}
+
+.home-hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  padding: 1rem;
+  box-shadow: 3px 3px 12px rgba(0,0,0,.2);
+}
+
+
+.wrapper .responsive-img {
+  max-width: 50%;
+}
+
+.hero-btn.btn {
+ width: 100%;
+ margin: 0 20vw;
+}
+
+.home-hero.row {
+  margin-bottom: 0;
+}
+
+.col.p2 {
+  padding: 2rem;
+}
