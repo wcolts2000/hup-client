@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col m6 s12">
             <select id="input-country">
               <option value="" disabled> --- Please Select --- </option>
               <option value="244">Aaland Islands</option>
@@ -327,7 +327,7 @@
             </select>
             <label for="input-country">Country</label>
           </div>
-          <div class="input-field col s12">
+          <div class="input-field col m6 s12">
             <select id="input-zone">
               <option value="" selected disabled> --- Please Select --- </option>
               <option value="3613">Alabama</option>
