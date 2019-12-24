@@ -26,7 +26,7 @@
     <div class="row">
       <form class="col s12">
         <h5>Your Personal Details</h5>
-        <div class="col s12 divider" style="margin-bottom: 1rem;"></div>
+        <div class="col s12 divider mb1"></div>
         <div class="row">
           <div class="input-field col m6 s12">
             <input type="text" class="validate" placeholder="First Name" id="first_name">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <h5>Your Address</h5>
-        <div class="col s12 divider" style="margin-bottom: 1rem;"></div>
+        <div class="col s12 divider mb1"></div>
         <div class="row">
           <div class="input-field col s12">
             <input type="text" placeholder="Address 1" id="address_1">
@@ -400,7 +400,7 @@
           </div>
         </div>
         <h5>Your Password</h5>
-        <div class="col s12 divider" style="margin-bottom: 1rem;"></div>
+        <div class="col s12 divider mb1"></div>
         <div class="row">
           <div class="input-field col m6 s12">
             <input type="password" placeholder="Password" id="password">
@@ -412,18 +412,18 @@
           </div>
         </div>
         <h5>Newletter</h5>
-        <div class="col s12 divider" style="margin-bottom: 1rem;"></div>
+        <div class="col s12 divider mb1"></div>
         <p>
           <input name="newsletter" id="yes" type="radio" class="with-gap" checked>
           <label for="yes">Yes</label>
         </p>
-        <p style="margin-bottom: 2rem;">
+        <p class="mb2">
           <input name="newsletter" id="no" type="radio" class="with-gap">
           <label for="no">No</label>
         </p>
         <h5>Submit Registration</h5>
-        <div class="col s12 divider" style="margin-bottom: 1rem;"></div>
-        <p style="margin-bottom: 1rem;">
+        <div class="col s12 divider mb1"></div>
+        <p class="mb1">
           <input type="checkbox" name="Privacy Policy" id="privacy">
           <label for="privacy">I have read and agree the
             <a href="privacy_policy.html">Privacy Policy</a>

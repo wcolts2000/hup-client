@@ -1,11 +1,13 @@
 #login {
-  margin-left: 0;
-  margin-right: 0;
   border-radius: 50px;
 }
 #form {
   padding: 2rem;
   margin: 2rem;
+}
+
+.btn.header-login {
+  margin: 0 15px;
 }
 
 .card-title {
@@ -67,4 +69,16 @@
 
 .home-section-partners .row h4 {
   text-transform: uppercase;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.m2a {
+  margin: 2rem auto;
 }

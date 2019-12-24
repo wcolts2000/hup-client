@@ -15,7 +15,7 @@
 <body>
   <?php include 'header.php'; ?>
 
-  <div class="container" style="margin: 2rem auto">
+  <div class="container m2a">
     <div class="row">
       <div class="col s12 m6">
         <div class="card grey lighten-4">
@@ -34,14 +34,16 @@
         <!-- <div class="card grey lighten-4"> -->
         <form class="card grey lighten-4">
           <div class="card-content">
-            <span class="card-title">
-              Login
-            </span>
-            <div class="row">
-              <label for="email">Email</label>
+            <div class="mb2">
+              <span class="card-title">
+                Login
+              </span>
+            </div>
+            <div class="input-field">
+              <label for="email" data-error="must be a valid email" data-success="valid">Email</label>
               <input type="email" id="email" placeholder="johndoe@email.com" class="validate">
             </div>
-            <div class="row">
+            <div class="input-field">
               <label for="password">Password</label>
               <input type="password" id="password" placeholder="$k8vG3p09aB%77hn2^" class="validate">
             </div>

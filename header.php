@@ -125,8 +125,7 @@
             </div>
           </li>
         </ul>
-        <li><a href='/login.php' id='login' class='btn btn-small waves-effect waves-light'
-            style='margin: 0 15px;'>Login</a>
+        <li><a href='/login.php' id='login' class='btn btn-small waves-effect waves-light header-login'>Login</a>
         </li>
         <li><a href='/dashboard.php' class=' btn waves-effect waves-light' id='avatar'>User Settings<i
               class='material-icons white-text'>person</i></a>
