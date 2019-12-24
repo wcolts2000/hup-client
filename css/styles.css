@@ -56,3 +56,12 @@
 .tabs li.indicator {
   background-color: #FBC02D;
 }
+
+.home-section-partners {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-section-partners .row h4 {
+  text-transform: uppercase;
+}

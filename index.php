@@ -183,14 +183,21 @@
 
     </main>
 
-    <section class="home-section-partners gray lighten-2">
-      <div class="row">
-        <h4>Check out some of our partner companies for even more great service</h4>
+    <section class="home-section-partners center-align cyan darken-4">
+      <div class="row white-text">
+        <h4>check out some satisfied clients</h4>
       </div>
-      <div class="row">
-        <div class="col s4">FTL</div>
-        <div class="col s4">Northern Nevada Network Services</div>
-        <div class="col s4">Mow Blow and Go</div>
+      <div class="row white-text">
+        <div class="col s6">
+          <i class="material-icons large">loyalty</i>
+          <h5>FTL</h5>
+          <p>Urban Attire, Gifts, and Paints</p>
+        </div>
+        <div class="col s6">
+          <i class="material-icons large">wifi</i>
+          <h5>NNNS</h5>
+          <p>Wifi Networking and Admin Services</p>
+        </div>
       </div>
     </section>
 
@@ -338,8 +345,6 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

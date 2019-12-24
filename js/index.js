@@ -24,11 +24,11 @@ $(document).ready(function() {
     $('.parallax').parallax();
     
     // COLLAPSIBLE
-    $('.collapsible').collapsible()
+    // $('.collapsible').collapsible()
 
     // CAROUSEL
-    $('.carousel').carousel();
-    $('.carousel-slider').carousel({ fullWidth: true});
+    // $('.carousel').carousel();
+    // $('.carousel-slider').carousel({ fullWidth: true});
 
   });
 
