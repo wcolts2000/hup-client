@@ -67,7 +67,7 @@
           <ul class="tabs grey lighten-4">
             <li class="tab col s3 active"><a href="#category1" class="black-text">LARGE FORMAT</a></li>
             <li class="tab col s3"><a href="#category2" class="black-text">OFFSET</a></li>
-            <li class="tab col s3"><a href="#category3" class="black-text">BUSINESS CARDS</a></li>
+            <li class="tab col s3"><a href="#category3" class="black-text">GARMENTS</a></li>
             <li class="tab col s3"><a href="#category4" class="black-text">WEBSITES</a></li>
           </ul>
         </div>
