@@ -82,3 +82,15 @@
 .m2a {
   margin: 2rem auto;
 }
+
+.ms2 {
+  margin: 0 2rem;
+}
+
+.p2 {
+  padding: 2rem;
+}
+
+.ps2 {
+  padding: 0 2rem;
+}
