@@ -67,9 +67,9 @@ function handleFormSubmit(event) {
   const URL = "http://localhost:8080/api/auth/register"
   const registerBody = {"username": "samwise@email.com", "password": "pass"}
   
-  axios.post(URL, registerBody)
-    .then(res => console.log("RES", res))
-    .catch(err => console.log("ERR", err))
+  // axios.post(URL, registerBody)
+  //   .then(res => console.log("RES", res))
+  //   .catch(err => console.log("ERR", err))
 }
 
 
