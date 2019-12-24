@@ -78,7 +78,8 @@
           </div>
           <div class="row">
             <div class="col s6">
-              <img src="img/lupitas-windows-1.jpg" alt="window decals on a mexican restaurant" class="responsive-img">
+              <img src="img/lupitas-windows-1-card.png" alt="window decals on a mexican restaurant"
+                class="responsive-img">
               <p>Advertise big with our banners and window perf. Get your business noticed with Vehicle Wraps or decals.
                 We can quickly get you visible with our signage and displays.</p>
             </div>
@@ -118,7 +119,7 @@
           </div>
           <div class="row">
             <div class="col s6">
-              <img src="img/premium-business-card-2.png" alt="fancy business cards" class="responsive-img">
+              <img src="img/premium-business-card-1-card.png" alt="fancy business cards" class="responsive-img">
               <p>Never miss a connection opportunity. Be sure to have your business cards at all times. Create a
                 personalized postcard or mailer.</p>
             </div>
@@ -159,7 +160,7 @@
           </div>
           <div class="row">
             <div class="col s6">
-              <img src="img/embroidered-hat.jpg" alt="a custom embroidered hat" class="responsive-img">
+              <img src="img/embroidered-hat-card.png" alt="a custom embroidered hat" class="responsive-img">
               <p>Take your clothing to the next level and get them custom printed or embroidered.</p>
             </div>
             <div class="col s6">
@@ -183,7 +184,7 @@
           </div>
           <div class="row">
             <div class="col s6">
-              <img src="img/web-design.jpg" alt="a display of web pages" class="responsive-img">
+              <img src="img/web-design-card.jpg" alt="a display of web pages" class="responsive-img">
               <p>Get your custom website or native application built today. Take you company worldwide and advertise on
                 the internet</p>
             </div>
