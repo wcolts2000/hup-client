@@ -29,7 +29,8 @@
         <h5 class="home-hero-header">Premium Business Cards</h5>
         <img class="responsive-img" src="img/premium-business-card-1.png" />
         <img class="responsive-img" src="img/premium-business-card-2.png" />
-        <button class="hero-btn btn waves-effect waves light yellow darken-2 black-text">Shop Now</button>
+        <a href="/offset/business_cards.php"
+          class="hero-btn btn waves-effect waves light yellow darken-2 black-text">Shop Now</a>
       </div>
     </section>
 
@@ -78,32 +79,33 @@
           <div class="row">
             <div class="col s6">
               <img src="img/lupitas-windows-1.jpg" alt="window decals on a mexican restaurant" class="responsive-img">
-              <p>Advertise big with our banners and window perf. Get your business noticed with Vehicle Wraps or decals. We can quickly get you visible with our signage and displays.</p>
+              <p>Advertise big with our banners and window perf. Get your business noticed with Vehicle Wraps or decals.
+                We can quickly get you visible with our signage and displays.</p>
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="black-text waves-effect waves-light collection-item">
+                <a href="/large_format/banners.php" class="black-text waves-effect waves-light collection-item">
                   <li>Banners</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/magnets.php" class="collection-item black-text waves-effect waves-light">
                   <li>Magnets</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/decals.php" class="collection-item black-text waves-effect waves-light">
                   <li>Decals</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/vehicle_wraps.php" class="collection-item black-text waves-effect waves-light">
                   <li>Vehicle Wraps</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/window_perf.php" class="collection-item black-text waves-effect waves-light">
                   <li>Window Perf</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/displays.php" class="collection-item black-text waves-effect waves-light">
                   <li>Displays</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/signage.php" class="collection-item black-text waves-effect waves-light">
                   <li>Signage</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/large_format/posters.php" class="collection-item black-text waves-effect waves-light">
                   <li>Posters</li>
                 </a>
               </ul>
@@ -117,31 +119,32 @@
           <div class="row">
             <div class="col s6">
               <img src="img/premium-business-card-2.png" alt="fancy business cards" class="responsive-img">
-              <p>Never miss a connection opportunity. Be sure to have your business cards at all times. Create a personalized postcard or mailer.</p>
+              <p>Never miss a connection opportunity. Be sure to have your business cards at all times. Create a
+                personalized postcard or mailer.</p>
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/offset/business_cards.php" class="collection-item black-text waves-effect waves-light">
                   <li>
                     Business Cards
                   </li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/offset/postcards.php" class="collection-item black-text waves-effect waves-light">
                   <li>
                     Postcards
                   </li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/offset/flyers.php" class="collection-item black-text waves-effect waves-light">
                   <li>
                     Flyers
                   </li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/offset/invitations.php" class="collection-item black-text waves-effect waves-light">
                   <li>
                     Invitations
                   </li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/offset/menus.php" class="collection-item black-text waves-effect waves-light">
                   <li>
                     Menus
                   </li>
@@ -161,13 +164,13 @@
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/garments/silk_screen.php" class="collection-item black-text waves-effect waves-light">
                   <li>Silk Screen Printing</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/garments/embroidery.php" class="collection-item black-text waves-effect waves-light">
                   <li>Embroidery</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/garments/vinyl.php" class="collection-item black-text waves-effect waves-light">
                   <li>Vinyl</li>
                 </a>
               </ul>
@@ -181,26 +184,27 @@
           <div class="row">
             <div class="col s6">
               <img src="img/web-design.jpg" alt="a display of web pages" class="responsive-img">
-              <p>Get your custom website or native application built today. Take you company worldwide and advertise on the internet</p>
+              <p>Get your custom website or native application built today. Take you company worldwide and advertise on
+                the internet</p>
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/websites/static_sites.php" class="collection-item black-text waves-effect waves-light">
                   <li>Static Sites</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/websites/dynamic_sites.php" class="collection-item black-text waves-effect waves-light">
                   <li>Dynamic Sites</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/websites/e-commerce_sites.php" class="collection-item black-text waves-effect waves-light">
                   <li>E-commerce Sites</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/websites/restaurant_sites.php" class="collection-item black-text waves-effect waves-light">
                   <li>Restaurant Sites</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/websites/blog_sites.php" class="collection-item black-text waves-effect waves-light">
                   <li>Blog Sites</li>
                 </a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                <a href="/websites/applications.php" class="collection-item black-text waves-effect waves-light">
                   <li>Apps</li>
                 </a>
               </ul>
@@ -217,14 +221,18 @@
       </div>
       <div class="row white-text">
         <div class="col s6">
-          <i class="material-icons large">loyalty</i>
-          <h5>FTL</h5>
-          <p>Urban Attire, Gifts, and Paints</p>
+          <a class="white-text" href="https://proclubshop.com">
+            <i class="material-icons large">loyalty</i>
+            <h5>FTL</h5>
+            <p>Urban Attire, Gifts, and Paints</p>
+          </a>
         </div>
         <div class="col s6">
-          <i class="material-icons large">wifi</i>
-          <h5>NNNS</h5>
-          <p>Wifi Networking and Admin Services</p>
+          <a class="white-text" href="https://nnnsllc.com">
+            <i class="material-icons large">wifi</i>
+            <h5>NNNS</h5>
+            <p>Wifi Networking and Admin Services</p>
+          </a>
         </div>
       </div>
     </section>
@@ -233,7 +241,7 @@
       <!-- CARDS -->
       <div class="row">
         <div class="col s12 m6 l3">
-          <a class="black-text" href="large_format.html">
+          <a class="black-text" href="large_format.php">
             <!-- CARD WITH IMAGE -->
             <div class="card">
               <div class="card-image">
@@ -250,13 +258,13 @@
                 </ul>
               </div>
               <div class="card-action yellow darken-2">
-                <a href="#" class="black-text">Shop here &rarr;</a>
+                <a href="large_format.php" class="black-text">Shop here &rarr;</a>
               </div>
             </div>
           </a>
         </div>
         <div class="col s12 m6 l3">
-          <a class="black-text" href="offset.html">
+          <a class="black-text" href="offset.php">
             <!-- CARD WITH IMAGE -->
             <div class="card">
               <div class="card-image">
@@ -273,13 +281,13 @@
                 </ul>
               </div>
               <div class="card-action yellow darken-2">
-                <a href="#" class="black-text">Shop here &rarr;</a>
+                <a href="offset.php" class="black-text">Shop here &rarr;</a>
               </div>
             </div>
           </a>
         </div>
         <div class="col s12 m6 l3">
-          <a class="black-text" href="garments.html">
+          <a class="black-text" href="garments.php">
             <!-- CARD WITH IMAGE -->
             <div class="card">
               <div class="card-image">
@@ -296,13 +304,13 @@
                 </ul>
               </div>
               <div class="card-action yellow darken-2">
-                <a href="#" class="black-text">Shop here &rarr;</a>
+                <a href="garments.php" class="black-text">Shop here &rarr;</a>
               </div>
             </div>
           </a>
         </div>
         <div class="col s12 m6 l3">
-          <a class="black-text" href="websites.html">
+          <a class="black-text" href="websites.php">
             <!-- CARD WITH IMAGE -->
             <div class="card">
               <div class="card-image">
@@ -318,7 +326,7 @@
                 </ul>
               </div>
               <div class="card-action yellow darken-2">
-                <a href="#" class="black-text">Shop here &rarr;</a>
+                <a href="website.php" class="black-text">Shop here &rarr;</a>
               </div>
             </div>
           </a>
@@ -341,18 +349,18 @@
           <h5 class="white-text">High Quality Printing in the Reno Area</h5>
           <p class="grey-text text-lighten-4">Providing Reno Sparks and Carson City with high quality printing.</p>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Large Format</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Offset</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Garments</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Websites</a></li>
+            <li><a class="grey-text text-lighten-3" href="/large_format.php">Large Format</a></li>
+            <li><a class="grey-text text-lighten-3" href="/offset.php">Offset</a></li>
+            <li><a class="grey-text text-lighten-3" href="/garments.php">Garments</a></li>
+            <li><a class="grey-text text-lighten-3" href="/websites.php">Websites</a></li>
           </ul>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Info</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Terms & Conditions</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+            <li><a class="grey-text text-lighten-3" href="/privacy_policy.php">Privacy Policy</a></li>
+            <li><a class="grey-text text-lighten-3" href="/terms.php">Terms & Conditions</a></li>
+            <li><a class="grey-text text-lighten-3" href="/faq.php">FAQ</a></li>
           </ul>
         </div>
       </div>
