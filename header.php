@@ -1,5 +1,6 @@
 <nav class='yellow darken-1'>
-<div class='container'> <div class='nav-wrapper'> <a class='button-collapse black-text' data-activates='mobile-nav' href='#' >
+  <div class='container'>
+    <div class='nav-wrapper'> <a class='button-collapse black-text' data-activates='mobile-nav' href='#'>
         <i class='material-icons'>menu</i></a>
       <ul class='right hide-on-med-and-down'>
         <li><a data-activates='lf-dropdown' class='dropdown-button black-text' href='#!'>Large Format<i class='material-icons right'>arrow_drop_down</i></a></li>
@@ -56,7 +57,7 @@
 
         <ul class='collapsible collapsible-accordion'>
           <li>
-          <a class='black-text collapsible-header' href='#!'>Garments<i class='material-icons right'>arrow_drop_down</i></a>
+            <a class='black-text collapsible-header' href='#!'>Garments<i class='material-icons right'>arrow_drop_down</i></a>
             <div class='collapsible-body'>
               <ul>
                 <li class='yellow darken-1'><a href='/garments.php'>Garments</a></li>
@@ -80,7 +81,8 @@
                 <li><a href='/websites/blog_sites.php'>Blog Sites</a></li>
                 <li><a href='/websites/applications.php'>Applications</a></li>
               </ul>
-            </div></li>
+            </div>
+          </li>
         </ul>
         <li><a href='/login.php' id='login' class='btn btn-small waves-effect waves-light' style='margin: 0 15px;'>Login</a>
         </li>

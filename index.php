@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Hurry Up Print | Websites, Banners, Business Cards, Flyers, Vehicle Wraps,
-      Garment Printing
-    </title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.png" sizes="32x32">
-  </head>
-  <body>
 
-    <?php include 'header.php'; ?>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Hurry Up Print | Websites, Banners, Business Cards, Flyers, Vehicle Wraps,
+    Garment Printing
+  </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.png" sizes="32x32">
+</head>
+
+<body>
+
+  <?php include 'header.php'; ?>
 
 
-    <div class="home container">
+  <div class="home container">
 
 
 
     <section class="home-hero row">
       <div class="wrapper">
         <h5 class="home-hero-header">Premium Business Cards</h5>
-          <img class="responsive-img" src="img/premium-business-card-1.png" />
-          <img class="responsive-img" src="img/premium-business-card-2.png" />
-          <button class="hero-btn btn waves-effect waves light yellow darken-2 black-text">Shop Now</button>
+        <img class="responsive-img" src="img/premium-business-card-1.png" />
+        <img class="responsive-img" src="img/premium-business-card-2.png" />
+        <button class="hero-btn btn waves-effect waves light yellow darken-2 black-text">Shop Now</button>
       </div>
     </section>
 
@@ -66,7 +60,7 @@
       <div class="row">
         <h3>Product Categories</h3>
       </div>
-      
+
       <!-- CATEGORY TABS -->
       <div class="row">
         <div class="col s12 grey lighten-4">
@@ -88,15 +82,31 @@
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="black-text waves-effect waves-light collection-item"><li>Banners</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Magnets</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Decals</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Vehicle Wraps</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Window Perf</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Displays</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Signage</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Posters</li></a>
-              </ul> 
+                <a href="#!" class="black-text waves-effect waves-light collection-item">
+                  <li>Banners</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Magnets</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Decals</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Vehicle Wraps</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Window Perf</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Displays</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Signage</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Posters</li>
+                </a>
+              </ul>
             </div>
           </div>
         </div>
@@ -112,27 +122,27 @@
             <div class="col s6">
               <ul class="collection">
                 <a href="#!" class="collection-item black-text waves-effect waves-light">
-                  <li>  
+                  <li>
                     Business Cards
                   </li>
                 </a>
                 <a href="#!" class="collection-item black-text waves-effect waves-light">
-                  <li>  
+                  <li>
                     Postcards
                   </li>
                 </a>
                 <a href="#!" class="collection-item black-text waves-effect waves-light">
-                  <li>  
+                  <li>
                     Flyers
                   </li>
                 </a>
                 <a href="#!" class="collection-item black-text waves-effect waves-light">
-                  <li>  
+                  <li>
                     Invitations
                   </li>
                 </a>
                 <a href="#!" class="collection-item black-text waves-effect waves-light">
-                  <li>  
+                  <li>
                     Menus
                   </li>
                 </a>
@@ -151,9 +161,15 @@
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Silk Screen Printing</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Embroidery</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Vinyl</li></a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Silk Screen Printing</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Embroidery</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Vinyl</li>
+                </a>
               </ul>
             </div>
           </div>
@@ -169,12 +185,24 @@
             </div>
             <div class="col s6">
               <ul class="collection">
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Static Sites</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Dynamic Sites</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>E-commerce Sites</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Restaurant Sites</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Blog Sites</li></a>
-                <a href="#!" class="collection-item black-text waves-effect waves-light"><li>Apps</li></a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Static Sites</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Dynamic Sites</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>E-commerce Sites</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Restaurant Sites</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Blog Sites</li>
+                </a>
+                <a href="#!" class="collection-item black-text waves-effect waves-light">
+                  <li>Apps</li>
+                </a>
               </ul>
             </div>
           </div>
@@ -213,7 +241,7 @@
               </div>
               <div class="card-content">
                 <span class="card-title">Large Format</span>
-                
+
                 <ul>
                   <li>Banners</li>
                   <li>Vehicle Wraps</li>
@@ -236,7 +264,7 @@
               </div>
               <div class="card-content">
                 <span class="card-title">Offset</span>
-                
+
                 <ul>
                   <li>Business Cards</li>
                   <li>Postcards</li>
@@ -259,7 +287,7 @@
               </div>
               <div class="card-content">
                 <span class="card-title">Garments</span>
-                
+
                 <ul>
                   <li>Silk Screening</li>
                   <li>Embroidery</li>
@@ -281,7 +309,7 @@
                 <img src="img/web-design.jpg" alt="card image">
               </div>
               <div class="card-content">
-                <span class="card-title">Websites</span>                
+                <span class="card-title">Websites</span>
                 <ul>
                   <li>Static Sites</li>
                   <li>Dynamic Sites</li>
@@ -297,54 +325,53 @@
         </div>
       </div>
     </section>
-      
 
 
-      <?php include 'mailer_list.php'; ?>
 
-    </div> <!--END CONTAINER -->
+    <?php include 'mailer_list.php'; ?>
 
-    <!-- FOOTER -->
-    <footer class="page-footer cyan darken-2">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">High Quality Printing in the Reno Area</h5>
-            <p class="grey-text text-lighten-4">Providing Reno Sparks and Carson City with high quality printing.</p>
-            <ul>
+  </div>
+  <!--END CONTAINER -->
+
+  <!-- FOOTER -->
+  <footer class="page-footer cyan darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">High Quality Printing in the Reno Area</h5>
+          <p class="grey-text text-lighten-4">Providing Reno Sparks and Carson City with high quality printing.</p>
+          <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Large Format</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Offset</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Garments</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Websites</a></li>
-            </ul>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Info</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Terms & Conditions</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
-            </ul>
-          </div>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Info</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Terms & Conditions</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
         © 2019 Copyright | Hurry Up Print
         <a class="grey-text text-lighten-4 right" href="mailto:sales@hurryupprint.com">
           <i class="material-icons left">email</i>
           sales@hurryupprint.com
         </a>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!--Import jQuery before materialize.js-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
