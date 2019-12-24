@@ -17,6 +17,9 @@ $(document).ready(function() {
       hover: true
     });
 
+    // TABS
+    $('.tabs').tabs();
+
     // PARALLAX
     $('.parallax').parallax();
     

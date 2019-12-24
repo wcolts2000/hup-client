@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2rem 0;
   background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,.1));
   position: relative;
 }
@@ -51,4 +51,8 @@
 
 .col.p2 {
   padding: 2rem;
+}
+
+.tabs li.indicator {
+  background-color: #FBC02D;
 }
