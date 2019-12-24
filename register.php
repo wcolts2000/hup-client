@@ -426,7 +426,7 @@
         <p class="mb1">
           <input type="checkbox" name="Privacy Policy" id="privacy">
           <label for="privacy">I have read and agree the
-            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="privacy_policy.php">Privacy Policy</a>
           </label>
         </p>
         <input type="submit" value="Register" class="btn waves-effect waves-light teal white-text">
