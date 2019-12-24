@@ -1,14 +1,47 @@
 <nav class='yellow darken-1'>
   <div class='container'>
-    <div class='nav-wrapper'> <a class='button-collapse black-text' data-activates='mobile-nav' href='#'>
-        <i class='material-icons'>menu</i></a>
+    <div class='nav-wrapper'>
+      <a href="/" class="brand-logo">
+        <img class="left" src="/img/hupLogoDrop.svg" width="30px" height="60px" alt="Hurry Up Print logo icon">
+      </a>
+      <a class='button-collapse black-text' data-activates='mobile-nav' href='#'>
+        <i class='material-icons'>menu</i>
+      </a>
       <ul class='right hide-on-med-and-down'>
-        <li><a data-activates='lf-dropdown' class='dropdown-button black-text' href='#!'>Large Format<i class='material-icons right'>arrow_drop_down</i></a></li>
-        <li><a data-activates='off-dropdown' class='dropdown-button black-text' href='#!'>Offset<i class='material-icons right'>arrow_drop_down</i></a></li>
-        <li> <a data-activates='gar-dropdown' class='dropdown-button black-text' href='#!'>Garments<i class='material-icons right'>arrow_drop_down</i></a></li>
-        <li><a data-activates='web-dropdown' class='dropdown-button black-text' href='#!'>Websites<i class='material-icons right'>arrow_drop_down</i></a></li>
-        <li><a id='login' href='/login.php' class='btn black waves-effect waves-light'>Login</a></li>
-        <li><a href='/dashboard.php' class=' black-text' id='avatar'><i class='material-icons tiny'>person</i></a></li>
+        <li>
+          <a data-activates='lf-dropdown' class='dropdown-button black-text' href='#!'>
+            Large Format
+            <i class='material-icons right'>arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a data-activates='off-dropdown' class='dropdown-button black-text' href='#!'>
+            Offset
+            <i class='material-icons right'>arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a data-activates='gar-dropdown' class='dropdown-button black-text' href='#!'>
+            Garments
+            <i class='material-icons right'>arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a data-activates='web-dropdown' class='dropdown-button black-text' href='#!'>
+            Websites
+            <i class='material-icons right'>arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a id='login' href='/login.php' class='btn black waves-effect waves-light'>
+            Login
+          </a>
+        </li>
+        <li>
+          <a href='/dashboard.php' class=' black-text' id='avatar'>
+            <i class='material-icons tiny'>person</i>
+          </a>
+        </li>
       </ul>
       <ul class='side-nav' id='mobile-nav'>
         <ul class='collapsible collapsible-accordion'>
@@ -23,7 +56,8 @@
             </div>
           </li>
           <li>
-            <a class='black-text collapsible-header' href='#!'>Large Format<i class='material-icons right'>arrow_drop_down</i></a>
+            <a class='black-text collapsible-header' href='#!'>Large Format<i
+                class='material-icons right'>arrow_drop_down</i></a>
             <div class='collapsible-body'>
               <ul>
                 <li class='yellow darken-1'><a href='/large_format.php'>Large Format</a></li>
@@ -41,7 +75,8 @@
         </ul>
         <ul class='collapsible collapsible-accordion'>
           <li>
-            <a class='black-text collapsible-header' href='#!'>Offset<i class='material-icons right'>arrow_drop_down</i></a>
+            <a class='black-text collapsible-header' href='#!'>Offset<i
+                class='material-icons right'>arrow_drop_down</i></a>
             <div class='collapsible-body'>
               <ul>
                 <li class='yellow darken-1'><a href='/offset.php'>Offest</a></li>
@@ -57,7 +92,10 @@
 
         <ul class='collapsible collapsible-accordion'>
           <li>
-            <a class='black-text collapsible-header' href='#!'>Garments<i class='material-icons right'>arrow_drop_down</i></a>
+            <a class='black-text collapsible-header' href='#!'>
+              Garments
+              <i class='material-icons right'>arrow_drop_down</i>
+            </a>
             <div class='collapsible-body'>
               <ul>
                 <li class='yellow darken-1'><a href='/garments.php'>Garments</a></li>
@@ -70,7 +108,10 @@
         </ul>
         <ul class='collapsible collapsible-accordion'>
           <li>
-            <a class='black-text collapsible-header' href='#!'>Websites<i class='material-icons right'>arrow_drop_down</i></a>
+            <a class='black-text collapsible-header' href='#!'>
+              Websites
+              <i class='material-icons right'>arrow_drop_down</i>
+            </a>
             <div class='collapsible-body'>
               <ul>
                 <li class='yellow darken-1'><a href='/websites.php'>Websites</a></li>
@@ -84,9 +125,11 @@
             </div>
           </li>
         </ul>
-        <li><a href='/login.php' id='login' class='btn btn-small waves-effect waves-light' style='margin: 0 15px;'>Login</a>
+        <li><a href='/login.php' id='login' class='btn btn-small waves-effect waves-light'
+            style='margin: 0 15px;'>Login</a>
         </li>
-        <li><a href='/dashboard.php' class=' btn waves-effect waves-light' id='avatar'>User Settings<i class='material-icons white-text'>person</i></a>
+        <li><a href='/dashboard.php' class=' btn waves-effect waves-light' id='avatar'>User Settings<i
+              class='material-icons white-text'>person</i></a>
         </li>
       </ul>
     </div>
