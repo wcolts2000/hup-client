@@ -29,21 +29,21 @@
         <div class="col s12 divider mb1"></div>
         <div class="row">
           <div class="input-field col m6 s12">
-            <input type="text" class="validate" placeholder="First Name" id="first_name">
+            <input type="text" class="validate" placeholder="John" id="first_name">
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col m6 s12">
-            <input type="text" class="validate" placeholder="Last Name" id="last_name">
+            <input type="text" class="validate" placeholder="Doe" id="last_name">
             <label for="last_name">Last Name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col m6 s12">
-            <input type="email" class="validate" placeholder="Email" id="email">
+            <input type="email" class="validate" placeholder="johnnyd@email.com" id="email">
             <label for="email">Email</label>
           </div>
           <div class="input-field col m6 s12">
-            <input type="tel" class="validate" placeholder="Telephone" id="phone">
+            <input type="tel" class="validate" placeholder="555-123-4567" id="phone">
             <label for="phone">Telephone</label>
           </div>
         </div>
@@ -51,19 +51,19 @@
         <div class="col s12 divider mb1"></div>
         <div class="row">
           <div class="input-field col s12">
-            <input type="text" placeholder="Address 1" id="address_1">
+            <input type="text" placeholder="135 Main St." id="address_1">
             <label for="address_1">Address 1</label>
           </div>
           <div class="input-field col s12">
-            <input type="text" placeholder="Address 2" id="address_2">
+            <input type="text" placeholder="PO Box 112" id="address_2">
             <label for="address_2">Address 2</label>
           </div>
           <div class="input-field col m6 s12">
-            <input type="text" placeholder="City" id="city">
+            <input type="text" placeholder="Reno" id="city">
             <label for="city">City</label>
           </div>
           <div class="input-field col m6 s12">
-            <input type="text" placeholder="Postal Code" id="postal">
+            <input type="text" placeholder="89502" id="postal">
             <label for="postal">Postal Code</label>
           </div>
         </div>
@@ -403,11 +403,11 @@
         <div class="col s12 divider mb1"></div>
         <div class="row">
           <div class="input-field col m6 s12">
-            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="$k8vG3p09aB%77hn2^" id="password">
             <label for="password">Password</label>
           </div>
           <div class="input-field col m6 s12">
-            <input type="password" placeholder="Password Confirm" id="password-conf">
+            <input type="password" placeholder="$k8vG3p09aB%77hn2^" id="password-conf">
             <label for="password-conf">Password Confirm</label>
           </div>
         </div>
