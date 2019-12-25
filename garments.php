@@ -45,7 +45,7 @@
       </nav>
 
       <!-- PRODUCTS -->
-      <div id="category1" class="col s12">
+      <div class="col s12">
         <h4>Advertise Everywhere You Go.</h4>
         <div class="row">
           <div class="col s6">

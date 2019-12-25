@@ -46,7 +46,7 @@
       </nav>
 
       <!-- PRODUCTS -->
-      <div id="category1" class="col s12">
+      <div class="col s12">
         <h4>Large Scale Marketing Made Easy.</h4>
         <div class="row">
           <div class="col s6">
