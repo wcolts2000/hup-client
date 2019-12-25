@@ -21,8 +21,8 @@
       <div class="parallax"><img src="img/embroidery_machines.png" alt="embroidery machines"></div>
       <h1 class="white-text ps2 ts">Custom Garments</h1>
       <h4 class="ps2 white-text ts">Get your logo on your uniforms and clothing.</h5>
-        <a href="/garments/silk_screen.php"
-          class="round-border btn waves-effect waves-light yellow darken-2 black-text m2">Silk Screening Here
+        <a href="/garments/embroidery.php"
+          class="round-border btn waves-effect waves-light yellow darken-2 black-text m2">Embroidery Here
           <i class="material-icons black-text right">chevron_right</i>
         </a>
     </div>
