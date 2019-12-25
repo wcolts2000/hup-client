@@ -71,6 +71,14 @@
   text-transform: uppercase;
 }
 
+.parallax-container.page-header {
+  height: auto;
+}
+
+.m2 {
+  margin: 2rem;
+}
+
 .mb1 {
   margin-bottom: 1rem;
 }
@@ -93,4 +101,13 @@
 
 .ps2 {
   padding: 0 2rem;
+}
+
+.ts {
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.3),
+    2px 2px 7px rgba(0, 0, 0, 0.5), 3px 3px 9px rgba(0, 0, 0, 0.8);
+}
+
+.round-border {
+  border-radius: 50px;
 }
