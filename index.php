@@ -222,14 +222,14 @@
       </div>
       <div class="row white-text">
         <div class="col s6">
-          <a class="white-text" href="https://proclubshop.com">
+          <a class="white-text" href="https://proclubshop.com" target="_blank" rel="nofollow noreferrer">
             <i class="material-icons large">loyalty</i>
             <h5>FTL</h5>
             <p>Urban Attire, Gifts, and Paints</p>
           </a>
         </div>
         <div class="col s6">
-          <a class="white-text" href="https://nnnsllc.com">
+          <a class="white-text" href="https://nnnsllc.com" target="_blank" rel="nofollow noreferrer">
             <i class="material-icons large">wifi</i>
             <h5>NNNS</h5>
             <p>Wifi Networking and Admin Services</p>
