@@ -19,7 +19,8 @@
     <div class="nav-wrapper ms2">
       <div class="col s12">
         <a href="/index.php" class="breadcrumb"><i class="material-icons">home</i></a>
-        <a href="/offset.php" class="breadcrumb black-text">Offset</a>
+        <a href="/large_format.php" class="breadcrumb black-text">Large Format</a>
+        <a href="/large_format/banners.php" class="breadcrumb black-text">Banners</a>
       </div>
     </div>
   </nav>
