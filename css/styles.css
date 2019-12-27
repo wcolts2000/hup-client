@@ -74,6 +74,9 @@
 .parallax-container.page-header {
   height: auto;
 }
+.m1 {
+  margin: 1rem;
+}
 
 .m2 {
   margin: 2rem;
@@ -91,6 +94,9 @@
   margin: 2rem auto;
 }
 
+.ms1 {
+  margin: 0 1rem;
+}
 .ms2 {
   margin: 0 2rem;
 }
@@ -110,4 +116,8 @@
 
 .round-border {
   border-radius: 50px;
+}
+
+span.err {
+  color: red;
 }
