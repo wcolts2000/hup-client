@@ -11,7 +11,7 @@
         <div class="card-content">
           <span class="card-title">New Customer?</span>
           <p>Please go to our
-            <a href="register.php" class="blue-grey-text">register</a>
+            <a href="register.php">register</a>
             page and create a new account.</p>
         </div>
         <div class="card-action">
@@ -51,6 +51,17 @@
           </div>
           <div class="row">
             <button type="submit" name="login-submit" class="btn yellow darken-1 black-text waves-effect waves-light">Login</button>
+          </div>
+          <div class="row">
+            <?php
+              if (isset($_GET['newpwd'])) {
+                if ($_GET["newpwd"] == "passwordupdated") {
+                  echo '<p class="signupsuccess">Your password has been reset!</p>';
+                }
+              }
+            ?>
+            <p>Forgot your password? <a href="password_reset.php">Reset Password Here</a></p>
+            
           </div>
         </div>
       </form>
