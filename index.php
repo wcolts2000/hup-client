@@ -7,39 +7,42 @@
 <?php require 'header.php'; ?>
 
 
+<section class="home-hero row">
+  <!-- <div class="container">
+    <img class="responsive-img" src="img/premium-business-card-1.png" />
+    <img class="responsive-img" src="img/premium-business-card-2.png" />
+    <a href="/offset/business_cards.php" class="hero-btn btn waves-effect waves light yellow darken-1 black-text">Shop
+      Now</a>
+  </div> -->
+  <div class="parallax-container">
+      <div class="parallax"><img src="img/printing-house.jpg"></div>
+      <div class="center-align">
+
+        <img src="img/hup_logo.png" alt="Hurry Up Print logo" class="m2a" style="max-width: 600px; width: 100%; margin: 6rem auto">
+      </div>
+    </div>
+</section>
 <div class="home container">
 
 
 
-  <section class="home-hero row">
-    <div class="wrapper">
-      <h5 class="home-hero-header">Premium Business Cards</h5>
-      <img class="responsive-img" src="img/premium-business-card-1.png" />
-      <img class="responsive-img" src="img/premium-business-card-2.png" />
-      <a href="/offset/business_cards.php" class="hero-btn btn waves-effect waves light yellow darken-2 black-text">Shop
-        Now</a>
-    </div>
-  </section>
 
 
   <main class="home-main white">
 
     <!-- ICON BANNER -->
-    <div class="row yellow darken-2 hide-on-small-only">
-      <div class="col s4 center-align p2">
-        <i class="material-icons small">access_time</i>
+    <div class="m2a">&nbsp;</div>
+    <div class="row hide-on-small-only m4a">
+      <div class="col s4 center-align pink-text p2">
+        <i class="material-icons large">access_time</i>
         <h5>Fast Turnarounds</h5>
       </div>
-      <div class="col s4 center-align p2">
-        <i class="material-icons small">grade</i>
-        <i class="material-icons small">grade</i>
-        <i class="material-icons small">grade</i>
-        <i class="material-icons small">grade</i>
-        <i class="material-icons small">grade</i>
+      <div class="col s4 center-align pink-text p2">
+        <i class="material-icons large">grade</i>
         <h5>Premium Products</h5>
       </div>
-      <div class="col s4 center-align p2">
-        <i class="material-icons small">thumb_up</i>
+      <div class="col s4 center-align pink-text p2">
+        <i class="material-icons large">thumb_up</i>
         <h5>Quality Assurance</h5>
       </div>
     </div>
@@ -51,8 +54,8 @@
 
     <!-- CATEGORY TABS -->
     <div class="row">
-      <div class="col s12 grey lighten-4">
-        <ul class="tabs grey lighten-4">
+      <div class="col s12">
+        <ul class="tabs">
           <li class="tab col s3 active"><a href="#category1" class="black-text">LARGE FORMAT</a></li>
           <li class="tab col s3"><a href="#category2" class="black-text">OFFSET</a></li>
           <li class="tab col s3"><a href="#category3" class="black-text">GARMENTS</a></li>
@@ -203,7 +206,7 @@
 
   </main>
 
-  <section class="home-section-partners center-align cyan darken-4">
+  <section class="home-section-partners center-align pink">
     <div class="row white-text">
       <h4>check out some satisfied clients</h4>
     </div>
@@ -245,8 +248,8 @@
                 <li>and more...</li>
               </ul>
             </div>
-            <div class="card-action yellow darken-2">
-              <a href="large_format.php" class="black-text">Shop here &rarr;</a>
+            <div class="card-action yellow darken-1">
+              <a href="large_format.php" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -268,8 +271,8 @@
                 <li>and more...</li>
               </ul>
             </div>
-            <div class="card-action yellow darken-2">
-              <a href="offset.php" class="black-text">Shop here &rarr;</a>
+            <div class="card-action yellow darken-1">
+              <a href="offset.php" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -291,8 +294,8 @@
                 <li>and more...</li>
               </ul>
             </div>
-            <div class="card-action yellow darken-2">
-              <a href="garments.php" class="black-text">Shop here &rarr;</a>
+            <div class="card-action yellow darken-1">
+              <a href="garments.php" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -313,8 +316,8 @@
                 <li>and more...</li>
               </ul>
             </div>
-            <div class="card-action yellow darken-2">
-              <a href="website.php" class="black-text">Shop here &rarr;</a>
+            <div class="card-action yellow darken-1">
+              <a href="website.php" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -324,8 +327,8 @@
 
 
 
-  <?php require 'mailer_list.php'; ?>
-
+  
 </div>
 <!--END CONTAINER -->
+<?php require 'mailer_list.php'; ?>
 <?php require "footer.php" ?>

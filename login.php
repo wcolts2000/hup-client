@@ -7,7 +7,7 @@
 <div class="container m2a">
   <div class="row">
     <div class="col s12 m6">
-      <div class="card grey lighten-4">
+      <div class="card">
         <div class="card-content">
           <span class="card-title">New Customer?</span>
           <p>Please go to our
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="col s12 m6">
-      <form action="/includes/login.inc.php" method="post" class="card grey lighten-4">
+      <form action="/includes/login.inc.php" method="post" class="card">
         <div class="card-content">
           <div class="mb2">
             <span class="card-title">
@@ -50,8 +50,7 @@
             <input type="password" id="password" name="pwd" placeholder="$k8vG3p09aB%77hn2^" class="validate">
           </div>
           <div class="row">
-            <button type="submit" name="login-submit"
-              class="btn yellow darken-2 black-text waves-effect waves-light">Login</button>
+            <button type="submit" name="login-submit" class="btn yellow darken-1 black-text waves-effect waves-light">Login</button>
           </div>
         </div>
       </form>

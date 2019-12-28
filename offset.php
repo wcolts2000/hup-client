@@ -10,7 +10,7 @@
     <div class="parallax"><img src="img/digital_print_samples.png" alt="marketing prints"></div>
     <h1 class="white-text ps2 ts">Offset and Digital Printing</h1>
     <h4 class="ps2 white-text ts">From business cards to menus and everything in between.</h5>
-      <a href="/offset/menus.php" class="round-border btn waves-effect waves-light yellow darken-2 black-text m2">Menus
+      <a href="/offset/menus.php" class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Menus
         Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>
@@ -24,10 +24,10 @@
   <main class="lf-main">
 
     <!-- BREADCRUMBS -->
-    <nav class="yellow darken-2 m2a">
+    <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb"><i class="material-icons">home</i></a>
+          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
           <a href="/offset.php" class="breadcrumb black-text">Offset</a>
         </div>
       </div>

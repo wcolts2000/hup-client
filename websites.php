@@ -12,7 +12,7 @@
     <h1 class="white-text ps2 ts">Custom Websites</h1>
     <h4 class="ps2 white-text ts">Get your website or application built.</h5>
       <a href="/garments/embroidery.php"
-        class="round-border btn waves-effect waves-light yellow darken-2 black-text m2">Blog Sites Here
+        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Blog Sites Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>
   </div>
@@ -25,10 +25,10 @@
   <main class="lf-main">
 
     <!-- BREADCRUMBS -->
-    <nav class="yellow darken-2 m2a">
+    <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb"><i class="material-icons">home</i></a>
+          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
           <a href="/websites.php" class="breadcrumb black-text">Websites</a>
         </div>
       </div>

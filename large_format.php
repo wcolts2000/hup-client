@@ -10,7 +10,7 @@
     <h1 class="white-text ps2 ts">Large Format Printing</h1>
     <h4 class="ps2 white-text ts">Get a banner for your next event.</h5>
       <a href="/large_format/banners.php"
-        class="round-border btn waves-effect waves-light yellow darken-2 black-text m2">Buy
+        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Buy
         Banners Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>
@@ -24,10 +24,10 @@
   <main class="lf-main">
 
     <!-- BREADCRUMBS -->
-    <nav class="yellow darken-2 m2a">
+    <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb"><i class="material-icons">home</i></a>
+          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
           <a href="/large_format.php" class="breadcrumb black-text">Large Format</a>
         </div>
       </div>

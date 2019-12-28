@@ -94,6 +94,10 @@
   margin: 2rem auto;
 }
 
+.m4a {
+  margin: 4rem auto;
+}
+
 .ms1 {
   margin: 0 1rem;
 }
@@ -120,4 +124,27 @@
 
 span.err {
   color: red;
+}
+
+.side-nav .collapsible-header,
+.side-nav.fixed .collapsible-header {
+  line-height: 48px;
+  height: 48px;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: black;
+}
+
+.breadcrumb:before {
+  color: #bdbdbd;
+}
+
+.collection {
+  border: 1px solid rgb(255, 222, 138);
+}
+
+.collection .collection-item {
+  border-bottom: 1px solid #FBC02D;
 }

@@ -1,4 +1,4 @@
-<nav class='yellow darken-1'>
+<nav class='yellow'>
   <div class='container'>
     <div class='nav-wrapper'>
 
@@ -56,10 +56,10 @@
         <li>
           <ul class='collapsible collapsible-accordion'>
             <li>
-              <i class='material-icons left'>person</i>
               <a class='black-text collapsible-header' href='#!'>
+                <i class='material-icons left'>person</i>
                 My Account
-                <i class='material-icons right'>arrow_drop_down</i>
+                <!-- <i class='material-icons'>arrow_drop_down</i> -->
               </a>
               <div class='collapsible-body'>
                 <ul>
@@ -67,7 +67,7 @@
                   if (isset($_SESSION['email'])) {
                     echo '<li>
                       <form action="includes/logout.inc.php" method="post">
-                        <button class="btn waves-effect waves-light white-text red ms2" name="logout-submit"
+                        <button class="btn waves-effect waves-light black-text yellow ms2" name="logout-submit"
                           type="submit">Logout</button>
                       </form>
                     </li>';
@@ -86,11 +86,13 @@
         <li>
           <ul class='collapsible collapsible-accordion'>
             <li>
-              <a class='black-text collapsible-header' href='#!'>Large Format<i
-                  class='material-icons right'>arrow_drop_down</i></a>
+              <a class='black-text collapsible-header' href='#!'>
+                <i class='material-icons left'>aspect_ratio</i>
+                Large Format
+              </a>
               <div class='collapsible-body'>
                 <ul>
-                  <li class='yellow darken-1'><a href='/large_format.php'>Large Format</a></li>
+                  <li class='yellow '><a href='/large_format.php'>Large Format</a></li>
                   <li><a href='/large_format/banners.php'>Banners</a></li>
                   <li><a href='/large_format/magnets.php'>Magnets</a></li>
                   <li><a href='/large_format/decals.php'>Decals</a></li>
@@ -109,11 +111,13 @@
         <li>
           <ul class='collapsible collapsible-accordion'>
             <li>
-              <a class='black-text collapsible-header' href='#!'>Offset<i
-                  class='material-icons right'>arrow_drop_down</i></a>
+              <a class='black-text collapsible-header' href='#!'>
+                <i class='material-icons left'>print</i>
+                Offset
+              </a>
               <div class='collapsible-body'>
                 <ul>
-                  <li class='yellow darken-1'><a href='/offset.php'>Offest</a></li>
+                  <li class='yellow '><a href='/offset.php'>Offest</a></li>
                   <li><a href='/offset/business_cards.php'>Business Cards</a></li>
                   <li><a href='/offset/postcards.php'>Postcards</a></li>
                   <li><a href='/offset/flyers.php'>Flyers</a></li>
@@ -130,12 +134,12 @@
           <ul class='collapsible collapsible-accordion'>
             <li>
               <a class='black-text collapsible-header' href='#!'>
+                <i class='material-icons left'>style</i>
                 Garments
-                <i class='material-icons right'>arrow_drop_down</i>
               </a>
               <div class='collapsible-body'>
                 <ul>
-                  <li class='yellow darken-1'><a href='/garments.php'>Garments</a></li>
+                  <li class='yellow '><a href='/garments.php'>Garments</a></li>
                   <li><a href='/garments/silk_screen.php'>Silk Screen</a></li>
                   <li><a href='/garments/embroidery.php'>Embroidery</a></li>
                   <li><a href='/garments/vinyl.php'>Vinyl</a></li>
@@ -150,12 +154,12 @@
           <ul class='collapsible collapsible-accordion'>
             <li>
               <a class='black-text collapsible-header' href='#!'>
+                <i class='material-icons left'>important_devices</i>
                 Websites
-                <i class='material-icons right'>arrow_drop_down</i>
               </a>
               <div class='collapsible-body'>
                 <ul>
-                  <li class='yellow darken-1'><a href='/websites.php'>Websites</a></li>
+                  <li class='yellow '><a href='/websites.php'>Websites</a></li>
                   <li><a href='/websites/static_sites.php'>Static Websites</a></li>
                   <li><a href='/websites/dynamic_sites.php'>Dynamic Websites</a></li>
                   <li><a href='/websites/e-commerce_sites.php'>E-commerce Sites</a></li>
@@ -175,7 +179,7 @@
 
 <!-- DESKTOP DROPDOWNS -->
 <ul id='lf-dropdown' class='dropdown-content'>
-  <li class='yellow darken-1'><a href='/large_format.php'>Large Format</a></li>
+  <li class='yellow '><a href='/large_format.php'>Large Format</a></li>
   <li><a href='/large_format/banners.php'>Banners</a></li>
   <li><a href='/large_format/magnets.php'>Magnets</a></li>
   <li><a href='/large_format/decals.php'>Decals</a></li>
@@ -186,7 +190,7 @@
   <li><a href='/large_format/posters.php'>Posters</a></li>
 </ul>
 <ul id='off-dropdown' class='dropdown-content'>
-  <li class='yellow darken-1'><a href='/offset.php'>Offset</a></li>
+  <li class='yellow '><a href='/offset.php'>Offset</a></li>
   <li><a href='/offset/business_cards.php'>Business Cards</a></li>
   <li><a href='/offset/postcards.php'>Postcards</a></li>
   <li><a href='/offset/flyers.php'>Flyers</a></li>
@@ -194,13 +198,13 @@
   <li><a href='/offset/menus.php'>Menus</a></li>
 </ul>
 <ul id='gar-dropdown' class='dropdown-content'>
-  <li class='yellow darken-1'><a href='/garments.php'>Garments</a></li>
+  <li class='yellow '><a href='/garments.php'>Garments</a></li>
   <li><a href='/garments/silk_screen.php'>Silk Screen</a></li>
   <li><a href='/garments/embroidery.php'>Embroidery</a></li>
   <li><a href='/garments/vinyl.php'>Vinyl</a></li>
 </ul>
 <ul id='web-dropdown' class='dropdown-content'>
-  <li class='yellow darken-1'><a href='/websites.php'>Websites</a></li>
+  <li class='yellow '><a href='/websites.php'>Websites</a></li>
   <li><a href='/websites/static_sites.php'>Static Websites</a></li>
   <li><a href='/websites/dynamic_sites.php'>Dynamic Websites</a></li>
   <li><a href='/websites/e-commerce_sites.php'>E-commerce Sites</a></li>
@@ -213,7 +217,7 @@
   if (isset($_SESSION['email'])) {
     echo '<li>
     <form action="includes/logout.inc.php" method="post">
-      <button class="btn waves-effect waves-light white-text red m1" name="logout-submit" type="submit">Logout</button>
+      <button class="btn waves-effect waves-light black-text yellow m1" name="logout-submit" type="submit">Logout</button>
     </form>
   </li>';
   } else {

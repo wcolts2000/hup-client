@@ -11,10 +11,10 @@
   <div class="divider mb2"></div>
 
   <!-- BREADCRUMBS -->
-  <nav class="yellow darken-2 mb2">
+  <nav class="yellow darken-1 mb2">
     <div class="nav-wrapper ms2">
       <div class="col s12">
-        <a href="/index.php" class="breadcrumb"><i class="material-icons">home</i></a>
+        <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
         <a href="/terms.php" class="breadcrumb black-text">Terms & Conditions</a>
       </div>
     </div>

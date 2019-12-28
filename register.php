@@ -4,7 +4,7 @@
 
 <?php require('header.php'); ?>
 
-<div class="container m2">
+<div class="container m2a">
   <div class="row">
     <h4>Register Account</h4>
     <small>If you have already created an account with us, please login at the
@@ -465,7 +465,8 @@
           <a href="privacy_policy.php">Privacy Policy</a>
         </label>
       </p>
-      <input name="register-submit" type="submit" value="Register" class="btn waves-effect waves-light teal white-text">
+      <input name="register-submit" type="submit" value="Register"
+        class="btn waves-effect waves-light yellow darken-1 black-text">
 
     </form>
   </div>

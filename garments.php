@@ -10,7 +10,7 @@
     <h1 class="white-text ps2 ts">Custom Garments</h1>
     <h4 class="ps2 white-text ts">Get your logo on your uniforms and clothing.</h5>
       <a href="/garments/embroidery.php"
-        class="round-border btn waves-effect waves-light yellow darken-2 black-text m2">Embroidery Here
+        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Embroidery Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>
   </div>
@@ -23,10 +23,10 @@
   <main class="lf-main">
 
     <!-- BREADCRUMBS -->
-    <nav class="yellow darken-2 m2a">
+    <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb"><i class="material-icons">home</i></a>
+          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
           <a href="/garments.php" class="breadcrumb black-text">Garments</a>
         </div>
       </div>
