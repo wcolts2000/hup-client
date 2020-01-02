@@ -324,5 +324,13 @@
   
 </div>
 <!--END CONTAINER -->
+
+<!-- MAILER LIST FORM -->
 <?php require 'mailer_list.php'; ?>
+
+<!-- GOOGLE MAP -->
+<div class="video-container map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12311.951650900202!2d-119.8031856!3d39.5147625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5f2d1bf75a8660a!2sHurry%20Up%20Print!5e0!3m2!1sen!2sus!4v1577959090285!5m2!1sen!2sus" width="1200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+
 <?php require "footer.php" ?>

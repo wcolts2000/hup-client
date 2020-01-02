@@ -15,7 +15,7 @@
   </div>
 </nav>
 
-<section class="flyers__section">
+<section class="embroidery__section">
 <h1>Embroidery</h1>
   <div class="divider"></div>
  <?php require('../under_construction.php') ?>

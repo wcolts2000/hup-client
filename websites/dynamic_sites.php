@@ -14,7 +14,7 @@
   </div>
 </nav>
 
-<section class="flyers__section">
+<section class="dynamic__section">
 <h1>Dynamic Sites</h1>
   <div class="divider"></div>
  <?php require('../under_construction.php') ?>

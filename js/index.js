@@ -26,6 +26,24 @@ $(document).ready(function() {
   // FORM SELECTS
   $('select').material_select();
 
+  // TEXTAREAS
+  // $('#business_objective').val('New Text');
+  // $('#prospective_clients').val('New Text');
+  // $('#goal').val('New Text');
+  // $('#uniq').val('New Text');
+  // $('#new_clients').val('New Text');
+  // $('#sales').val('New Text');
+  // $('#questions').val('New Text');
+
+  // DATE PICKER
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 15,
+    closeOnSelect: true
+  })
+  // below code stops picker from immediately closing when clicked into in Chrome (may be needed in SELECT elements also)
+  $('.datepicker').on('mousedown',function(event){ event.preventDefault(); })
+
   // COLLAPSIBLE
   // $('.collapsible').collapsible()
 

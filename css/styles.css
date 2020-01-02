@@ -18,6 +18,10 @@
   text-transform: uppercase;
 }
 
+.video-container.map {
+  padding-bottom: 13%;
+}
+
 /* =================== */
 /* PAGE HELPERS */
 /* =================== */
@@ -117,6 +121,10 @@ span.err {
 
 .collection .collection-item {
   border-bottom: 1px solid #FBC02D;
+}
+
+textarea.materialize-textarea {
+  padding: 0;
 }
 
 /* =================== */

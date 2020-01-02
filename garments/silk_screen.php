@@ -15,7 +15,7 @@
   </div>
 </nav>
 
-<section class="flyers__section">
+<section class="silkscreen__section">
 <h1>Silk Screen Printing</h1>
   <div class="divider"></div>
  <?php require('../under_construction.php') ?>
