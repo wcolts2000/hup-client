@@ -42,11 +42,11 @@
         </div>
         <div class="col s6">
           <ul class="collection">
-            <a href="/garments/silk_screen.php" class="collection-item black-text waves-effect waves-light">
-              <li>Silk Screen Printing</li>
-            </a>
             <a href="/garments/embroidery.php" class="collection-item black-text waves-effect waves-light">
               <li>Embroidery</li>
+            </a>
+            <a href="/garments/silk_screen.php" class="collection-item black-text waves-effect waves-light">
+              <li>Silk Screen Printing</li>
             </a>
             <a href="/garments/vinyl.php" class="collection-item black-text waves-effect waves-light">
               <li>Vinyl</li>

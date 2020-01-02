@@ -8,12 +8,6 @@
 
 
 <section class="home-hero row">
-  <!-- <div class="container">
-    <img class="responsive-img" src="img/premium-business-card-1.png" />
-    <img class="responsive-img" src="img/premium-business-card-2.png" />
-    <a href="/offset/business_cards.php" class="hero-btn btn waves-effect waves light yellow darken-1 black-text">Shop
-      Now</a>
-  </div> -->
   <div class="parallax-container">
       <div class="parallax"><img src="img/printing-house.jpg"></div>
       <div class="center-align">

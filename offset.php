@@ -47,11 +47,6 @@
                 Business Cards
               </li>
             </a>
-            <a href="/offset/postcards.php" class="collection-item black-text waves-effect waves-light">
-              <li>
-                Postcards
-              </li>
-            </a>
             <a href="/offset/flyers.php" class="collection-item black-text waves-effect waves-light">
               <li>
                 Flyers
@@ -65,6 +60,11 @@
             <a href="/offset/menus.php" class="collection-item black-text waves-effect waves-light">
               <li>
                 Menus
+              </li>
+            </a>
+            <a href="/offset/postcards.php" class="collection-item black-text waves-effect waves-light">
+              <li>
+                Postcards
               </li>
             </a>
           </ul>

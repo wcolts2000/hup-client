@@ -43,8 +43,11 @@
         </div>
         <div class="col s6">
           <ul class="collection">
-            <a href="/websites/static_sites.php" class="collection-item black-text waves-effect waves-light">
-              <li>Static Sites</li>
+            <a href="/websites/applications.php" class="collection-item black-text waves-effect waves-light">
+              <li>Applications</li>
+            </a>
+            <a href="/websites/blog_sites.php" class="collection-item black-text waves-effect waves-light">
+              <li>Blog Sites</li>
             </a>
             <a href="/websites/dynamic_sites.php" class="collection-item black-text waves-effect waves-light">
               <li>Dynamic Sites</li>
@@ -55,11 +58,8 @@
             <a href="/websites/restaurant_sites.php" class="collection-item black-text waves-effect waves-light">
               <li>Restaurant Sites</li>
             </a>
-            <a href="/websites/blog_sites.php" class="collection-item black-text waves-effect waves-light">
-              <li>Blog Sites</li>
-            </a>
-            <a href="/websites/applications.php" class="collection-item black-text waves-effect waves-light">
-              <li>Apps</li>
+            <a href="/websites/static_sites.php" class="collection-item black-text waves-effect waves-light">
+              <li>Static Sites</li>
             </a>
           </ul>
         </div>

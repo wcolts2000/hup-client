@@ -2,6 +2,9 @@
 <?php $description = "Hurry Up Print window perf, custom window perforation, perforated vinyl, perforated window decals" ?>
 <?php require('../head.php') ?>
 <?php require('../header.php'); ?>
+
+<div class="container">
+
 <!-- BREADCRUMBS -->
 <nav class="yellow darken-1 m2a">
   <div class="nav-wrapper ms2">
@@ -12,4 +15,11 @@
     </div>
   </div>
 </nav>
+
+<section class="window-perf__section">
+ <h1>Window Perforation</h1>
+ <?php require('../under_construction.php') ?>
+</section>
+
+</div>
 <?php require('../footer.php'); ?>

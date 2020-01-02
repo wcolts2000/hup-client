@@ -2,6 +2,10 @@
 <?php $description = "Hurry Up Print Decals, custom Decals, stickers, bumper stickers" ?>
 <?php require('../head.php') ?>
 <?php require('../header.php'); ?>
+
+
+<div class="container">
+
 <!-- BREADCRUMBS -->
 <nav class="yellow darken-1 m2a">
   <div class="nav-wrapper ms2">
@@ -12,5 +16,13 @@
     </div>
   </div>
 </nav>
+
+<section class="decals__section">
+  <h1>Decals</h1>
+  <?php require('../under_construction.php') ?>
+</section>
+
+
+</div>
 
 <?php require('../footer.php'); ?>
