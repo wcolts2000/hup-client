@@ -117,7 +117,7 @@
               </a>
               <div class='collapsible-body'>
                 <ul>
-                  <li class='yellow '><a href='/offset.php'>Offest</a></li>
+                  <li class='yellow '><a href='/offset.php'>Offset</a></li>
                   <li><a href='/offset/business_cards.php'>Business Cards</a></li>
                   <li><a href='/offset/postcards.php'>Postcards</a></li>
                   <li><a href='/offset/flyers.php'>Flyers</a></li>
