@@ -77,7 +77,7 @@ if (isset($_POST['register-submit'])) {
         header("Location: ../register.php?error=emailtaken&f_name=" . $firstname . "&l_name=" . $lastname . "&mail=" . $email . "&phone=" . $phone . "&add1=" . $address1 . "&add2=" . $address2 . "&city=" . $city . "&zip=" . $zipcode . "&country=" . $country . "&st=" . $state . "&nltr=" . $newsletter . "&privacy=" . $privacy);
         exit();
       } else {
-        $sql = "INSERT INTO users (firstName, lastName, email, phone, address1, address2, city, zipcode, country, state, password, newsletter, privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (firstName, lastName, email, phone, address1, address2, city, zipcode, country, state, password, newsletter, privacy, admin) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null)";
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {

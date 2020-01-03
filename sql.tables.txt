@@ -1,0 +1,7 @@
+CREATE TABLE bcardgallery (
+  id int(11) AUTO_INCREMENT PRIMARY KEY not null,
+  title LONGTEXT not null,
+  imgDesc LONGTEXT not null,
+  imgFullName LONGTEXT not null,
+  imgOrder LONGTEXT not null
+);

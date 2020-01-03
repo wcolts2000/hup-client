@@ -26,6 +26,9 @@ if (isset($_POST['login-submit'])) {
           exit();
         } else if ($pwdCheck == true) {
           session_start();
+            if ($row["admin"] === 1) {
+              $_SESSION['admin'] = $row['admin'];
+            }
           $_SESSION['id'] = $row["id"];
           $_SESSION['email'] = $row["email"];
           header("Location: ../index.php?login=success");
