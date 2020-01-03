@@ -454,7 +454,7 @@
         <label for="yes">Yes</label>
       </p>
       <p class="mb2">
-        <input value="0" id="no" name="newsletter" type="radio" class="with-gap">
+        <input value="false" id="no" name="newsletter" type="radio" class="with-gap">
         <label for="no">No</label>
       </p>
       <h5>Submit Registration</h5>

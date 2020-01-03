@@ -88,7 +88,7 @@ if (isset($_POST['register-submit'])) {
 
           mysqli_stmt_bind_param($stmt, "sssssssisssi", $firstname, $lastname, $email, $phone, $address1, $address2, $city, $zipcode, $country, $state, $hashedPwd, $newsletter);
           mysqli_stmt_execute($stmt);
-          header("Location: ../login.php?registration=success&email=".$email."&news=".$newsletter."&priv=".$privacy);
+          header("Location: ../login.php?registration=success&email=".$email);
           exit();
         }
       }
