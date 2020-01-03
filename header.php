@@ -65,8 +65,13 @@
                 <ul>
                   <?php
                   if (isset($_SESSION['email'])) {
+                    if (file_exists('includes/logout.inc.php')) {
+                        $filepath = 'includes/logout.inc.php';
+                      } else {
+                        $filepath = '../includes/logout.inc.php';
+                      }
                     echo '<li>
-                      <form action="includes/logout.inc.php" method="post">
+                      <form action="'.$filepath.'" method="post">
                         <button class="btn waves-effect waves-light black-text yellow ms2" name="logout-submit"
                           type="submit">Logout</button>
                       </form>
@@ -215,8 +220,13 @@
 <ul id='acct-dropdown' class='dropdown-content'>
   <?php
   if (isset($_SESSION['email'])) {
-    echo '<li>
-    <form action="includes/logout.inc.php" method="post">
+    if (file_exists('includes/logout.inc.php')) {
+      $filepath = 'includes/logout.inc.php';
+    } else {
+      $filepath = '../includes/logout.inc.php';
+    }
+  echo '<li>
+    <form action="'.$filepath.'" method="post">
       <button class="btn waves-effect waves-light black-text yellow m1" name="logout-submit" type="submit">Logout</button>
     </form>
   </li>';

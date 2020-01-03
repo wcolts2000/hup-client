@@ -5,6 +5,9 @@
   margin-bottom: 0;
 }
 
+.col.p1 {
+  padding: 1rem;
+}
 .col.p2 {
   padding: 2rem;
 }
@@ -20,6 +23,25 @@
 
 .video-container.map {
   padding-bottom: 13%;
+}
+
+/* =================== */
+/* BUSINESS CARD GALLERY STYLES */
+/* =================== */
+.bcard-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bcard-gallery a {
+  color: black;
+  margin: 1rem;
+}
+
+.bcard-gallery div {
+  width: 250px;
+  height: 143px;
+  background: yellow;
 }
 
 /* =================== */
@@ -61,6 +83,9 @@
   margin: 0 2rem;
 }
 
+.p1 {
+  padding: 1rem;
+}
 .p2 {
   padding: 2rem;
 }
