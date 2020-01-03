@@ -77,7 +77,7 @@ if (isset($_POST['register-submit'])) {
         header("Location: ../register.php?error=emailtaken&f_name=" . $firstname . "&l_name=" . $lastname . "&mail=" . $email . "&phone=" . $phone . "&add1=" . $address1 . "&add2=" . $address2 . "&city=" . $city . "&zip=" . $zipcode . "&country=" . $country . "&st=" . $state . "&nltr=" . $newsletter . "&privacy=" . $privacy);
         exit();
       } else {
-        $sql = "INSERT INTO users (firstName, lastName, email, phone, address1, address2, city, zipcode, country, state, password, newsletter, privacy, admin) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null)";
+        $sql = "INSERT INTO users (firstName, lastName, email, phone, address1, address2, city, zipcode, country, state, password, newsletter, privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1)";
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -86,9 +86,9 @@ if (isset($_POST['register-submit'])) {
         } else {
           $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
-          mysqli_stmt_bind_param($stmt, "sssssssisssii", $firstname, $lastname, $email, $phone, $address1, $address2, $city, $zipcode, $country, $state, $hashedPwd, $newsletter, $privacy);
+          mysqli_stmt_bind_param($stmt, "sssssssisssi", $firstname, $lastname, $email, $phone, $address1, $address2, $city, $zipcode, $country, $state, $hashedPwd, $newsletter);
           mysqli_stmt_execute($stmt);
-          header("Location: ../register.php?registration=success");
+          header("Location: ../login.php?registration=success&email=".$email."&news=".$newsletter."&priv=".$privacy);
           exit();
         }
       }

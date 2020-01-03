@@ -6,6 +6,11 @@
 
 <div class="container m2a">
   <div class="row">
+    <?php 
+      if (isset($_GET['registration'])) {
+        echo "<h5 style='color: limegreen; padding-left: 2rem;'>Thank you for registering, Please Login</h5>";
+      }
+    ?>
     <div class="col s12 m6">
       <div class="card">
         <div class="card-content">
@@ -43,7 +48,18 @@
           </div>
           <div class="input-field">
             <label for="email" data-error="must be a valid email" data-success="valid">Email</label>
-            <input type="email" id="email" name="email" placeholder="johndoe@email.com" class="validate">
+            <input 
+              type="email"
+              id="email"
+              name="email"
+              placeholder="johndoe@email.com"
+              class="validate"
+              value="<?php 
+                if (isset($_GET['email'])) {
+                  echo $_GET['email'];
+                }
+              ?>"
+            >
           </div>
           <div class="input-field">
             <label for="password">Password</label>

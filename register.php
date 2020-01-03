@@ -450,11 +450,11 @@
       <h5>Newsletter</h5>
       <div class="col s12 divider mb1"></div>
       <p>
-        <input name="newsletter" id="yes" type="radio" class="with-gap" checked>
+        <input value="1" id="yes" name="newsletter" type="radio" class="with-gap" checked>
         <label for="yes">Yes</label>
       </p>
       <p class="mb2">
-        <input name="newsletter" id="no" type="radio" class="with-gap">
+        <input value="0" id="no" name="newsletter" type="radio" class="with-gap">
         <label for="no">No</label>
       </p>
       <h5>Submit Registration</h5>
