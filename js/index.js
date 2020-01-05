@@ -1,10 +1,3 @@
-const appState = {
-  username: '',
-  password: '',
-  loggedIn: false,
-  loginModalOpen: false
-};
-
 $(document).ready(function() {
   // NAVBAR
   // Init nav dropdowns
@@ -25,15 +18,9 @@ $(document).ready(function() {
 
   // FORM SELECTS
   $('select').material_select();
-
-  // TEXTAREAS
-  // $('#business_objective').val('New Text');
-  // $('#prospective_clients').val('New Text');
-  // $('#goal').val('New Text');
-  // $('#uniq').val('New Text');
-  // $('#new_clients').val('New Text');
-  // $('#sales').val('New Text');
-  // $('#questions').val('New Text');
+  $('.select-wrapper').click(function(e){
+    e.stopPropagation();
+  });
 
   // DATE PICKER
   $('.datepicker').pickadate({

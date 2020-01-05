@@ -16,26 +16,30 @@
 </nav>
 
 <section class="request_form__section">
-<h1>Request for Web or Application Services</h1>
+<h1>Web Services Questionaire</h1>
   <div class="divider"></div>
- <?php require('../under_construction.php') ?>
 
  <!-- START FORM -->
  <div class="container m2a">
   <div class="row">
     <h4>Request for Web Services. Please be as thorough as possible and fill out all pertinent fields.</h4>
-    <small>If you have already created an account with us, please login at the
-      <a href="/login.php">login page</a>
-    </small>
-    <small>If not, please 
+    <p>If you have already created an account with us, please login at the
+      <a href="/login.php">Login Page</a>
+    </p>
+    <p>If not, please 
       <a href="/register.php">Register Here First</a>
-    </small>
+    </p>
   </div>
   <div class="row">
+      <p class="red-text">* Required fields</p>
     <?php
     if (isset($_GET['error'])) {
       if ($_GET['error'] == 'emptyfields') {
         echo "<span class='err'>Fill out all required fields</span>";
+      } elseif ($_GET['error'] == 'notloggedin') {
+        echo "<span class='err'>You must be logged in to request services, please log in or register</span>";
+      } elseif ($_GET['error'] == "sqlerror") {
+        echo "<span class='err'>SQL ERROR</span>";
       }
     }
     ?>
@@ -48,98 +52,119 @@
       <!-- <div class="col s12 divider mb1"></div> -->
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea" name="business_objective" id="business_objective" value="<?php
-                                                                                                          if (isset($_GET['b_obj'])) {
-                                                                                                            echo $_GET['b_obj'];
-                                                                                                          }
-                                                                                                          ?>"></textarea>
-          <label for="business_objective">What does your business do?</label>
+          <textarea required class="materialize-textarea" name="business_objective" id="business_objective"><?php if (isset($_GET['b_obj'])) { echo $_GET['b_obj']; } ?></textarea>
+          <label for="business_objective">What does your business do? <span class="red-text">*</span></label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea"  name="prospective_clients" id="prospective_clients" value="<?php
+          <textarea required class="materialize-textarea"  name="prospective_clients" id="prospective_clients"><?php
                                                                                                           if (isset($_GET['p_client'])) {
                                                                                                             echo $_GET['p_client'];
                                                                                                           }
-                                                                                                          ?>"></textarea>
-          <label for="prospective_clients">Who is your target audience?</label>
+                                                                                                          ?></textarea>
+          <label for="prospective_clients">Who is your target audience? <span class="red-text">*</span></label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea" name="goal" id="goal" value="<?php
+          <textarea  required class="materialize-textarea" name="goal" id="goal"><?php
                                                                                                           if (isset($_GET['goal'])) {
                                                                                                             echo $_GET['goal'];
                                                                                                           }
-                                                                                                          ?>"></textarea>
-          <label for="goal">What is your main goal for a website visitor?</label>
+                                                                                                          ?></textarea>
+          <label for="goal">What is your main goal for a website visitor? <span class="red-text">*</span></label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea" name="uniq" id="uniq" value="<?php
+          <textarea required class="materialize-textarea" name="uniq" id="uniq"><?php
                                                                                                           if (isset($_GET['uniq'])) {
                                                                                                             echo $_GET['uniq'];
                                                                                                           }
-                                                                                                          ?>"></textarea>
-          <label for="uniq">What makes you unique from your competitors?</label>
+                                                                                                          ?></textarea>
+          <label for="uniq">What makes you unique from your competitors? <span class="red-text">*</span></label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea" name="new_clients" id="new_clients" value="<?php
+          <textarea class="materialize-textarea" name="new_clients" id="new_clients"><?php
                                                                                                           if (isset($_GET['n_client'])) {
                                                                                                             echo $_GET['n_client'];
                                                                                                           }
-                                                                                                          ?>"></textarea>
+                                                                                                          ?></textarea>
           <label for="new_clients">How do you acquire new clients?</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea" name="sales" id="sales" value="<?php
+          <textarea class="materialize-textarea" name="sales" id="sales"><?php
                                                                                                           if (isset($_GET['sales'])) {
                                                                                                             echo $_GET['sales'];
                                                                                                           }
-                                                                                                          ?>"></textarea>
-          <label for="sales">How many products do you sell a month?</label>
+                                                                                                          ?></textarea>
+          <label for="sales">How many products (clients) do you sell (acquire) a month?</label>
         </div>
       </div>
       <div class="row">
-      <div class="input-field col s12">
-          <select name="brand" id="state">
-            <option value="" selected disabled> --- Please Select --- </option>
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-          </select>
-          <label for="brand">Do you have professional images and a brand identity?</label>
+        <div class="col s12">
+          <h6 class="grey-text">Do you have professional images and a brand identity / logo? <span class="red-text">*</span></h6>
+          <p>
+            <input required value="1" id="yes" type="radio" class="with-gap" name="brand" <?php if (isset($_GET['brand'])) {
+              if($_GET['brand'] == "1") {
+                echo "checked";
+              }
+            } ?>>
+            <label for="yes">Yes</label>
+          </p>
+          <p>
+            <input required value='false' id="no" type="radio" class="with-gap" name="brand" <?php if (isset($_GET['brand'])) {
+              if($_GET['brand'] == "false") {
+                echo "checked";
+              }
+            } ?>>
+            <label for="no">No</label>
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input type="text" class="datepicker" id="datepicker">
+          <input name="datepicker" type="text" class="datepicker" id="datepicker" value="<?php if (isset($_GET['deadline'])) {
+            echo $_GET['deadline'];
+          } ?>">
           <label for="datepicker">When do you need the project completed by?</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea class="materialize-textarea" name="questions" id="questions" value="<?php
+          <textarea class="materialize-textarea" name="questions" id="questions"><?php
                                                                                                           if (isset($_GET['questions'])) {
                                                                                                             echo $_GET['questions'];
                                                                                                           }
-                                                                                                          ?>"></textarea>
+                                                                                                          ?></textarea>
           <label for="first_name">Is there anything else you would like to let us know about?</label>
         </div>
       </div>
+      <input 
+        type="text"
+        name="id"
+        hidden
+        value="<?php 
+          if(isset($_SESSION['id'])) {
+            echo $_SESSION['id'];
+          } else {
+            echo  null;
+          }
+        ?>"
+      >
       
-      <input name="register-submit" type="submit" value="Submit"
-        class="btn waves-effect waves-light yellow darken-1 black-text">
+      <button name="register-submit" type="submit"
+        class="btn waves-effect waves-light yellow darken-1 black-text">Submit</button>
 
     </form>
   </div>
 </div>
- <!-- END FORM -->
+<!-- END FORM -->
 
 </section>
 

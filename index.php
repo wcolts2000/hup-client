@@ -30,6 +30,15 @@
         ";
       }
     }
+    if(isset($_GET['websiterequest'])) {
+      echo "<h5 id='toast' class='green-text yellow lighten-4 p2'>
+      Thank you, your request has been submitted</h5>
+      <script>
+        const toast = document.getElementById('toast');
+        console.log(toast);
+        setTimeout((() => toast.style.display =  'none') , 3000)</script>
+    ";
+    }
   ?>
 
   <main class="home-main white">
@@ -209,6 +218,13 @@
     </div>
 
   </main>
+
+  <div class="row">
+    <div class="col s12">
+      <!-- WEBSITE BANNER -->
+      <?php include './web-banner.php' ?>
+    </div>
+  </div>
 
   <section class="home-section-partners center-align pink">
     <div class="row white-text">

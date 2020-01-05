@@ -12,3 +12,17 @@ CREATE TABLE newsletter (
   date TIMESTAMP(6) NOT NULL,
   active BOOLEAN NOT NULL DEFAULT TRUE 
 );
+
+CREATE TABLE webservices (
+  id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  userId INT(11) UNSIGNED NOT NULL,
+  business_obj LONGTEXT NOT NULL,
+  prospective_clients LONGTEXT NOT NULL,
+  website_goal LONGTEXT NOT NULL,
+  uniqueness LONGTEXT NOT NULL,
+  new_clients LONGTEXT,
+  sales LONGTEXT,
+  brand BOOLEAN NOT NULL,
+  deadline TEXT(30),
+  questions LONGTEXT
+);

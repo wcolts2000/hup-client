@@ -203,5 +203,55 @@ textarea.materialize-textarea {
   }
 }
 
+.web-banner {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  background: linear-gradient(
+    to right,
+    rgba(86, 58, 177, 1),
+    rgba(209, 119, 245, .9),
+    rgba(175, 63, 219, .8),
+    rgba(209, 119, 245, .9),
+    rgba(86, 58, 177, 1)),
+    url(../img/macbook-and-tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.web-banner .left {
+  width: 50%;
+}
+
+.web-banner .left img {
+  width: 100%;
+  height: auto;
+}
+
+.web-banner .right {
+  width: 50%;
+  background: rgba(0,0,0,.2);
+  border-radius: 7px;
+  color: white;
+}
+
+.web-banner .right button {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .web-banner {
+    flex-direction: column;
+  }
+
+  .web-banner .left, .web-banner .right {
+    width: 100%;
+  }
+
+  .web-banner .right {
+    order: -1;
+  }
+}
 
 

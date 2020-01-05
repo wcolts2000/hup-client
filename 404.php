@@ -11,7 +11,7 @@
       <h4>Looks like we can't find what you are looking for</h4>
     </div>
     <div id="img-wrapper404" class="col s12 m8">
-      <img src="img/maps.jpg" id="img404" alt="table of maps" class="responsive-img">
+      <img src="/img/maps.jpg" id="img404" alt="table of maps" class="responsive-img">
       <a id="btn404" class="btn yellow darken-1 black-text waves-effect waves-light" href="/index.php">Return Home</a>
     </div>
   </div>

@@ -29,8 +29,8 @@ if (isset($_POST['login-submit'])) {
             if ($row["admin"] === 1) {
               $_SESSION['admin'] = $row['admin'];
             }
-          $_SESSION['id'] = $row["id"];
           $_SESSION['email'] = $row["email"];
+          $_SESSION['id'] = $row["id"];
           header("Location: ../index.php?login=success");
           exit();
         } else {
