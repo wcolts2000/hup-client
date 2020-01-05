@@ -7,9 +7,9 @@
 <div class="container m2a">
   <div class="row">
     <h4>Register Account</h4>
-    <small>If you have already created an account with us, please login at the
+    <h6>If you have already created an account with us, please login at the
       <a href="/login.php">login page</a>
-    </small>
+    </h6>
   </div>
   <div class="row">
     <?php
@@ -27,6 +27,7 @@
   </div>
 
   <div class="row">
+    <p> <span class="red-text">* Required fields</span></p>
     <form class="col s12" action="/includes/register.inc.php" method="post">
       <h5>Your Personal Details</h5>
       <div class="col s12 divider mb1"></div>
@@ -37,7 +38,7 @@
                                                                                                             echo $_GET['f_name'];
                                                                                                           }
                                                                                                           ?>">
-          <label for="first_name">First Name</label>
+          <label for="first_name">First Name <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
           <input type="text" class="validate" placeholder="Doe" name="last_name" id="last_name" value="<?php
@@ -45,7 +46,7 @@
                                                                                                           echo $_GET['l_name'];
                                                                                                         }
                                                                                                         ?>">
-          <label for="last_name">Last Name</label>
+          <label for="last_name">Last Name <span class="red-text">*</span></label>
         </div>
       </div>
       <div class="row">
@@ -55,7 +56,7 @@
                                                                                                                 echo $_GET['mail'];
                                                                                                               }
                                                                                                               ?>">
-          <label for="email">Email</label>
+          <label for="email">Email <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
           <input type="tel" class="validate" placeholder="555-123-4567" name="phone" id="phone" value="<?php
@@ -63,7 +64,7 @@
                                                                                                           echo $_GET['phone'];
                                                                                                         }
                                                                                                         ?>">
-          <label for="phone">Telephone</label>
+          <label for="phone">Telephone <span class="red-text">*</span></label>
         </div>
       </div>
       <h5>Your Address</h5>
@@ -75,7 +76,7 @@
                                                                                                   echo $_GET['add1'];
                                                                                                 }
                                                                                                 ?>">
-          <label for="address_1">Address 1</label>
+          <label for="address_1">Address 1 <span class="red-text">*</span></label>
         </div>
         <div class="input-field col s12">
           <input type="text" placeholder="PO Box 112" name="address_2" id="address_2" value="<?php
@@ -92,7 +93,7 @@
                                                                                 echo $_GET['city'];
                                                                               }
                                                                               ?>">
-          <label for="city">City</label>
+          <label for="city">City <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
           <input type="text" placeholder="89502" name="zip" id="zip" value="<?php
@@ -100,7 +101,7 @@
                                                                               echo $_GET['zip'];
                                                                             }
                                                                             ?>">
-          <label for="zip">Postal Zip Code</label>
+          <label for="zip">Postal Zip Code <span class="red-text">*</span></label>
         </div>
       </div>
       <div class="row">
@@ -361,7 +362,7 @@
             <option value="238">Zambia</option>
             <option value="239">Zimbabwe</option>
           </select>
-          <label for="country">Country</label>
+          <label for="country">Country <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
           <select name="state" id="state">
@@ -432,7 +433,7 @@
             <option value="3676">Wisconsin</option>
             <option value="3677">Wyoming</option>
           </select>
-          <label for="state">Region / State</label>
+          <label for="state">Region / State <span class="red-text">*</span></label>
         </div>
       </div>
       <h5>Your Password</h5>
@@ -440,14 +441,14 @@
       <div class="row">
         <div class="input-field col m6 s12">
           <input type="password" placeholder="$k8vG3p09aB%77hn2^" name="password" id="password">
-          <label for="password">Password</label>
+          <label for="password">Password <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
           <input type="password" placeholder="$k8vG3p09aB%77hn2^" name="password-conf" id="password-conf">
-          <label for="password-conf">Password Confirm</label>
+          <label for="password-conf">Password Confirm <span class="red-text">*</span></label>
         </div>
       </div>
-      <h5>Newsletter</h5>
+      <h5>Newsletter <span class="red-text">*</span></h5>
       <div class="col s12 divider mb1"></div>
       <p>
         <input value="1" id="yes" name="newsletter" type="radio" class="with-gap" checked>
@@ -462,11 +463,15 @@
       <p class="mb1">
         <input type="checkbox" name="privacy" id="privacy">
         <label for="privacy">I have read and agree to the
-          <a href="privacy_policy.php">Privacy Policy</a>
+          <a href="privacy_policy.php">Privacy Policy</a> <span class="red-text">*</span>
         </label>
       </p>
-      <input name="register-submit" type="submit" value="Register"
+      <button
+        name="register-submit"
+        type="submit"
         class="btn waves-effect waves-light yellow darken-1 black-text">
+        Register
+      </button>
 
     </form>
   </div>

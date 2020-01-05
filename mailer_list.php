@@ -3,15 +3,15 @@
   <div class='container'>
     <div class="row">
 
-      <form class='yellow lighten-5 col s12 m6 offset-m3 p2 m2a'>
+      <form id="newsletter" action="/includes/newsletter-signup.inc.php" method="POST" class='yellow lighten-5 col s12 m6 offset-m3 p2 m2a'>
         <h4>Never miss a special!</h4>
         <h5>Join Our Mailer List</h5>
         <div class='input-field'>
-          <input id='email' type='email' autocomplete='on' />
+          <input id='email' type='email' autocomplete='on' name="email" required/>
           <label for='email'>email</label>
         </div>
-        <input class='btn waves-effect waves-light yellow darken-1 black-text' id='form-submit' type='submit'
-          value='join' />
+        <button class='btn waves-effect waves-light yellow darken-1 black-text' id='newsletter-request' name="newsletter-request" type='submit'
+          >join</button>
       </form>
     </div>
   </div>

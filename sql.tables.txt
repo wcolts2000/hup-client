@@ -5,3 +5,10 @@ CREATE TABLE bcardgallery (
   imgFullName LONGTEXT not null,
   imgOrder LONGTEXT not null
 );
+
+CREATE TABLE newsletter (
+  id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	email VARCHAR(256) NOT NULL UNIQUE,
+  date TIMESTAMP(6) NOT NULL,
+  active BOOLEAN NOT NULL DEFAULT TRUE 
+);

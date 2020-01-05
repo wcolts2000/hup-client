@@ -45,6 +45,23 @@
 }
 
 /* =================== */
+/* 404 STYLES */
+/* =================== */
+#img-wrapper404 {
+  position: relative;
+}
+
+#img404 {
+  width: 100%;
+}
+
+#btn404 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+/* =================== */
 /* PAGE HELPERS */
 /* =================== */
 

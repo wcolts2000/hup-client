@@ -18,9 +18,19 @@
 </section>
 <div class="home container">
 
-
-
-
+  <?php 
+    if(isset($_GET['newsletter'])) {
+      if ($_GET['newsletter'] === "subscribed") {
+        echo "<h5 id='toast' class='green-text yellow lighten-4 p2'>
+          Thank You, ". $_GET['email'] ." has been added to our newsletter mailer list</h5>
+          <script>
+            const toast = document.getElementById('toast');
+            console.log(toast);
+            setTimeout((() => toast.style.display =  'none') , 3000)</script>
+        ";
+      }
+    }
+  ?>
 
   <main class="home-main white">
 
