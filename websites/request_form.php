@@ -23,20 +23,10 @@
 </nav>
 
 <section class="request_form__section">
-<h1>Web Services Questionaire</h1>
+<h4>Web Services Questionaire</h4>
   <div class="divider"></div>
 
  <!-- START FORM -->
-<div class="container m2a">
-  <div class="row">
-    <h4>Request for Web Services. Please be as thorough as possible and fill out all pertinent fields.</h4>
-    <p>If you have already created an account with us, please login at the
-      <a href="/login.php">Login Page</a>
-    </p>
-    <p>If not, please 
-      <a href="/register.php">Register Here First</a>
-    </p>
-  </div>
   <div class="row">
       <p class="red-text">* Required fields</p>
     <?php
@@ -170,7 +160,6 @@
 
     </form>
   </div>
-</div>
 <!-- END FORM -->
 
 </section>
