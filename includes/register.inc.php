@@ -18,7 +18,6 @@ if (isset($_POST['register-submit'])) {
   $newsletter = $_POST['newsletter'];
   $privacy = $_POST['privacy'];
   $webservice = $_POST['webservice'];
-  $header_str = "&webservice=".$webservice . "&f_name=" . $firstname . "&l_name=" . $lastname . "&mail=" . $email . "&phone=" . $phone . "&add1=" . $address1 . "&add2=" . $address2 . "&city=" . $city . "&zip=" . $zipcode . "&country=" . $country . "&st=" . $state . "&nltr=" . $newsletter . "&privacy=" . $privacy;
 
   if (!empty($address1)) {
     if (strpos($address1, "#") > 0) {
@@ -32,6 +31,10 @@ if (isset($_POST['register-submit'])) {
       $address2 = str_replace("#", urlencode("#"), $address2);
     }
   }
+
+  $header_str = "&webservice=".$webservice . "&f_name=" . $firstname . "&l_name=" . $lastname . "&mail=" . $email . "&phone=" . $phone . "&add1=" . $address1 . "&add2=" . $address2 . "&city=" . $city . "&zip=" . $zipcode . "&country=" . $country . "&st=" . $state . "&nltr=" . $newsletter . "&privacy=" . $privacy;
+
+  
 
   if (
     empty($firstname) ||

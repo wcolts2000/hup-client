@@ -33,7 +33,7 @@
       <div class="col s12 divider mb1"></div>
       <div class="row">
         <div class="input-field col m6 s12">
-          <input type="text" class="validate" placeholder="John" name="first_name" id="first_name" value="<?php
+          <input required type="text" class="validate" placeholder="John" name="first_name" id="first_name" value="<?php
                                                                                                           if (isset($_GET['f_name'])) {
                                                                                                             echo $_GET['f_name'];
                                                                                                           }
@@ -41,7 +41,7 @@
           <label for="first_name">First Name <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
-          <input type="text" class="validate" placeholder="Doe" name="last_name" id="last_name" value="<?php
+          <input required type="text" class="validate" placeholder="Doe" name="last_name" id="last_name" value="<?php
                                                                                                         if (isset($_GET['l_name'])) {
                                                                                                           echo $_GET['l_name'];
                                                                                                         }
@@ -51,7 +51,7 @@
       </div>
       <div class="row">
         <div class="input-field col m6 s12">
-          <input type="email" class="validate" placeholder="johnnyd@email.com" name="email" id="email" value="<?php
+          <input required type="email" class="validate" placeholder="johnnyd@email.com" name="email" id="email" value="<?php
                                                                                                               if (isset($_GET['mail'])) {
                                                                                                                 echo $_GET['mail'];
                                                                                                               }
@@ -59,7 +59,7 @@
           <label for="email">Email <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
-          <input type="tel" class="validate" placeholder="555-123-4567" name="phone" id="phone" value="<?php
+          <input required type="tel" class="validate" placeholder="555-123-4567" name="phone" id="phone" value="<?php
                                                                                                         if (isset($_GET['phone'])) {
                                                                                                           echo $_GET['phone'];
                                                                                                         }
@@ -71,7 +71,7 @@
       <div class="col s12 divider mb1"></div>
       <div class="row">
         <div class="input-field col s12">
-          <input type="text" placeholder="135 Main St." name="address_1" id="address_1" value="<?php
+          <input required type="text" placeholder="135 Main St." name="address_1" id="address_1" value="<?php
                                                                                                 if (isset($_GET['add1'])) {
                                                                                                   echo $_GET['add1'];
                                                                                                 }
@@ -88,7 +88,7 @@
           <label for="address_2">Address 2</label>
         </div>
         <div class="input-field col m6 s12">
-          <input type="text" placeholder="Reno" name="city" id="city" value="<?php
+          <input required type="text" placeholder="Reno" name="city" id="city" value="<?php
                                                                               if (isset($_GET['city'])) {
                                                                                 echo $_GET['city'];
                                                                               }
@@ -96,7 +96,7 @@
           <label for="city">City <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
-          <input type="text" placeholder="89502" name="zip" id="zip" value="<?php
+          <input required type="text" placeholder="89502" name="zip" id="zip" value="<?php
                                                                             if (isset($_GET['zip'])) {
                                                                               echo $_GET['zip'];
                                                                             }
@@ -106,7 +106,7 @@
       </div>
       <div class="row">
         <div class="input-field col m6 s12 select-wrapper">
-          <select name="country" id="country">
+          <select required name="country" id="country">
             <option value="" disabled> --- Please Select --- </option>
             <option value="244">Aaland Islands</option>
             <option value="1">Afghanistan</option>
@@ -365,8 +365,8 @@
           <label for="country">Country <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12 select-wrapper">
-          <select name="state" id="state">
-            <option value="" selected disabled> --- Please Select --- </option>
+          <select required name="state" id="state">
+            <option value="" disabled> --- Please Select --- </option>
             <option value="3613">Alabama</option>
             <option value="3614">Alaska</option>
             <option value="3615">American Samoa</option>
@@ -405,7 +405,7 @@
             <option value="3648">Missouri</option>
             <option value="3649">Montana</option>
             <option value="3650">Nebraska</option>
-            <option value="3651">Nevada</option>
+            <option value="3651" selected >Nevada</option>
             <option value="3652">New Hampshire</option>
             <option value="3653">New Jersey</option>
             <option value="3654">New Mexico</option>
@@ -440,28 +440,40 @@
       <div class="col s12 divider mb1"></div>
       <div class="row">
         <div class="input-field col m6 s12">
-          <input type="password" placeholder="$k8vG3p09aB%77hn2^" name="password" id="password">
+          <input required type="password" placeholder="$k8vG3p09aB%77hn2^" name="password" id="password">
           <label for="password">Password <span class="red-text">*</span></label>
         </div>
         <div class="input-field col m6 s12">
-          <input type="password" placeholder="$k8vG3p09aB%77hn2^" name="password-conf" id="password-conf">
+          <input required type="password" placeholder="$k8vG3p09aB%77hn2^" name="password-conf" id="password-conf">
           <label for="password-conf">Password Confirm <span class="red-text">*</span></label>
         </div>
       </div>
       <h5>Newsletter <span class="red-text">*</span></h5>
       <div class="col s12 divider mb1"></div>
       <p>
-        <input value="1" id="yes" name="newsletter" type="radio" class="with-gap" checked>
+        <input required value="1" id="yes" name="newsletter" type="radio" class="with-gap" <?php if (isset($_GET['nltr'])) {
+              if($_GET['nltr'] == "1") {
+                echo "checked";
+              }
+            } ?>>
         <label for="yes">Yes</label>
       </p>
       <p class="mb2">
-        <input value="false" id="no" name="newsletter" type="radio" class="with-gap">
+        <input required value="false" id="no" name="newsletter" type="radio" class="with-gap" <?php if (isset($_GET['nltr'])) {
+              if($_GET['nltr'] == "0") {
+                echo "checked";
+              }
+            } ?>>
         <label for="no">No</label>
       </p>
       <h5>Submit Registration</h5>
       <div class="col s12 divider mb1"></div>
       <p class="mb1">
-        <input type="checkbox" name="privacy" id="privacy">
+        <input required type="checkbox" name="privacy" id="privacy" <?php if (isset($_GET['privacy'])) {
+              if($_GET['privacy'] == "on") {
+                echo "checked";
+              }
+            } ?> >
         <label for="privacy">I have read and agree to the
           <a href="privacy_policy.php">Privacy Policy</a> <span class="red-text">*</span>
         </label>

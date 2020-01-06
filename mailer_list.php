@@ -7,7 +7,7 @@
         <h4>Never miss a special!</h4>
         <h5>Join Our Mailer List</h5>
         <div class='input-field'>
-          <input id='email' type='email' autocomplete='on' name="email" required/>
+          <input id='email' type='email' autocomplete='on' name="email" required value="<?php if(isset($_SESSION['email'])) { echo $_SESSION['email'];}?>"/>
           <label for='email'>email</label>
         </div>
         <button class='btn waves-effect waves-light yellow darken-1 black-text' id='newsletter-request' name="newsletter-request" type='submit'
