@@ -1,5 +1,5 @@
-<?php $title = 'Register' ?>
-<?php $description = 'Hurry Up Print registration page' ?>
+<?php $title = '404' ?>
+<?php $description = 'Hurry Up Print 404 not found' ?>
 <?php require('head.php') ?>
 
 <?php require('header.php'); ?>
