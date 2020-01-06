@@ -32,7 +32,7 @@ $(document).ready(function() {
   $('.datepicker').on('mousedown',function(event){ event.preventDefault(); })
 
   // COLLAPSIBLE
-  // $('.collapsible').collapsible()
+  $('.collapsible').collapsible()
 
   // CAROUSEL
   // $('.carousel').carousel();

@@ -11,8 +11,8 @@
     <div class="parallax"><img src="img/macbook.png" alt="person using a macbook"></div>
     <h1 class="white-text ps2 ts">Custom Websites</h1>
     <h4 class="ps2 white-text ts">Get your website or application built.</h5>
-      <a href="/garments/embroidery.php"
-        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Blog Sites Here
+      <a href="/websites/request_form.php"
+        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Request Web Services Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>
   </div>

@@ -1,0 +1,7 @@
+GET REQUEST FORM RESULTS
+=============================
+SELECT u.firstName, u.email, w.business_obj, w.prospective_clients, w.website_goal, w.uniqueness, w.new_clients, w.sales, w.brand, w.deadline, w.questions 
+FROM users u INNER JOIN webservices w 
+WHERE u.id = w.userId;
+
+-----------------------------
