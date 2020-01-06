@@ -5,6 +5,7 @@ if (isset($_POST['login-submit'])) {
 
   $email = $_POST['email'];
   $password = $_POST['pwd'];
+  $webservice = $_POST['webservice'];
 
   if (empty($email) || empty($password)) {
     header("Location: ../login.php?error=emptyfields");
@@ -31,6 +32,10 @@ if (isset($_POST['login-submit'])) {
             }
           $_SESSION['email'] = $row["email"];
           $_SESSION['id'] = $row["id"];
+          if ($webservice == "true") {
+            header("Location: ../websites/request_form.php");
+            exit();
+          }
           header("Location: ../index.php?login=success");
           exit();
         } else {

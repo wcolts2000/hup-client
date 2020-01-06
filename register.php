@@ -466,6 +466,7 @@
           <a href="privacy_policy.php">Privacy Policy</a> <span class="red-text">*</span>
         </label>
       </p>
+      <input type="text" name="webservice" hidden value="<?php if (isset($_GET['webservice'])) { echo 'true'; } ?>">
       <button
         name="register-submit"
         type="submit"

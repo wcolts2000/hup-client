@@ -3,6 +3,13 @@
 <?php require('../head.php') ?>
 <?php require('../header.php'); ?>
 
+<?php 
+  if (!isset($_SESSION['id'])) {
+    echo "<script>window.location = window.location.origin + '/login.php?webservice=true';</script>";
+    exit();
+  }
+?> 
+
 <div class="container">
 <!-- BREADCRUMBS -->
 <nav class="yellow darken-1 m2a">

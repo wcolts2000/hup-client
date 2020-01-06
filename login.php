@@ -10,6 +10,9 @@
       if (isset($_GET['registration'])) {
         echo "<h5 style='color: limegreen; padding-left: 2rem;'>Thank you for registering, Please Login</h5>";
       }
+      if (isset($_GET['webservice'])) {
+        echo "<h5 style='padding-left: 2rem;'>Please Login to request services. If you have not registered yet, follow the register link</h5>";
+      }
     ?>
     <div class="col s12 m6">
       <div class="card">
@@ -20,7 +23,7 @@
             page and create a new account.</p>
         </div>
         <div class="card-action">
-          <a class="btn waves-effect waves-light black white-text" href="register.php">Register</a>
+          <a class="btn waves-effect waves-light black white-text" href="register.php<?php if (isset($_GET['webservice'])) {echo '?webservice=true';}?>">Register</a>
         </div>
       </div>
     </div>
@@ -65,6 +68,7 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="pwd" placeholder="$k8vG3p09aB%77hn2^" class="validate">
           </div>
+          <input type="text" name="webservice" hidden value="<?php if (isset($_GET['webservice'])) { echo 'true'; } ?>">
           <div class="row">
             <button type="submit" name="login-submit" class="btn yellow darken-1 black-text waves-effect waves-light">Login</button>
           </div>
