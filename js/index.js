@@ -39,5 +39,6 @@ $(document).ready(function() {
   // $('.carousel-slider').carousel({ fullWidth: true});
 
   // to be able to keyboard select the checkbox in register form
-  document.getElementById("privacy").addEventListener('keypress', (e) => { if (e.code === "Enter"){ document.getElementById("privacy").checked = true } } )
+  const registerCheckbox = document.getElementById("privacy");
+  registerCheckbox && registerCheckbox.addEventListener('keypress', (e) => { if (e.code === "Enter"){ registerCheckbox.checked = true } } )
 });
