@@ -1,25 +1,5 @@
-
-<?php $title = "Questionaire Answers" ?>
-<?php $description = "Hurry Up Prints web services questionnaire results" ?>
-<?php require('head.php') ?>
-
-<?php include 'header.php' ?>
-
-<div class="container m2a">
 <?php 
-if (!isset($_SESSION['admin'])) {
-  echo "<script>window.location = window.location.origin + '/404.php'</script>";
-}
-?>
-
-
-  <h4>Questionaire Results</h4>
-  <div class="divider mb2"></div>
-
-<main>
-
-  <?php 
-  include_once "includes/dbh.inc.php";
+  include_once './includes/dbh.inc.php';
 
   $sql = "SELECT u.firstName, u.email, w.business_obj, w.prospective_clients, w.website_goal, w.uniqueness, w.new_clients, w.sales, w.brand, w.deadline, w.questions 
   FROM users u INNER JOIN webservices w 
@@ -31,8 +11,13 @@ if (!isset($_SESSION['admin'])) {
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
 
+    echo '
+    <div class="tabs-item" data-tab="3">
+    <h5 class="col s12 m10 m2 pt2 bb">Web Questionnaire</h5>
+    <section class="row ms1"> <div class="col s12 m10">';
     while ($row = mysqli_fetch_assoc($result)) {
-      echo '<ul class="collapsible">
+      echo '
+      <ul class="collapsible">
       <li>
         <div class="collapsible-header">
           <i class="material-icons">person</i>
@@ -82,14 +67,6 @@ if (!isset($_SESSION['admin'])) {
       </li>
     </ul>';
     }
+    echo '</div> </section></div>';
   }
-  ?>
-
-  
-</main>
-
-
-</div>
-
-
-<?php include 'footer.php' ?>
+?>

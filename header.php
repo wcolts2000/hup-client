@@ -76,6 +76,11 @@
                           type="submit">Logout</button>
                       </form>
                     </li>';
+                    if (isset($_SESSION['admin'])) {
+                      echo '<li>
+                              <a href="/admin.php"><button class="black-text btn waves-effect waves-light yellow">Admin Panel</button></a>
+                            </li>';    
+                      }
                   } else {
                     echo "<li><a href='/login.php'>Login</a></li>                  
                       <li><a href='/register.php'>Register</a></li>";
@@ -226,10 +231,15 @@
       $filepath = '../includes/logout.inc.php';
     }
   echo '<li>
-    <form action="'.$filepath.'" method="post">
-      <button class="btn waves-effect waves-light black-text yellow m1" name="logout-submit" type="submit">Logout</button>
-    </form>
-  </li>';
+          <form action="'.$filepath.'" method="post">
+            <button class="btn waves-effect waves-light black-text yellow m1" name="logout-submit" type="submit">Logout</button>
+          </form>
+        </li>';
+  if (isset($_SESSION['admin'])) {
+    echo '<li>
+    <a href="/admin.php"><button class="btn black-text waves-effect waves-light yellow">Admin</button></a>
+  </li>';    
+    }
   } else {
     echo "<li><a href='/login.php'>Login</a></li>  
     <li><a href='/register.php'>Register</a></li>";

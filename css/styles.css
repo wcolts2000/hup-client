@@ -1,6 +1,7 @@
 /* =================== */
 /* HOMEPAGE STYLES */
 /* =================== */
+
 .home-hero.row {
   margin-bottom: 0;
 }
@@ -28,6 +29,7 @@
 /* =================== */
 /* BUSINESS CARD GALLERY STYLES */
 /* =================== */
+
 .bcard-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -45,8 +47,74 @@
 }
 
 /* =================== */
+/* ADMIN STYLES */
+/* =================== */
+
+.admin-wrapper {
+  width: 100%;
+  display: flex;
+  min-height: 63vh;
+}
+
+.admin-sidebar {
+  width: 300px;
+}
+
+.admin-sidebar ul {
+  margin-top: 0;
+}
+
+.admin-sidebar ul li {
+  padding: 1.4rem 1rem;
+  cursor: pointer;
+  border-bottom: 2px inset rgba(255,255,255,.3);
+}
+
+.admin-sidebar ul li:hover {
+  background: rgba(255,255,255,.3);
+}
+
+.admin-main {
+  box-shadow: inset 1px 0 10px rgba(0,0,0,.1);
+  flex-grow: 1;
+  overflow-x: scroll;
+}
+
+.tabs-item {
+  display: none;
+}
+
+.tabs-item-selected {
+  display: block;
+}
+
+.tabs-link-selected {
+  background: rgba(255,255,255,.3);
+}
+
+@media screen and (max-width: 800px) {
+  .admin-wrapper {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .admin-sidebar ul {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .admin-sidebar ul li {
+    border-bottom: none;
+  }
+}
+
+/* =================== */
 /* 404 STYLES */
 /* =================== */
+
 #img-wrapper404 {
   position: relative;
 }
@@ -67,6 +135,14 @@
 
 .parallax-container.page-header {
   height: auto;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mt2 {
+  margin-top: 2rem;
 }
 
 .m1 {
@@ -107,6 +183,10 @@
   padding: 2rem;
 }
 
+.pt2 {
+  padding: 2rem 0;
+}
+
 .ps2 {
   padding: 0 2rem;
 }
@@ -114,6 +194,10 @@
 .ts {
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.3),
     2px 2px 7px rgba(0, 0, 0, 0.5), 3px 3px 9px rgba(0, 0, 0, 0.8);
+}
+
+.bb {
+  border-bottom: 1px solid #0f0f0f;
 }
 
 .round-border {
@@ -218,7 +302,6 @@ textarea.materialize-textarea {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .web-banner .left {
   width: 50%;
