@@ -17,7 +17,8 @@
   </nav>
 
   <section class="banners__section">
-    <h1>Custom Banners (UNDER CONSTRUCTION)</h1>
+    <h1>Custom Banners</h1>
+    <p>(UNDER CONSTRUCTION)</p>
     <div class="row">
 
       <!-- LEFT SIDE -->
@@ -91,7 +92,7 @@
             <label>Design Proof <span class="red-text">*</span> </label>
           </div>
           <div class="input-field col s6">
-            <select required name="turnaround" id="turnaround">
+            <select required name="turnaround-x" id="turnaround-x">
               <option value="standard" selected>2 - 3 Day</option>
               <option value="same">Same Day</option>
             </select>
