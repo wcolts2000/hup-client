@@ -19,6 +19,7 @@
   <section class="banners__section">
     <h1>Custom Banners</h1>
     <p>(UNDER CONSTRUCTION)</p>
+    <div id="error"></div>
     <div class="row">
 
       <!-- LEFT SIDE -->

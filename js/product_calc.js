@@ -1,4 +1,5 @@
 const state = {
+  error: "",
   sides: 1,
   sameDay: 0
 }
@@ -25,6 +26,7 @@ const length = document.getElementById('length');
 const width = document.getElementById('width');
 const quantity = document.getElementById('quantity');
 
+const errorDiv = document.getElementById('error');
 const totalInput = document.getElementById('total');
 const totalStr = document.getElementById('totalStr');
 const inputs = document.querySelectorAll('input');
@@ -72,6 +74,8 @@ selects.forEach(select => {
   });
   
   // FUNCTIONS
+
+  // CALCULATE
   function calculate(product) {
     orderTotal = 0;
     let area = Number(length.value) * Number(width.value);
@@ -86,6 +90,25 @@ selects.forEach(select => {
     }
     console.log("New Total: $", orderTotal);
     console.log(typeof orderTotal);
-    totalStr.textContent = `Total: $ ${Math.max(minimumOrderTotal, orderTotal).toFixed(2)}`
-    totalInput.value = orderTotal;
+    if (isNaN(orderTotal)) {
+      console.log("here")
+      totalStr.innerHTML = `<span class="red-text">You can only input numbers for calculating sizes</span>`;
+    } else {
+      totalStr.textContent = `Total: $ ${Math.max(minimumOrderTotal, orderTotal).toFixed(2)}`;
+      totalInput.value = orderTotal;
+    }
+  }
+
+  // CREATE ERROR
+  function createError(message) {
+    const para = document.createElement('p');
+    para.innerText = message;
+    errorDiv.innerHTML = para;
+  }
+  
+  // CLEAR ERRORS
+  function clearErrorDiv(element) {
+    setTimeout(() => {
+      element.innerHTML = "";
+    }, 4000);
   }
