@@ -26,3 +26,120 @@ CREATE TABLE webservices (
   deadline TEXT(30),
   questions LONGTEXT
 );
+
+
+=================================
+==== SQL FROM DBDESIGNER.NET ==== // has errors with syntax in MariaDB
+=================================
+CREATE TABLE `product_categories` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` varchar(255) NOT NULL UNIQUE,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `product` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`categorytId` int(11) NOT NULL,
+	`productName` varchar(255) NOT NULL UNIQUE,
+	`imageName` varchar(255) NOT NULL,
+	`imageAlt` varchar(255) NOT NULL,
+	`productDescription` varchar NOT NULL,
+	`productPrice` FLOAT NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `product_selects` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`productId` int(11) NOT NULL AUTO_INCREMENT,
+	`selectName` varchar(255) NOT NULL UNIQUE,
+	`label` varchar(255) NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `select_options` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`selectId` int(11) NOT NULL,
+	`optionKey` varchar(255) NOT NULL,
+	`optionValue` varchar(255) NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `shopping_cart` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`userId` int(11) NOT NULL,
+	`order(JSON)` longtext NOT NULL DEFAULT 'current_timestamp()',
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`first_name` varchar(255) NOT NULL,
+	`last_name` varchar(255) NOT NULL,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`phone` varchar(255) NOT NULL,
+	`address1` varchar(255) NOT NULL,
+	`address2` varchar(255),
+	`city` varchar(255) NOT NULL UNIQUE,
+	`zipcode` tinyint(5) NOT NULL UNIQUE,
+	`country` tinyint NOT NULL,
+	`state` tinyint NOT NULL UNIQUE,
+	`password` varchar(255) NOT NULL,
+	`newsletter` tinyint(1) NOT NULL DEFAULT '1',
+	`privacy` tinyint(1) NOT NULL,
+	`created` TIMESTAMP NOT NULL DEFAULT 'current_timestamp()',
+	`admin` tinyint(1) DEFAULT 'NULL',
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `pwdreset` (
+	`pwdResetId` int(11) NOT NULL AUTO_INCREMENT,
+	`pwdResetEmail` TEXT NOT NULL,
+	`pwdResetSelector` TEXT NOT NULL,
+	`pwdResetToken` TEXT NOT NULL,
+	`pwdResetExpires` TEXT NOT NULL,
+	PRIMARY KEY (`pwdResetId`)
+);
+
+CREATE TABLE `webservices` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`userId` int(11) NOT NULL,
+	`business_Obj` longtext NOT NULL,
+	`prospective_clients` longtext NOT NULL,
+	`website_goal` longtext NOT NULL,
+	`uniqueness` longtext NOT NULL,
+	`new_clients` longtext NOT NULL,
+	`sales` longtext NOT NULL,
+	`brand` tinyint(1) NOT NULL,
+	`deadline` tinytext NOT NULL,
+	`questions` longtext NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `newsletter` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`email` varchar(256) NOT NULL,
+	`date` TIMESTAMP NOT NULL DEFAULT 'current_timestamp()',
+	`active` tinyint(1) NOT NULL DEFAULT '1',
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `bcardgallery` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`title` longtext NOT NULL,
+	`imgDesc` longtext NOT NULL,
+	`imgFullName` longtext NOT NULL,
+	`imgOrder` longtext NOT NULL,
+	PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `product` ADD CONSTRAINT `product_fk0` FOREIGN KEY (`categorytId`) REFERENCES `product_categories`(`id`);
+
+ALTER TABLE `product_selects` ADD CONSTRAINT `product_selects_fk0` FOREIGN KEY (`productId`) REFERENCES `product`(`id`);
+
+ALTER TABLE `select_options` ADD CONSTRAINT `select_options_fk0` FOREIGN KEY (`selectId`) REFERENCES `product_selects`(`id`);
+
+ALTER TABLE `shopping_cart` ADD CONSTRAINT `shopping_cart_fk0` FOREIGN KEY (`userId`) REFERENCES `users`(`id`);
+
+ALTER TABLE `pwdreset` ADD CONSTRAINT `pwdreset_fk0` FOREIGN KEY (`pwdResetEmail`) REFERENCES `users`(`email`);
+
+ALTER TABLE `webservices` ADD CONSTRAINT `webservices_fk0` FOREIGN KEY (`userId`) REFERENCES `users`(`id`);

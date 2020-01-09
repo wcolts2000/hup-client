@@ -39,10 +39,16 @@ class CreateDb
         $this->conn = mysqli_connect($servername, $username, $password, $dbname);
 
         // sql to create new table
-        $sql = "CREATE TABLE IF NOT EXISTS $tablename(
-          id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY
-          produc
-        );"
+        $sql = "CREATE TABLE IF NOT EXISTS $tablename (
+          id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+          name VARCHAR(255) NOT NULL UNIQUE
+        );";
+
+        if (mysqli_query($this->conn, $sql)) {
+          echo "Error creating table: ".mysqli_error($this->conn);
+        } else {
+          return false;
+        }
       }
     }
 }

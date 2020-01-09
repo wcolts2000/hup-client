@@ -253,6 +253,12 @@ textarea.materialize-textarea {
   padding: 0;
 }
 
+.tabs {
+  display:-webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
 /* =================== */
 /* COMPONENT STYLES */
 /* =================== */
