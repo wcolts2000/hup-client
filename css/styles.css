@@ -257,6 +257,7 @@ textarea.materialize-textarea {
 /* COMPONENT STYLES */
 /* =================== */
 
+/* CONSTRUCTION BANNER */
 .construction {
   width: 100%;
   padding: 300px 60px;
@@ -287,6 +288,7 @@ textarea.materialize-textarea {
   }
 }
 
+/* WEB BANNER */
 .web-banner {
   display: flex;
   align-items: center;
@@ -299,42 +301,58 @@ textarea.materialize-textarea {
     rgba(209, 119, 245, .9),
     rgba(86, 58, 177, 1)),
     url(../img/macbook-and-tablet.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.web-banner .left {
-  width: 50%;
-}
-
-.web-banner .left img {
-  width: 100%;
-  height: auto;
-}
-
-.web-banner .right {
-  width: 50%;
-  background: rgba(0,0,0,.2);
-  border-radius: 7px;
-  color: white;
-}
-
-.web-banner .right button {
-  margin-top: 2rem;
-}
-
-@media screen and (max-width: 600px) {
-  .web-banner {
-    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
-  .web-banner .left, .web-banner .right {
+  
+  .web-banner .left {
+    width: 50%;
+  }
+  
+  .web-banner .left img {
     width: 100%;
+    height: auto;
   }
-
+  
   .web-banner .right {
-    order: -1;
+    width: 50%;
+    background: rgba(0,0,0,.2);
+    border-radius: 7px;
+    color: white;
   }
-}
+  
+  .web-banner .right button {
+    margin-top: 2rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .web-banner {
+      flex-direction: column;
+    }
+    
+    .web-banner .left, .web-banner .right {
+      width: 100%;
+    }
+    
+    .web-banner .right {
+      order: -1;
+    }
+  }
+  
+  /* SHOPPING CART */
+  #cart-link {
+    position: relative;
+  }
 
-
+  #cart {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.3rem;
+    background-color: white;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 50px;
+    line-height: initial;
+  }
+  
+  

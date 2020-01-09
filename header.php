@@ -1,11 +1,19 @@
 <nav class='yellow'>
-  <div class='container'>
-    <div class='nav-wrapper'>
-
+  <!-- <div class='container'> -->
+    <div class='nav-wrapper ps2'>
+      
       <!-- LOGO -->
       <a href="/" class="brand-logo">
         <img class="left" src="/img/hupLogoDrop.svg" width="30px" height="60px" alt="Hurry Up Print logo icon">
       </a>
+      <ul class="right ps2">
+        <li id="cart-link" >
+          <a class='black-text' href='#!'>
+            <i class='material-icons'>shopping_cart</i>
+          </a>
+          <p id="cart">0</p>
+        </li>
+      </ul>
 
       <!-- HAMBURGER -->
       <a class='button-collapse black-text' data-activates='mobile-nav' href='#'>
@@ -46,6 +54,7 @@
           </a>
         </li>
       </ul>
+      
 
 
 
@@ -184,7 +193,7 @@
       </ul>
 
     </div>
-  </div>
+  <!-- </div> -->
 </nav>
 
 <!-- DESKTOP DROPDOWNS -->
