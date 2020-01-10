@@ -27,6 +27,25 @@ CREATE TABLE webservices (
   questions LONGTEXT
 );
 
+CREATE TABLE orders (
+	id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	userId INT(11) NOT NULL,
+	orderDate TIMESTAMP(6) NOT NULL,
+	shipperId INT(11) NOT NULL    
+);
+CREATE TABLE shipper (
+  id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(256) NOT NULL,
+  phone VARCHAR(10)
+);
+CREATE TABLE orderDetails (
+  id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  orderId INT(11) NOT NULL,
+  productId INT(11) NOT NULL,
+  productOptions LONGTEXT,
+  quantity INT(11) NOT NULL
+);
+
 
 =================================
 ==== SQL FROM DBDESIGNER.NET ==== // has errors with syntax in MariaDB
