@@ -97,9 +97,40 @@
             </div>
             <div class="input-field col s6">
               <input type="text" id="prod1Label" name="prod1Label">
-              <label for="prodLabel">Select Label</label>
+              <label for="prod1Label">Select Label</label>
             </div>
+
+            <div class="col s12">
+            <button class="btn waves-effect waves-light yellow darken-1 black-text" type="submit" name="select-submit">Submit  <i class="material-icons right">send</i> </button>
+          </div>
+          </form>
+
+          <form action="<?php echo htmlspecialchars('/includes/upload.lfproduct.inc.php') ?>" method="POST">
             <h5 class="col s12 m2c bb">Product Options</h5>
+            <div class='input-field col s12'>
+              <select required name='selectIdSelect' id='selectIdSelect'>
+                <option value='none' selected>--PICK SELECT--</option>
+                <?php 
+                  include_once 'includes/dbh.inc.php';
+
+                  $sql = "SELECT id, selectName FROM product_selects";
+                  $stmt = mysqli_stmt_init($conn);
+                  if (!mysqli_stmt_prepare($stmt, $sql)) {
+                    echo "SQL STATEMENT FAILED : ( !";
+                  } else {
+                  mysqli_stmt_execute($stmt);
+                  $result = mysqli_stmt_get_result($stmt);
+                  while ($row = mysqli_fetch_assoc($result)) {
+                    echo '
+                    <option value='.$row['id'].' selected>'.$row['selectName'].'</option>
+                    ';    
+                  }
+                  }
+                ?>
+                <option value=''></option>
+              </select>
+              <label>Product Category <span class='red-text'>*</span> </label>
+            </div>
             <div class="input-field col s6">
               <input type="text" id="prod1key1" name="prod1key1">
               <label for="prod1key1">Option 1 key</label>
@@ -116,97 +147,11 @@
 
           </div>
           <div class="col s12">
-            <button class="btn waves-effect waves-light yellow darken-1 black-text" type="submit" name="select-submit">Submit  <i class="material-icons right">send</i> </button>
+            <button class="btn waves-effect waves-light yellow darken-1 black-text" type="submit" name="options-submit">Submit  <i class="material-icons right">send</i> </button>
           </div>
           </form>
       </section>
     </div>
-    <!-- <h5 class="col s12 m10 ms2 pt2 bb">Large Format Product List</h5>
-    <div class="col s12 m10 p2">
-      <section>
-        <div class="row">
-        <?php 
-          include_once 'includes/dbh.inc.php';
-
-          $sql = "SELECT * FROM products";
-          $stmt = mysqli_stmt_init($conn);
-          if (!mysqli_stmt_prepare($stmt, $sql)) {
-            echo "SQL STATEMENT FAILED : ( !";
-          } else {
-          mysqli_stmt_execute($stmt);
-          $result = mysqli_stmt_get_result($stmt);
-          echo '
-            <table class="striped col s12 m10">
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Category</th>
-                  <th>Name</th>
-                  <th>Image Name</th>
-                  <th>Image Alt Text</th>
-                  <th>Description</th>
-                  <th>Price</th>
-                  <th>Select Name</th>
-                  <th>Select Label</th>
-                  <th>Option Key</th>
-                  <th>Option Value</th>
-                </tr>
-              </thead>
-              <tbody>';
-          while ($row = mysqli_fetch_assoc($result)) {
-            echo '
-              <tr>
-                <td>'.$row['id'].'</td>
-                <td>'.$row['categoryId'].'</td>
-                <td>'.$row['productName'].'</td>
-                <td>'.$row['imageName'].'</td>
-                <td>'.$row['imageAlt'].'</td>
-                <td>'.$row['productDescription'].'</td>
-                <td>'.$row['productPrice'].'</td>
-                <td>'.$row['SelectName'].'</td>
-                <td>'.$row['label'].'</td>
-                <td>'.$row['optionKey'].'</td>
-                <td>'.$row['optionValue'].'</td>
-              </tr>
-            ';    
-          }
-          echo '
-              </tbody>
-            </table>
-          ';
-          }
-        ?>
-        </div>
-      </section>
-    </div> -->
-    
-    <!-- OFFSET -->
-    <!-- <div id="offset" class="col s12">
-      <div class="col s12">
-        <ul class="tabs yellow mb1">
-          <li class="tab col s3"><a class="active black-text" href="#bcards">Business Cards</a></li>
-          <li class="tab col s3"><a class="black-text" href="#flyers">Flyers</a></li>
-          <li class="tab col s3"><a class="black-text" href="#invites">Invitaions</a></li>
-          <li class="tab col s3"><a class="black-text" href="#menus">Menus</a></li>
-          <li class="tab col s3"><a class="black-text" href="#postcards">Postcards</a></li>
-        </ul>
-      </div>
-      <div id="bcards" class="col s12">
-        <h5 class="col s12 m10 ms2 pt2 bb">Business Card Upload</h5>
-      </div>
-      <div id="flyers" class="col s12">
-        <h5 class="col s12 m10 ms2 pt2 bb">Flyers Upload</h5>
-      </div>
-      <div id="invites" class="col s12">
-        <h5 class="col s12 m10 ms2 pt2 bb">Invites Upload</h5>
-      </div>
-      <div id="menus" class="col s12">
-        <h5 class="col s12 m10 ms2 pt2 bb">Menus Upload</h5>
-      </div>
-      <div id="postcards" class="col s12">
-        <h5 class="col s12 m10 ms2 pt2 bb">Postcards Upload</h5>
-      </div>
-    </div> -->
 
 </div>
 <script>

@@ -42,17 +42,47 @@ if (isset($_POST['product-submit'])) {
       }
     }
   }
-
-  // header("Location: ../admin.php?Hello");
-  // exit();
 } elseif (isset($_POST['select-submit'])) {
-  $productSelectName = $_POST['productSelectName'];
+  $productId = $_POST['productIdSelect'];
+  $productId = intval($productId);
+  $selectName = $_POST['productSelectName'];
+  $label = $_POST['prod1Label'];
+  $header = "&productId=$productId&selectName=$selectName&label=$label";
 
   include_once "dbh.inc.php";
 
+  if (empty($productId) || empty($selectName) || empty($label)) {
+    header("Location: ../admin.php?upload=empty".$header);
+    exit();
+  } else {
+    $sql = "SELECT * FROM product_selects";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+      header("Location: ../admin.php?error=sqlerr1".$header);
+      exit();
+    } else {
+      mysqli_stmt_execute($stmt);
+      $result = mysqli_stmt_get_result($stmt);
+      $rowCount = mysqli_num_rows($result);
+
+      $sql = "INSERT INTO product_selects (productId, selectName, label) VALUES (?,?,?);";
+      if (!mysqli_stmt_prepare($stmt, $sql)) {
+        header("Location: ../admin.php?error=sqlerr2".$header);
+        exit();
+      } else {
+        mysqli_stmt_bind_param($stmt, "iss", $productId, $selectName, $label);
+        mysqli_stmt_execute($stmt);
+
+        header('Location: ../admin.php?upload=success');
+        exit();
+      }
+    }
+  }
 
   header("Location: ../admin.php?there");
   exit();
+} elseif (isset($_POST['options-submit'])) {
+
 }
 else  {
   header("Location: ../index.php");
