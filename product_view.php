@@ -132,7 +132,7 @@
               <label>Product Category <span class='red-text'>*</span> </label>
             </div>
             <div class="input-field col s6">
-              <input type="text" id="prod1key1" name="prod1key1">
+              <input type="text" id="prod1key1" name="prod1key1" value="<?php if(isset($_GET[''])) ?>">
               <label for="prod1key1">Option 1 key</label>
             </div>
             <div class="input-field col s6">
