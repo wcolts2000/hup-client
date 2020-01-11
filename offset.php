@@ -10,7 +10,7 @@
     <div class="parallax"><img src="img/digital_print_samples.png" alt="marketing prints"></div>
     <h1 class="white-text ps2 ts">Offset and Digital Printing</h1>
     <h4 class="ps2 white-text ts">From business cards to menus and everything in between.</h5>
-      <a href="/offset/menus.php" class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Menus
+      <a href="/offset/menus.php" class="round-border btn waves-effect waves-light yellow darken-1 black-text m2c">Menus
         Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>

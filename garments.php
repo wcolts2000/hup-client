@@ -10,7 +10,7 @@
     <h1 class="white-text ps2 ts">Custom Garments</h1>
     <h4 class="ps2 white-text ts">Get your logo on your uniforms and clothing.</h5>
       <a href="/garments/embroidery.php"
-        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Embroidery Here
+        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2c">Embroidery Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>
   </div>

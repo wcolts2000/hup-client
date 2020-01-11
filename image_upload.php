@@ -6,7 +6,7 @@
 
 <div class="container m2a">
   <div class="row">
-    <form action="/includes/upload.image.inc.php" method="POST" enctype="multipart/form-data">
+    <form action="<?php echo htmlspecialchars('/includes/upload.image.inc.php') ?>" method="POST" enctype="multipart/form-data">
     <div class="file-field input-field">
       <div class="btn waves-effect waves-light yellow darken-1 black-text">
         <span>Image File</span>

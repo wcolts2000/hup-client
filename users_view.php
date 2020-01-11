@@ -10,7 +10,7 @@
     $result = mysqli_stmt_get_result($stmt);
     echo '
     <div class="tabs-item" data-tab="1">
-    <h5 class="col s12 m10 m2 pt2 bb">Users</h5>
+    <h5 class="col s12 m10 ms2 pt2 bb">Users</h5>
     <div class="row ps2">
     <table class="striped col s12 m10">
       <thead>

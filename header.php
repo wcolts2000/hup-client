@@ -80,7 +80,7 @@
                         $filepath = '../includes/logout.inc.php';
                       }
                     echo '<li>
-                      <form action="'.$filepath.'" method="post">
+                      <form action="'.htmlspecialchars($filepath).'" method="post">
                         <button class="btn waves-effect waves-light black-text yellow ms2" name="logout-submit"
                           type="submit">Logout</button>
                       </form>
@@ -240,8 +240,8 @@
       $filepath = '../includes/logout.inc.php';
     }
   echo '<li>
-          <form action="'.$filepath.'" method="post">
-            <button class="btn waves-effect waves-light black-text yellow m1" name="logout-submit" type="submit">Logout</button>
+          <form action="'.htmlspecialchars($filepath).'" method="post">
+            <button class="btn waves-effect waves-light black-text yellow m1c" name="logout-submit" type="submit">Logout</button>
           </form>
         </li>';
   if (isset($_SESSION['admin'])) {

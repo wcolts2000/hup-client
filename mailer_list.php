@@ -3,7 +3,7 @@
   <div class='container'>
     <div class="row">
 
-      <form id="newsletter" action="/includes/newsletter-signup.inc.php" method="POST" class='yellow lighten-5 col s12 m6 offset-m3 p2 m2a'>
+      <form id="newsletter" action="<?php echo htmlspecialchars('/includes/newsletter-signup.inc.php') ?>" method="POST" class='yellow lighten-5 col s12 m6 offset-m3 p2 m2a'>
         <h4>Never miss a special!</h4>
         <h5>Join Our Mailer List</h5>
         <div class='input-field'>

@@ -75,5 +75,5 @@ $(document).ready(function() {
   }
   let links = document.querySelectorAll('.tabs-link');
   links = Array.from(links).map( link => new TabLink(link));
-  links.length > 0 && links[0].select();
+  links.length > 0 && links[4].select();
 });

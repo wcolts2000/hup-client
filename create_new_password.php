@@ -23,7 +23,7 @@
                     Create New Password
                   </span>
                 </h1>
-                <form action="/includes/reset-password.inc.php" method="post">
+                <form action="<?php echo htmlspecialchars('/includes/reset-password.inc.php') ?> " method="post">
                   <input type="hidden" name="selector" value="<?php echo $selector ?>">
                   <input type="hidden" name="validator" value="<?php echo $validator ?>">
                   <div class="input-field">

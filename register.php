@@ -28,7 +28,7 @@
 
   <div class="row">
     <p> <span class="red-text">* Required fields</span></p>
-    <form class="col s12" action="/includes/register.inc.php" method="post">
+    <form class="col s12" action="<?php echo htmlspecialchars('/includes/register.inc.php') ?>" method="post">
       <h5>Your Personal Details</h5>
       <div class="col s12 divider mb1"></div>
       <div class="row">

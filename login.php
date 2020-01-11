@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="col s12 m6">
-      <form action="/includes/login.inc.php" method="post" class="card">
+      <form action="<?php echo htmlspecialchars('/includes/login.inc.php') ?>" method="post" class="card">
         <div class="card-content">
           <div class="mb2">
             <span class="card-title">

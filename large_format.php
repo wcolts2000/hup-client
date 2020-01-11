@@ -10,7 +10,7 @@
     <h1 class="white-text ps2 ts">Large Format Printing</h1>
     <h4 class="ps2 white-text ts">Get a banner for your next event.</h5>
       <a href="/large_format/banners.php"
-        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2">Buy
+        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2c">Buy
         Banners Here
         <i class="material-icons black-text right">chevron_right</i>
       </a>

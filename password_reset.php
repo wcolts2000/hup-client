@@ -15,7 +15,7 @@
             </span>
           </h1>
           <p>An Email will be sent to you with instructions on how to reset your password.</p>
-          <form action="/includes/reset-request.inc.php" method="post">
+          <form action="<?php echo htmlspecialchars('/includes/reset-request.inc.php') ?>" method="post">
             <div class="input-field">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="johnnyd@email.com">

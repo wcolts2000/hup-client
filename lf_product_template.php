@@ -57,7 +57,7 @@ $product = [
   <form 
     autocomplete='off'
     class='col s12 m12 l8 product-right'
-    action='../includes/product_calc.inc.php'
+    action='<?php echo htmlspecialchars('../includes/product_calc.inc.php') ?>'
     id='product-form'
     method='POST'
   >

@@ -13,7 +13,7 @@
 
     echo '
     <div class="tabs-item" data-tab="3">
-    <h5 class="col s12 m10 m2 pt2 bb">Web Questionnaire</h5>
+    <h5 class="col s12 m10 ms2 pt2 bb">Web Questionnaire</h5>
     <section class="row ms1"> <div class="col s12 m10">';
     while ($row = mysqli_fetch_assoc($result)) {
       echo '

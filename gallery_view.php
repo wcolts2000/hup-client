@@ -1,20 +1,18 @@
-<div class="row ms2">
-
-<div class="tabs-item" data-tab="5">
+<div class="tabs-item" data-tab="6">
 
   <div class="row">
-    <div class="col s12">
-      <ul class="tabs grey darken-2 mb1">
-        <li class="tab col s6"><a class="active white-text" href="#largeFormatGallery">Large Format Gallery Upload</a></li>
-        <li class="tab col s6"><a class="white-text" href="#offsetGallery">Offset Gallery Upload</a></li>
+    <div class="col s12 ms2">
+      <ul class="tabs mb1">
+        <li class="tab col s6 active"><a class="active black-text" href="#largeFormatGallery">Large Format Gallery Upload</a></li>
+        <li class="tab col s6"><a class="black-text" href="#offsetGallery">Offset Gallery Upload</a></li>
       </ul>
     </div>
 
     <div id="largeFormatGallery" class="col s12">
       <div class="row">
-        <div class="col s12 m12 l12">
-          <ul class="tabs yellow mb1">
-            <li class="tab col s3"><a class="active black-text" href="#bannersGallery">Banners</a></li>
+        <div class="col s12">
+          <ul class="tabs yellow lighten-4 mb1">
+            <li class="tab col s3 active"><a class="active black-text" href="#bannersGallery">Banners</a></li>
             <li class="tab col s3"><a class="black-text" href="#decalsGallery">Decals</a></li>
             <li class="tab col s3"><a class="black-text" href="#displaysGallery">Displays</a></li>
             <li class="tab col s3"><a class="black-text" href="#magnetsGallery">Magnets</a></li>
@@ -63,10 +61,10 @@
       </div>
       <div id="bcardsGallery" class="col s12">
         <h5 class="col s12 m10 ms2 pt2 bb">Business Card Upload</h5>
-        <div class="row">
+        <!-- <div class="row"> -->
           <section class="business-card-form">
             <div class="col s12 m10 p2">
-              <form action="/includes/upload.bcard.inc.php" method="POST" class="" enctype="multipart/form-data">
+              <form action="<?php echo htmlspecialchars('/includes/upload.bcard.inc.php') ?>" method="POST" class="" enctype="multipart/form-data">
               <div class="input-field">
                 <input type="text" id="filename" name="filename">
                 <label for="filename">File name</label>
@@ -92,11 +90,11 @@
               </form>
             </div>
           </section>
-        </div>
+        <!-- </div> -->
         <h5 class="col s12 m10 ms2 pt2 bb">Business Card List</h5>
         <div class="col s12 m10 p2">
           <section>
-            <div class="row">
+            <!-- <div class="row"> -->
             <?php 
               include_once 'includes/dbh.inc.php';
 
@@ -136,7 +134,7 @@
               ';
               }
             ?>
-            </div>
+            <!-- </div> -->
           </section>
         </div>
       </div>

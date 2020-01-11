@@ -43,7 +43,7 @@
   </div>
 
   <div class="row">
-    <form class="col s12" action="/includes/request.web.services.inc.php" method="post">
+    <form class="col s12" action="<?php echo htmlspecialchars('/includes/request.web.services.inc.php') ?>" method="post">
       <div class="row">
       <h5>Business Information</h5>
       <!-- <div class="col s12 divider mb1"></div> -->

@@ -1,9 +1,9 @@
-<div class="tabs-item" data-tab="6">
+<div class="tabs-item" data-tab="4">
 
-    <h5 class="col s12 m10 m2 pt2 bb">Categories Upload</h5>
+    <h5 class="col s12 m10 ms2 pt2 bb">Categories Upload</h5>
     <div class="row">
       <div class="col s12 m10 p2s">
-        <form action="/includes/upload.category.inc.php" method="POST">
+        <form class="ms2" action="<?php echo htmlspecialchars('/includes/upload.category.inc.php') ?>" method="POST">
           <div class="input-field">
             <input type="text" id="catName" name="catName">
             <label for="catName">Product category name</label>
@@ -52,6 +52,5 @@
         </div>
       </section>
     </div>
-  </div>
 
 </div>
