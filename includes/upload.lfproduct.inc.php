@@ -55,7 +55,7 @@ if (isset($_POST['product-submit'])) {
     header("Location: ../admin.php?upload=empty".$header);
     exit();
   } else {
-    $sql = "SELECT * FROM product_selects";
+    $sql = "SELECT * FROM product_selects;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../admin.php?error=sqlerr1".$header);
@@ -91,7 +91,7 @@ if (isset($_POST['product-submit'])) {
     header("Location: ../admin.php?upload=empty".$header);
     exit();
   } else {
-    $sql = "SELECT * FROM select_options";
+    $sql = "SELECT * FROM select_options;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../admin.php?error=sqlerr1".$header);

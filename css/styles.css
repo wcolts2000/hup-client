@@ -208,6 +208,17 @@ span.err {
   color: red;
 }
 
+footer a {
+  transition: all .3s;
+  padding: .2rem 0;
+}
+
+footer a:hover {
+  left: .4rem;
+  padding: .2rem .4rem;
+  background-color: rgba(0,0,0,.1);
+}
+
 /* =================== */
 /* MATERIALIZE OVERRIDES */
 /* =================== */
