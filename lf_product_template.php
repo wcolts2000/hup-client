@@ -1,57 +1,31 @@
 <?php
-$product = [
-  "productName"=> "banners",
-  "imageName"=> "banners.png",
-  "imageAlt"=> "banners",
-  "selects"=> [
-    "sides-x"=> [
-      "options"=> [
-        "single"=> "Single Sided",
-        "double"=> "Double Sided" 
-      ],
-      "label"=>"# of Sides"
-    ],
-    "material"=> [
-      "options"=>[
-        "matte"=> "13 oz. Matte Vinyl Banner - 56' max",
-        "glossy"=> "13 oz. Glossy Vinyl Banner - 56' max"
-      ],
-      "label"=> "Material "
-    ],
-    "grommets" => [
-      "options"=>[
-        "none"=> "--NONE--",
-        "standard"=> "Every 2 ft (all 4 sides)",
-        "top_bottom"=> "Every 2 ft (top & bottom)",
-        "left_right"=> "Every 2 ft (left & right)",
-        "top"=> "Top only",
-        "bottom"=> "Bottom only",
-        "left"=> "Left only",
-        "right"=> "Right only",
-        "corners"=> "Corners only"
-      ],
-      "label"=> "Grommets "
-    ],
-    "hemming"=> [
-      "options"=> [
-        "none"=> "--NONE--",
-        "yes"=> "Yes, all sides"
-      ],
-      "label"=> "Hemming "
-    ]
-  ]
-  ];
-
-  ?>
-<section class='<?php echo $product['productName'] ?>__section'>
-  <h1>Custom <?php echo $product['productName']?></h1>
+  include_once "includes/dbh.inc.php";
+  $sql = "SELECT * FROM product WHERE productName = '$productName';";
+  $stmt = mysqli_stmt_init($conn);
+  $cost = "";
+  $productId = "";
+  if (!mysqli_stmt_prepare($stmt,$sql)) {
+    echo "SQL STATEMENT FAILED : ( !";
+  } else {
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    while ($row = mysqli_fetch_assoc($result)) { 
+      $cost = $row['productPrice'];
+      $productId = $row['id']?>
+<section class='<?php echo $row['productName'] ?>__section'>
+  <h1>Custom <?php echo $row['productName']?></h1>
   <div id='error'></div>
   <div class='row'>
-
+  
   <!-- LEFT SIDE -->
   <div class='col s12 m12 l4 product-left'>
-    <img src='../img/<?php echo $product['imageName']?>' alt='<?php echo $product['imageAlt']?>' class='responsive-img p2'>
+    <img src='../img/<?php echo $row['imageName']?>' alt='<?php echo $row['imageAlt']?>' class='responsive-img p2'>
+    <p><?php echo $row['productDescription'] ?></p>
   </div>
+
+ <?php }
+  }
+  ?>
 
   <!-- RIGHT SIDE -->
   <form 
@@ -61,37 +35,63 @@ $product = [
     id='product-form'
     method='POST'
   >
-    <input type='text' hidden id='total' name='total'>
+    <input type='text' hidden id='total' name='total' value="<?php echo $cost ?>">
     <div class='row'>
       <h5 id='totalStr'>Total: $20.00</h5>
       <p class='red-text'>* Required Fields</p>
+      <p class='red-text'><?php 
+        if (isset($_GET['error'])) {
+          if ($_GET['error'] == "emptyfields") {
+            echo "Please fill in all required fields";
+          }
+        }
+      ?></p>
     </div>
     <div class='input-field col s6'>
       <input autocomplete='off' required id='length' value='12' type='text' name='length'>
-      <label for='length'>Length In Inches <span class='red-text'>*</span> </label>
+      <label for='length'>Length In Inches <span class='red-text'>*</span></label>
     </div>
     <div class='input-field col s6'>
       <input autocomplete='off' required id='width' type='text' value='12' name='width'>
       <label for='width'>Width In Inches <span class='red-text'>*</span> </label>
     </div>
-
-
-    <?php foreach($product['selects'] as $key=>$value): ?>
-      <div class='input-field col s6'>
-        <select required name='<?php echo $key ?>' 
-        id='<?php echo $key ?>'>
-
-
-          <?php foreach($value['options'] as $option=>$content): ?>
-            <option value='<?php echo $option ?>'><?php echo $content ?></option>
-          <?php endforeach; ?>
-
-
-        </select>
-        <label><?php echo $product['selects'][$key]['label']?> <span class='red-text'>*</span> </label>
-      </div>
-    <?php endforeach; ?>    
-    
+<?php
+    $sql = "SELECT * FROM product_selects WHERE productId = '$productId';";
+    $stmt = mysqli_stmt_init($conn);
+    $cost = "";
+    if (!mysqli_stmt_prepare($stmt,$sql)) {
+      echo "SQL STATEMENT FAILED : ( !";
+    } else {
+      mysqli_stmt_execute($stmt);
+      $result = mysqli_stmt_get_result($stmt);
+      while ($row = mysqli_fetch_assoc($result)) {
+        $selectId = $row['id'];
+        $label = $row['label']; 
+        ?>
+        <div class='input-field col s6'>
+          <select required name='<?php echo $row['selectName'] ?>' 
+          id='<?php echo $row['selectName'] ?>'>
+<?php        
+    $sql2 = "SELECT * FROM select_options WHERE selectId = '$selectId';";
+    $stmt2 = mysqli_stmt_init($conn);
+    $cost = "";
+    if (!mysqli_stmt_prepare($stmt2,$sql2)) {
+      echo "SQL STATEMENT FAILED : ( !";
+    } else {
+      mysqli_stmt_execute($stmt2);
+      $result2 = mysqli_stmt_get_result($stmt2);
+      while ($row2 = mysqli_fetch_assoc($result2)) {
+      ?>
+      <option value='<?php echo $row2["optionKey"] ?>'><?php echo $row2['optionValue'] ?></option>
+<?php  }
+    }
+        ?>
+          </select>
+          <label><?php echo $label;?> <span class='red-text'>*</span> </label>
+        </div>
+<?php }
+  }
+  ?>
     
     <div class='input-field col s6'>
       <select required name='proof' id='proof'>
