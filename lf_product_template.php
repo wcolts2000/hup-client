@@ -35,7 +35,8 @@
     id='product-form'
     method='POST'
   >
-    <input type='text' hidden id='total' name='total' value="<?php echo $cost ?>">
+    <input type='text' hidden id='total' name='total'>
+    <input type='text' hidden id='cost' name='cost' value="<?php echo $cost ?>">
     <div class='row'>
       <h5 id='totalStr'>Total: $20.00</h5>
       <p class='red-text'>* Required Fields</p>

@@ -18,8 +18,9 @@
 </nav>
 
 <section class="decals__section">
-  <h1>Decals</h1>
-  <?php require('../under_construction.php') ?>
+  <p>(under construction)</p>
+  <?php $productName="decals"; ?>
+  <?php require_once("../lf_product_template.php"); ?>
 </section>
 
 

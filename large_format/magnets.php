@@ -17,8 +17,9 @@
 </nav>
 
 <section class="magnets__section">
- <h1>Magnets</h1>
- <?php require('../under_construction.php') ?>
+  <p>(under construction)</p>
+  <?php $productName="magnets"; ?>
+  <?php require_once("../lf_product_template.php"); ?>
 </section>
 
 </div>

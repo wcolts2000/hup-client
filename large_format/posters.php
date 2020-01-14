@@ -17,8 +17,9 @@
 </nav>
 
 <section class="posters__section">
- <h1>Posters</h1>
- <?php require('../under_construction.php') ?>
+  <p>(under construction</p>
+<?php $productName="posters"; ?>
+  <?php require_once("../lf_product_template.php"); ?>
 </section>
 
 </div>

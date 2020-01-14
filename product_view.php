@@ -89,7 +89,7 @@
                 ?>
                 <option value=''></option>
               </select>
-              <label>Product Category <span class='red-text'>*</span> </label>
+              <label>Product Name <span class='red-text'>*</span> </label>
             </div>
             <div class="input-field col s6">
               <input type="text" id="productSelectName" name="productSelectName">
@@ -129,7 +129,7 @@
                 ?>
                 <option value=''></option>
               </select>
-              <label>Product Category <span class='red-text'>*</span> </label>
+              <label>Selects Name <span class='red-text'>*</span> </label>
             </div>
             <div class="input-field col s6">
               <input type="text" id="prod1key1" name="prod1key1" value="<?php if(isset($_GET[''])) ?>">
