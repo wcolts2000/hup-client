@@ -17,8 +17,9 @@
 </nav>
 
 <section class="vehicle-wrap__section">
- <h1>Vehicle Wraps</h1>
- <?php require('../under_construction.php') ?>
+<p>(under construction</p>
+<?php $productName="vehicle_wraps"; ?>
+  <?php require_once("../lf_product_template.php"); ?>
 </section>
 
 </div>

@@ -36,6 +36,16 @@ const products = {
       same: 1
     }
   },
+   vehicle_wrap: {
+    ['lamination-x']: {
+      no: 0,
+      yes: 1
+    },
+    ['turnaround-x']: {
+      standard: 0,
+      same: 1
+    }
+  },
 };
 
 // VARIABLES
