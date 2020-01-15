@@ -10,10 +10,11 @@
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     while ($row = mysqli_fetch_assoc($result)) { 
+      $h1_title = str_replace("_", " ", $row['productName']);
       $cost = $row['productPrice'];
       $productId = $row['id']?>
 <section class='<?php echo $row['productName'] ?>__section'>
-  <h1>Custom <?php echo $row['productName']?></h1>
+  <h1>Custom <?php echo $h1_title?></h1>
   <div id='error'></div>
   <div class='row'>
   

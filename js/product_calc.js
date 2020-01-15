@@ -6,7 +6,6 @@ const state = {
 }
 
 const products = {
-  banners: {
     ['sides-x']: {
       single: 1,
       double: 2
@@ -14,38 +13,11 @@ const products = {
     ['turnaround-x']: {
       standard: 0,
       same: 1
-    }
-  },
-  decals: {
+    },
     ['lamination-x']: {
       no: 0,
       yes: 1
     },
-    ['turnaround-x']: {
-      standard: 0,
-      same: 1
-    }
-  },
-  magnets: {
-    ['lamination-x']: {
-      no: 0,
-      yes: 1
-    },
-    ['turnaround-x']: {
-      standard: 0,
-      same: 1
-    }
-  },
-   vehicle_wrap: {
-    ['lamination-x']: {
-      no: 0,
-      yes: 1
-    },
-    ['turnaround-x']: {
-      standard: 0,
-      same: 1
-    }
-  },
 };
 
 // VARIABLES
@@ -78,7 +50,7 @@ console.log(
 // LISTENERS
 inputs.forEach(input => {
   input.addEventListener('change', () => {
-    calculate(productName, 1);
+    calculate();
   });
   if (input.name.indexOf('-') !== -1) {
   }
@@ -91,22 +63,22 @@ selects.forEach(select => {
       selected = select.options[select.selectedIndex].value;
       console.log('selected value change: ', selected);
       if(select.name === 'sides-x') {
-        state.sides = products[productName][select.name][selected]
+        state.sides = products[select.name][selected]
         console.log(`\n*** ${state.sides} ***\n`)
-        calculate(productName);        
+        calculate();        
       } 
       else if(select.name === 'turnaround-x') {
-        state.sameDay = products[productName][select.name][selected]
+        state.sameDay = products[select.name][selected]
         console.log(`\n*** ${state.sameDay} ***\n`)
-        calculate(productName);        
+        calculate();        
       }
       else if(select.name === 'lamination-x') {
-        state.lam = products[productName][select.name][selected]
+        state.lam = products[select.name][selected]
         console.log(`\n*** ${state.lam} ***\n`)
-        calculate(productName);        
+        calculate();        
       }
     } else {
-      calculate(productName);
+      calculate();
 
       }
     };
@@ -115,7 +87,7 @@ selects.forEach(select => {
   // FUNCTIONS
 
   // CALCULATE
-  function calculate(product) {
+  function calculate() {
     orderTotal = 0;
     let area = Number(length.value) * Number(width.value);
     let ftArea = area / 144;
