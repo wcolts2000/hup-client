@@ -1,11 +1,15 @@
 <?php
 
-if (isset($_POST['login-submit'])) {
+if (isset($_POST['login-submit']) || isset($_POST['login-submit-lf'])) {
   require 'dbh.inc.php';
+
+
 
   $email = $_POST['email'];
   $password = $_POST['pwd'];
   $webservice = $_POST['webservice'];
+  $currPage = $_POST['currPage'];
+
 
   if (empty($email) || empty($password)) {
     header("Location: ../login.php?error=emptyfields");
@@ -27,13 +31,17 @@ if (isset($_POST['login-submit'])) {
           exit();
         } else if ($pwdCheck == true) {
           session_start();
-            if ($row["admin"] === 1) {
-              $_SESSION['admin'] = $row['admin'];
-            }
+          if ($row["admin"] === 1) {
+            $_SESSION['admin'] = $row['admin'];
+          }
           $_SESSION['email'] = $row["email"];
           $_SESSION['id'] = $row["id"];
           if ($webservice == "true") {
             header("Location: ../websites/request_form.php");
+            exit();
+          }
+          if (!empty($currPage)) {
+            header("Location: ../large_format/" . $currPage . ".php");
             exit();
           }
           header("Location: ../index.php?login=success");
