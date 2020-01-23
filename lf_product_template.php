@@ -115,10 +115,11 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
       if (isset($_SESSION['id'])) {
         echo "
       <button 
-      disabled
       class='btn waves-effect waves-light yellow black-text'
       type='submit'
-      id='product-cart'>
+      id='product-cart'
+      name='product-cart'
+      >
       Add To Cart
     </button>
     ";
@@ -129,7 +130,9 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
       }
       ?>
     </form>
-    <!-- Modal Structure -->
+
+    <!-- START LOGIN MODAL -->
+
     <div id="loginModal" class="modal modal-fixed-footer">
       <div class="modal-content">
         <h4>Login</h4>
@@ -188,6 +191,9 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
         <a href="register.php" class="modal-close waves-effect waves-green btn-flat">register here</a>
       </div>
     </div>
+
+    <!-- END LOGIN MODAL -->
+
   </div>
 </section>
 
