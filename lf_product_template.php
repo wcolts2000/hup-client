@@ -15,6 +15,19 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
     $productId = $row['id'] ?>
 <section class='<?php echo $row['productName'] ?>__section'>
   <h1>Custom <?php echo $h1_title ?></h1>
+  <p id="success" class="green-text"><?php
+                                          if (isset($_GET['cart'])) {
+                                            if ($_GET['cart'] == "success") {
+                                              echo "Item added to cart";
+                                            }
+                                          };
+                                          echo "<script defer>
+                              const successMessage = document.getElementById('success');
+                              setTimeout(() => {
+                                successMessage.textContent = '';
+                              }, 3000);
+                            </script>"
+                                          ?></p>
   <div id='error'></div>
   <div class='row'>
 
@@ -36,13 +49,19 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
       <div class='row'>
         <h5 id='totalStr'>Total: $20.00</h5>
         <p class='red-text'>* Required Fields</p>
-        <p class='red-text'><?php
-                            if (isset($_GET['error'])) {
-                              if ($_GET['error'] == "emptyfields") {
-                                echo "Please fill in all required fields";
-                              }
-                            }
-                            ?></p>
+        <p id="error" class='red-text'><?php
+                                        if (isset($_GET['error'])) {
+                                          if ($_GET['error'] == "emptyfields") {
+                                            echo "Please fill in all required fields";
+                                          }
+                                        };
+                                        echo "<script>
+                              const errMessage = document.getElementById('error');
+                              setTimeout(() => {
+                                errMessage.textContent = '';
+                              }, 3000);
+                            </script>"
+                                        ?></p>
       </div>
       <div class='input-field col s6'>
         <input autocomplete='off' required id='length' value='12' type='text' name='length'>
@@ -88,7 +107,6 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
       <?php }
       }
       ?>
-
       <div class='input-field col s6'>
         <select required name='proof' id='proof'>
           <option value='none' selected>--None--</option>

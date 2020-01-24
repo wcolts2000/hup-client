@@ -9,36 +9,35 @@
 
 <section class="home-hero row">
   <div class="parallax-container">
-      <div class="parallax"><img src="img/printing-house.jpg"></div>
-      <div class="center-align">
+    <div class="parallax"><img src="img/printing-house.jpg"></div>
+    <div class="center-align">
 
-        <img src="img/hup_logo.png" alt="Hurry Up Print logo" class="m2a" style="max-width: 600px; width: 100%; margin: 6rem auto">
-      </div>
+      <img src="img/hup_logo.png" alt="Hurry Up Print logo" class="m2a"
+        style="max-width: 600px; width: 100%; margin: 6rem auto">
     </div>
+  </div>
 </section>
 <div class="home container">
 
-  <?php 
-    if(isset($_GET['newsletter'])) {
-      if ($_GET['newsletter'] === "subscribed") {
-        echo "<h5 id='toast' class='green-text yellow lighten-4 p2'>
-          Thank You, ". $_GET['email'] ." has been added to our newsletter mailer list</h5>
+  <?php
+  if (isset($_GET['newsletter'])) {
+    if ($_GET['newsletter'] === "subscribed") {
+      echo "<h5 id='toast' class='green-text yellow lighten-4 p2'>
+          Thank You, " . $_GET['email'] . " has been added to our newsletter mailer list</h5>
           <script>
             const toast = document.getElementById('toast');
-            console.log(toast);
             setTimeout((() => toast.style.display =  'none') , 3000)</script>
         ";
-      }
     }
-    if(isset($_GET['websiterequest'])) {
-      echo "<h5 id='toast' class='green-text yellow lighten-4 p2'>
+  }
+  if (isset($_GET['websiterequest'])) {
+    echo "<h5 id='toast' class='green-text yellow lighten-4 p2'>
       Thank you, your request has been submitted</h5>
       <script>
         const toast = document.getElementById('toast');
-        console.log(toast);
         setTimeout((() => toast.style.display =  'none') , 3000)</script>
     ";
-    }
+  }
   ?>
 
   <main class="home-main white">
@@ -345,9 +344,6 @@
     </div>
   </section>
 
-
-
-  
 </div>
 <!--END CONTAINER -->
 
@@ -356,7 +352,9 @@
 
 <!-- GOOGLE MAP -->
 <div class="video-container map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12311.951650900202!2d-119.8031856!3d39.5147625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5f2d1bf75a8660a!2sHurry%20Up%20Print!5e0!3m2!1sen!2sus!4v1577959090285!5m2!1sen!2sus" width="1200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12311.951650900202!2d-119.8031856!3d39.5147625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5f2d1bf75a8660a!2sHurry%20Up%20Print!5e0!3m2!1sen!2sus!4v1577959090285!5m2!1sen!2sus"
+    width="1200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 
 <?php require "footer.php" ?>
