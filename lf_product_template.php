@@ -22,11 +22,11 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
                                             }
                                           };
                                           echo "<script defer>
-                              const successMessage = document.getElementById('success');
-                              setTimeout(() => {
-                                successMessage.textContent = '';
-                              }, 3000);
-                            </script>"
+                                                  const successMessage = document.getElementById('success');
+                                                  setTimeout(() => {
+                                                    successMessage.textContent = '';
+                                                  }, 3000);
+                                                </script>"
                                           ?></p>
   <div id='error'></div>
   <div class='row'>
@@ -44,8 +44,14 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
     <!-- RIGHT SIDE -->
     <form autocomplete='off' class='col s12 m12 l8 product-right'
       action='<?php echo htmlspecialchars('../includes/product_calc.inc.php') ?>' id='product-form' method='POST'>
+      <input type='text' hidden id='userId' name='userId' value="<?php
+                                                                  if (isset($_SESSION['id'])) {
+                                                                    echo $_SESSION['id'];
+                                                                  }
+                                                                  ?>">
       <input type='text' hidden id='total' name='total'>
       <input type='text' hidden id='cost' name='cost' value="<?php echo $cost ?>">
+      <input type="hidden" id="currPage" name="currPage" value="<?php echo $productName ?>">
       <div class='row'>
         <h5 id='totalStr'>Total: $20.00</h5>
         <p class='red-text'>* Required Fields</p>
@@ -56,11 +62,11 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
                                           }
                                         };
                                         echo "<script>
-                              const errMessage = document.getElementById('error');
-                              setTimeout(() => {
-                                errMessage.textContent = '';
-                              }, 3000);
-                            </script>"
+                                                const errMessage = document.getElementById('error');
+                                                setTimeout(() => {
+                                                  errMessage.textContent = '';
+                                                }, 3000);
+                                              </script>"
                                         ?></p>
       </div>
       <div class='input-field col s6'>

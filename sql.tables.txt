@@ -86,7 +86,7 @@ CREATE TABLE `select_options` (
 CREATE TABLE `shopping_cart` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`userId` int(11) NOT NULL,
-	`order(JSON)` longtext NOT NULL DEFAULT 'current_timestamp()',
+	`order` longtext NOT NULL DEFAULT 'current_timestamp()',
 	PRIMARY KEY (`id`)
 );
 
