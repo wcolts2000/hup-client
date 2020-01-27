@@ -18,7 +18,7 @@
   <section class="restaurants__section">
     <h1>Restaurant Sites</h1>
     <div class="divider"></div>
-    <?php require('../under_construction.php') ?>
+    <?php require('../components/under_construction.php') ?>
   </section>
 
 </div>

@@ -30,7 +30,7 @@
     </ul>
 
 
-    <?php require('../under_construction.php') ?>
+    <?php require('../components/under_construction.php') ?>
   </section>
 
 </div>

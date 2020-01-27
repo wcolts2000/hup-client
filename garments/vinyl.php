@@ -18,7 +18,7 @@
   <section class="vinyl_shirt__section">
     <h1>Vinyl</h1>
     <div class="divider"></div>
-    <?php require('../under_construction.php') ?>
+    <?php require('../components/under_construction.php') ?>
 
 
   </section>

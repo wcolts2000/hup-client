@@ -18,7 +18,7 @@
 
   <section class="signage__section">
     <h1>Signage</h1>
-    <?php require('../under_construction.php') ?>
+    <?php require('../components/under_construction.php') ?>
   </section>
 
 </div>
