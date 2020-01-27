@@ -9,7 +9,7 @@
             <li><a class="black-text" href="/large_format/">Large Format</a></li>
             <li><a class="black-text" href="/offset/">Offset</a></li>
             <li><a class="black-text" href="/garments/">Garments</a></li>
-            <li><a class="black-text" href="/websites.php">Websites</a></li>
+            <li><a class="black-text" href="/websites/">Websites</a></li>
           </ul>
         </div>
         <div class="col l4 offset-l2 s12 black-text">

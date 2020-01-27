@@ -16,7 +16,7 @@ if (!isset($_SESSION['id'])) {
     <div class="nav-wrapper ms2">
       <div class="col s12">
         <a href="/" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
-        <a href="/websites.php" class="breadcrumb grey-text text-lighten-1">Websites</a>
+        <a href="/websites/" class="breadcrumb grey-text text-lighten-1">Websites</a>
         <a class="breadcrumb black-text">Request Services</a>
       </div>
     </div>
@@ -43,15 +43,13 @@ if (!isset($_SESSION['id'])) {
     </div>
 
     <div class="row">
-      <form class="col s12" action="<?php echo htmlspecialchars('/includes/request.web.services.inc.php') ?>"
-        method="post">
+      <form class="col s12" action="<?php echo htmlspecialchars('/includes/request.web.services.inc.php') ?>" method="post">
         <div class="row">
           <h5>Business Information</h5>
           <!-- <div class="col s12 divider mb1"></div> -->
           <div class="row">
             <div class="input-field col s12">
-              <textarea required class="materialize-textarea" name="business_objective"
-                id="business_objective"><?php if (isset($_GET['b_obj'])) {
+              <textarea required class="materialize-textarea" name="business_objective" id="business_objective"><?php if (isset($_GET['b_obj'])) {
                                                                                                                   echo $_GET['b_obj'];
                                                                                                                 } ?></textarea>
               <label for="business_objective">What does your business do? <span class="red-text">*</span></label>
@@ -59,8 +57,7 @@ if (!isset($_SESSION['id'])) {
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <textarea required class="materialize-textarea" name="prospective_clients"
-                id="prospective_clients"><?php
+              <textarea required class="materialize-textarea" name="prospective_clients" id="prospective_clients"><?php
                                                                                                                   if (isset($_GET['p_client'])) {
                                                                                                                     echo $_GET['p_client'];
                                                                                                                   }
@@ -110,8 +107,7 @@ if (!isset($_SESSION['id'])) {
           </div>
           <div class="row">
             <div class="col s12">
-              <h6 class="grey-text">Do you have professional images and a brand identity / logo? <span
-                  class="red-text">*</span></h6>
+              <h6 class="grey-text">Do you have professional images and a brand identity / logo? <span class="red-text">*</span></h6>
               <p>
                 <input required value="1" id="yes" type="radio" class="with-gap" name="brand" <?php if (isset($_GET['brand'])) {
                                                                                                 if ($_GET['brand'] == "1") {
@@ -156,8 +152,7 @@ if (!isset($_SESSION['id'])) {
                                                       }
                                                       ?>">
 
-          <button name="register-submit" type="submit"
-            class="btn waves-effect waves-light yellow darken-1 black-text">Submit</button>
+          <button name="register-submit" type="submit" class="btn waves-effect waves-light yellow darken-1 black-text">Submit</button>
 
       </form>
     </div>

@@ -203,7 +203,7 @@
             </a>
             <div class='collapsible-body'>
               <ul>
-                <li class='yellow '><a href='/websites.php'>Websites</a></li>
+                <li class='yellow '><a href='/websites/'>Websites</a></li>
                 <li><a href='/websites/applications.php'>Applications</a></li>
                 <li><a href='/websites/blog_sites.php'>Blog Sites</a></li>
                 <li><a href='/websites/dynamic_sites.php'>Dynamic Websites</a></li>
@@ -248,7 +248,7 @@
   <li><a href='/garments/vinyl.php'>Vinyl</a></li>
 </ul>
 <ul id='web-dropdown' class='dropdown-content'>
-  <li class='yellow '><a href='/websites.php'>Websites</a></li>
+  <li class='yellow '><a href='/websites/'>Websites</a></li>
   <li><a href='/websites/applications.php'>Applications</a></li>
   <li><a href='/websites/blog_sites.php'>Blog Sites</a></li>
   <li><a href='/websites/dynamic_sites.php'>Dynamic Websites</a></li>

@@ -1,14 +1,14 @@
 <?php $title = "Websites" ?>
 <?php $description = "Get custom websites built, custom e-commerce sites, custom blog sites, custom static site, custom dynamic sites" ?>
-<?php require('head.php') ?>
+<?php require('../head.php') ?>
 
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
 
 
 <!-- HEADER -->
 <div class="lf-header">
   <div class="parallax-container page-header center-align">
-    <div class="parallax"><img src="img/macbook.png" alt="person using a macbook"></div>
+    <div class="parallax"><img src="../img/macbook.png" alt="person using a macbook"></div>
     <h1 class="white-text ps2 ts">Custom Websites</h1>
     <h4 class="ps2 white-text ts">Get your website or application built.</h5>
       <a href="/websites/request_form.php"
@@ -39,7 +39,7 @@
       <h4>Have an online presence. Go global</h4>
       <div class="row">
         <div class="col s6">
-          <img src="img/app.jpg" alt="person using a tablet" class="responsive-img">
+          <img src="../img/app.jpg" alt="person using a tablet" class="responsive-img">
         </div>
         <div class="col s6">
           <ul class="collection">
@@ -140,4 +140,4 @@
 
 </div> <!-- END CONTAINER -->
 
-<?php include 'footer.php' ?>
+<?php include '../footer.php' ?>
