@@ -6,7 +6,7 @@
           <h5>High Quality Printing in the Reno Area</h5>
           <p>Providing Reno Sparks and Carson City with high quality printing.</p>
           <ul>
-            <li><a class="black-text" href="/large_format.php">Large Format</a></li>
+            <li><a class="black-text" href="/large_format/">Large Format</a></li>
             <li><a class="black-text" href="/offset.php">Offset</a></li>
             <li><a class="black-text" href="/garments/">Garments</a></li>
             <li><a class="black-text" href="/websites.php">Websites</a></li>

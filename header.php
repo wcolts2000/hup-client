@@ -136,7 +136,7 @@
             </a>
             <div class='collapsible-body'>
               <ul>
-                <li class='yellow '><a href='/large_format.php'>Large Format</a></li>
+                <li class='yellow '><a href='/large_format/'>Large Format</a></li>
                 <li><a href='/large_format/banners.php'>Banners</a></li>
                 <li><a href='/large_format/decals.php'>Decals</a></li>
                 <li><a href='/large_format/displays.php'>Displays</a></li>
@@ -223,7 +223,7 @@
 
 <!-- DESKTOP DROPDOWNS -->
 <ul id='lf-dropdown' class='dropdown-content'>
-  <li class='yellow '><a href='/large_format.php'>Large Format</a></li>
+  <li class='yellow '><a href='/large_format/'>Large Format</a></li>
   <li><a href='/large_format/banners.php'>Banners</a></li>
   <li><a href='/large_format/decals.php'>Decals</a></li>
   <li><a href='/large_format/displays.php'>Displays</a></li>

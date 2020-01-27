@@ -1,12 +1,12 @@
 <?php $title = "Large Format Printing" ?>
 <?php $description = "Hurry Up Print Large format printing, banners, vehicle wraps, posters, store front displays, window perf, decals" ?>
-<?php require('head.php') ?>
-<?php require('header.php'); ?>
+<?php require('../head.php') ?>
+<?php require('../header.php'); ?>
 
 <!-- HEADER -->
 <div class="lf-header">
   <div class="parallax-container page-header center-align">
-    <div class="parallax"><img src="img/printing_banner.jpg"></div>
+    <div class="parallax"><img src="../img/printing_banner.jpg"></div>
     <h1 class="white-text ps2 ts">Large Format Printing</h1>
     <h4 class="ps2 white-text ts">Get a banner for your next event.</h5>
       <a href="/large_format/banners.php"
@@ -28,7 +28,7 @@
       <div class="nav-wrapper ms2">
         <div class="col s12">
           <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
-          <a href="/large_format.php" class="breadcrumb black-text">Large Format</a>
+          <a href="/large_format/" class="breadcrumb black-text">Large Format</a>
         </div>
       </div>
     </nav>
@@ -38,7 +38,7 @@
       <h4>Large Scale Marketing Made Easy.</h4>
       <div class="row">
         <div class="col s6">
-          <img src="img/vinyl_stickers.png" alt="printing vinyl stickers" class="responsive-img">
+          <img src="../img/vinyl_stickers.png" alt="printing vinyl stickers" class="responsive-img">
         </div>
         <div class="col s6">
           <ul class="collection">
@@ -139,4 +139,4 @@
 
 
 
-<?php require('footer.php'); ?>
+<?php require('../footer.php'); ?>
