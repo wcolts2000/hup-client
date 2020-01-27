@@ -1,8 +1,8 @@
 <?php $title = 'Admin' ?>
 <?php $description = 'Hurry Up Print Admin Dashboard' ?>
-<?php require('head.php') ?>
+<?php require('../head.php') ?>
 
-<?php require('header.php'); ?>
+<?php require('../header.php'); ?>
 
 <?php if (!isset($_SESSION['admin'])) {
   echo '<script>
@@ -23,14 +23,14 @@
     </ul>
   </div>
   <main class="admin-main">
-    <?php include "admin/users_view.php"; ?>
-    <?php include "admin/newsltr_view.php"; ?>
-    <?php include "admin/web_req_view.php"; ?>
-    <?php include "admin/category_view.php"; ?>
-    <?php include "admin/product_view.php"; ?>
-    <?php include "admin/gallery_view.php"; ?>
-    <?php include "admin/orders_view.php"; ?>
+    <?php include "./users_view.php"; ?>
+    <?php include "./newsltr_view.php"; ?>
+    <?php include "./web_req_view.php"; ?>
+    <?php include "./category_view.php"; ?>
+    <?php include "./product_view.php"; ?>
+    <?php include "./gallery_view.php"; ?>
+    <?php include "./orders_view.php"; ?>
   </main>
 </div>
 
-<?php include "footer.php" ?>
+<?php include "../footer.php" ?>

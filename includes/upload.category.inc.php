@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) {
   include_once "dbh.inc.php";
 
   if (empty($name)) {
-    header("Location: ../admin.php?upload=empty");
+    header("Location: ../admin/index.php?upload=empty");
     exit();
   } else {
     $sql = "SELECT * FROM product_categories;";
@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         mysqli_stmt_bind_param($stmt, "s", $name);
         mysqli_stmt_execute($stmt);
 
-        header('Location: ../admin.php?upload=success');
+        header('Location: ../admin/index.php?upload=success');
         exit();
       }
     }

@@ -112,7 +112,7 @@
                     </li>';
                   if (isset($_SESSION['admin'])) {
                     echo '<li>
-                              <a href="/admin.php"><button class="black-text btn waves-effect waves-light yellow">Admin Panel</button></a>
+                              <a href="/admin/"><button class="black-text btn waves-effect waves-light yellow">Admin Panel</button></a>
                             </li>';
                   }
                 } else {
@@ -271,7 +271,7 @@
         </li>';
     if (isset($_SESSION['admin'])) {
       echo '<li>
-    <a href="/admin.php"><button class="btn black-text waves-effect waves-light yellow">Admin</button></a>
+    <a href="/admin/"><button class="btn black-text waves-effect waves-light yellow">Admin</button></a>
   </li>';
     }
   } else {
