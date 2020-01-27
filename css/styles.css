@@ -67,15 +67,15 @@
 .admin-sidebar ul li {
   padding: 1.4rem 1rem;
   cursor: pointer;
-  border-bottom: 2px inset rgba(255,255,255,.3);
+  border-bottom: 2px inset rgba(255, 255, 255, 0.3);
 }
 
 .admin-sidebar ul li:hover {
-  background: rgba(255,255,255,.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .admin-main {
-  box-shadow: inset 1px 0 10px rgba(0,0,0,.1);
+  box-shadow: inset 1px 0 10px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
   overflow-x: scroll;
 }
@@ -89,7 +89,7 @@
 }
 
 .tabs-link-selected {
-  background: rgba(255,255,255,.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (max-width: 800px) {
@@ -209,14 +209,14 @@ span.err {
 }
 
 footer a {
-  transition: all .3s;
-  padding: .2rem 0;
+  transition: all 0.3s;
+  padding: 0.2rem 0;
 }
 
 footer a:hover {
-  left: .4rem;
-  padding: .2rem .4rem;
-  background-color: rgba(0,0,0,.1);
+  left: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* =================== */
@@ -257,7 +257,7 @@ footer a:hover {
 }
 
 .collection .collection-item {
-  border-bottom: 1px solid #FBC02D;
+  border-bottom: 1px solid #fbc02d;
 }
 
 textarea.materialize-textarea {
@@ -265,9 +265,9 @@ textarea.materialize-textarea {
 }
 
 .tabs {
-  display:-webkit-flex;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
 
 /* =================== */
@@ -285,10 +285,19 @@ textarea.materialize-textarea {
   text-align: center;
   justify-content: center;
   align-items: center;
-  text-shadow: 2px 3px 7px #00fffb, 3px 4px 8px rgba(0,0,0,.4), 4px 5px 8px rgba(0,0,0,.3), 5px 6px 8px rgba(0,0,0,.2), 6px 7px 9px rgba(0,0,0,.1);
+  text-shadow: 2px 3px 7px #00fffb, 3px 4px 8px rgba(0, 0, 0, 0.4),
+    4px 5px 8px rgba(0, 0, 0, 0.3), 5px 6px 8px rgba(0, 0, 0, 0.2),
+    6px 7px 9px rgba(0, 0, 0, 0.1);
   color: #6dff49;
-  background: repeating-linear-gradient(50deg, #FDD835 0%, #FDD835 5%, black 5%, black 10%);
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+  background: repeating-linear-gradient(
+    50deg,
+    #fdd835 0%,
+    #fdd835 5%,
+    black 5%,
+    black 10%
+  );
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
   animation: pulse 5s ease infinite alternate forwards;
 }
 
@@ -311,65 +320,67 @@ textarea.materialize-textarea {
   align-items: center;
   border-radius: 7px;
   background: linear-gradient(
-    to right,
-    rgba(86, 58, 177, 1),
-    rgba(209, 119, 245, .9),
-    rgba(175, 63, 219, .8),
-    rgba(209, 119, 245, .9),
-    rgba(86, 58, 177, 1)),
+      to right,
+      rgba(86, 58, 177, 1),
+      rgba(209, 119, 245, 0.9),
+      rgba(175, 63, 219, 0.8),
+      rgba(209, 119, 245, 0.9),
+      rgba(86, 58, 177, 1)
+    ),
     url(../img/macbook-and-tablet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .web-banner .left {
-    width: 50%;
-  }
-  
-  .web-banner .left img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .web-banner .right {
-    width: 50%;
-    background: rgba(0,0,0,.2);
-    border-radius: 7px;
-    color: white;
-  }
-  
-  .web-banner .right button {
-    margin-top: 2rem;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .web-banner {
-      flex-direction: column;
-    }
-    
-    .web-banner .left, .web-banner .right {
-      width: 100%;
-    }
-    
-    .web-banner .right {
-      order: -1;
-    }
-  }
-  
-  /* SHOPPING CART */
-  #cart-link {
-    position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.web-banner .left {
+  width: 50%;
+}
+
+.web-banner .left img {
+  width: 100%;
+  height: auto;
+}
+
+.web-banner .right {
+  width: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  color: white;
+}
+
+.web-banner .right button {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .web-banner {
+    flex-direction: column;
   }
 
-  #cart {
-    position: absolute;
-    top: -0.5rem;
-    right: -0.3rem;
-    background-color: white;
-    color: black;
-    padding: 4px 8px;
-    border-radius: 50px;
-    line-height: initial;
+  .web-banner .left,
+  .web-banner .right {
+    width: 100%;
   }
-  
-  
+
+  .web-banner .right {
+    order: -1;
+  }
+}
+
+/* =================== */
+/*    SHOPPING CART    */
+/* =================== */
+#cart-link {
+  position: relative;
+}
+
+#cart {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.3rem;
+  background-color: white;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 50px;
+  line-height: initial;
+}
