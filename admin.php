@@ -6,7 +6,7 @@
 
 <?php if (!isset($_SESSION['admin'])) {
   echo '<script>
-    window.location = window.location.origin + "/index.php"
+    window.location = window.location.origin + "/"
   </script>';
 }
 ?>

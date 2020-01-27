@@ -1,10 +1,10 @@
 <?php
 if (isset($_POST["reset-request-submit"])) {
-  
+
   $selector = bin2hex(random_bytes(8));
   $token = random_bytes(32);
 
-  $url = "www.hup.epizy.com/create_new_password.php?selector=".$selector."&validator=".bin2hex($token);
+  $url = "www.hup.epizy.com/create_new_password.php?selector=" . $selector . "&validator=" . bin2hex($token);
 
   $expires = date("U") + 1800;
 
@@ -14,7 +14,7 @@ if (isset($_POST["reset-request-submit"])) {
 
   $sql = "DELETE FROM pwdReset WHERE pwdResetEmail=?";
   $stmt = mysqli_stmt_init($conn);
-  if(!mysqli_stmt_prepare($stmt, $sql)) {
+  if (!mysqli_stmt_prepare($stmt, $sql)) {
     echo "There was an error!";
     exit();
   } else {
@@ -44,7 +44,7 @@ if (isset($_POST["reset-request-submit"])) {
   $message = '<p>We have recieved a password reset request. The link to reset your password is below.
     If you did not make this request, you can ignore this email</p>';
   $message .= '<p>Here is your password reset link: </br>';
-  $message .= '<a href="'.$url.'">'.$url.'</a></p>';
+  $message .= '<a href="' . $url . '">' . $url . '</a></p>';
 
   $headers = "From: Hurry Up Print <pwdreset@hup.epizy.com>\r\n";
   $headers .= "Reply-To: pwdreset@hup.epizy.com\r\n";
@@ -53,8 +53,7 @@ if (isset($_POST["reset-request-submit"])) {
   mail($to, $subject, $message, $headers);
 
   header("Location: ../password_reset.php?reset=success");
-
 } else {
-  header("Location: ../index.php");
+  header("Location: ../");
   exit();
 }

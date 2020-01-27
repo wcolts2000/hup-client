@@ -28,8 +28,8 @@
     <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
-          <a href="/websites.php" class="breadcrumb black-text">Websites</a>
+          <a href="/" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
+          <a class="breadcrumb black-text">Websites</a>
         </div>
       </div>
     </nav>

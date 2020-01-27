@@ -1,13 +1,13 @@
 <?php $title = "Offset and Digital Printing" ?>
 <?php $description = "Hurry Up Print offset and digital printing for all your marketing print needs, business cards, fliers, invitations, postcards." ?>
-<?php require('head.php') ?>
-<?php include 'header.php'; ?>
+<?php require('../head.php') ?>
+<?php include '../header.php'; ?>
 
 
 <!-- HEADER -->
 <div class="lf-header">
   <div class="parallax-container page-header center-align">
-    <div class="parallax"><img src="img/digital_print_samples.png" alt="marketing prints"></div>
+    <div class="parallax"><img src="../img/digital_print_samples.png" alt="marketing prints"></div>
     <h1 class="white-text ps2 ts">Offset and Digital Printing</h1>
     <h4 class="ps2 white-text ts">From business cards to menus and everything in between.</h5>
       <a href="/offset/menus.php" class="round-border btn waves-effect waves-light yellow darken-1 black-text m2c">Menus
@@ -27,8 +27,8 @@
     <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
-          <a href="/offset.php" class="breadcrumb black-text">Offset</a>
+          <a href="/" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
+          <a class="breadcrumb black-text">Offset</a>
         </div>
       </div>
     </nav>
@@ -38,7 +38,7 @@
       <h4>Business marketing and branding solutions.</h4>
       <div class="row">
         <div class="col s6">
-          <img src="img/business_card_display.jpg" alt="business cards" class="responsive-img">
+          <img src="../img/business_card_display.jpg" alt="business cards" class="responsive-img">
         </div>
         <div class="col s6">
           <ul class="collection">
@@ -141,4 +141,4 @@
 
 </div> <!-- END CONTAINER -->
 
-<?php include 'footer.php' ?>
+<?php include '../footer.php' ?>

@@ -26,6 +26,6 @@ if (isset($_POST['product-cart'])) {
     }
   }
 } else {
-  header('Location: ../index.php');
+  header('Location: ../');
   exit();
 }

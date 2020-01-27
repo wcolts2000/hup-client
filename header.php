@@ -161,7 +161,7 @@
             </a>
             <div class='collapsible-body'>
               <ul>
-                <li class='yellow '><a href='/offset.php'>Offset</a></li>
+                <li class='yellow '><a href='/offset/'>Offset</a></li>
                 <li><a href='/offset/business_cards.php'>Business Cards</a></li>
                 <li><a href='/offset/flyers.php'>Flyers</a></li>
                 <li><a href='/offset/invitations.php'>Invitations</a></li>
@@ -234,7 +234,7 @@
   <li><a href='/large_format/window_perf.php'>Window Perf</a></li>
 </ul>
 <ul id='off-dropdown' class='dropdown-content'>
-  <li class='yellow '><a href='/offset.php'>Offset</a></li>
+  <li class='yellow '><a href='/offset/'>Offset</a></li>
   <li><a href='/offset/business_cards.php'>Business Cards</a></li>
   <li><a href='/offset/flyers.php'>Flyers</a></li>
   <li><a href='/offset/invitations.php'>Invitations</a></li>
