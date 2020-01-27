@@ -8,7 +8,7 @@
     </a>
     <ul class="right ps2">
       <li id="cart-link">
-        <a class='black-text' href='/shopping_cart.php'>
+        <a class='black-text' href='/user/shopping_cart.php'>
           <i class='material-icons'>shopping_cart</i>
         </a>
         <p id="cart">

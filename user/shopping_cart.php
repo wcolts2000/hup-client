@@ -1,7 +1,7 @@
 <?php $title = "Shopping Cart" ?>
 <?php $description = "Hurry Up Print customer shopping cart" ?>
-<?php require('head.php') ?>
-<?php include 'header.php'; ?>
+<?php require('../head.php') ?>
+<?php include '../header.php'; ?>
 
 <!-- CONTAINER -->
 <div class="container">
@@ -36,4 +36,4 @@
 
 </div> <!-- END CONTAINER -->
 
-<?php include 'footer.php' ?>
+<?php include '../footer.php' ?>
