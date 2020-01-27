@@ -8,7 +8,7 @@
           <ul>
             <li><a class="black-text" href="/large_format.php">Large Format</a></li>
             <li><a class="black-text" href="/offset.php">Offset</a></li>
-            <li><a class="black-text" href="/garments.php">Garments</a></li>
+            <li><a class="black-text" href="/garments/">Garments</a></li>
             <li><a class="black-text" href="/websites.php">Websites</a></li>
           </ul>
         </div>

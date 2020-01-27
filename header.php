@@ -183,7 +183,7 @@
             </a>
             <div class='collapsible-body'>
               <ul>
-                <li class='yellow '><a href='/garments.php'>Garments</a></li>
+                <li class='yellow '><a href='/garments/'>Garments</a></li>
                 <li><a href='/garments/embroidery.php'>Embroidery</a></li>
                 <li><a href='/garments/silk_screen.php'>Silk Screen</a></li>
                 <li><a href='/garments/vinyl.php'>Vinyl</a></li>
@@ -242,7 +242,7 @@
   <li><a href='/offset/postcards.php'>Postcards</a></li>
 </ul>
 <ul id='gar-dropdown' class='dropdown-content'>
-  <li class='yellow '><a href='/garments.php'>Garments</a></li>
+  <li class='yellow '><a href='/garments/'>Garments</a></li>
   <li><a href='/garments/embroidery.php'>Embroidery</a></li>
   <li><a href='/garments/silk_screen.php'>Silk Screen</a></li>
   <li><a href='/garments/vinyl.php'>Vinyl</a></li>

@@ -221,7 +221,7 @@
   <div class="row">
     <div class="col s12">
       <!-- WEBSITE BANNER -->
-      <?php include './web-banner.php' ?>
+      <?php include './components/web-banner.php' ?>
     </div>
   </div>
 
@@ -297,7 +297,7 @@
         </a>
       </div>
       <div class="col s12 m6 l3">
-        <a class="black-text" href="garments.php">
+        <a class="black-text" href="/garments/">
           <!-- CARD WITH IMAGE -->
           <div class="card">
             <div class="card-image">
@@ -314,7 +314,7 @@
               </ul>
             </div>
             <div class="card-action yellow darken-1">
-              <a href="garments.php" class="black-text">Shop&nbsp;here</a>
+              <a href="/garments/" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -348,7 +348,7 @@
 <!--END CONTAINER -->
 
 <!-- MAILER LIST FORM -->
-<?php require 'mailer_list.php'; ?>
+<?php require './components/mailer_list.php'; ?>
 
 <!-- GOOGLE MAP -->
 <div class="video-container map">

@@ -1,12 +1,12 @@
 <?php $title = "Garment Printing" ?>
 <?php $description = "Hurry Up Print garment customization, silk screen printing, embroidery, vinyl press" ?>
-<?php require('head.php') ?>
-<?php include 'header.php'; ?>
+<?php require('../head.php') ?>
+<?php include '../header.php'; ?>
 
 <!-- HEADER -->
 <div class="lf-header">
   <div class="parallax-container page-header center-align">
-    <div class="parallax"><img src="img/embroidery_machines.png" alt="embroidery machines"></div>
+    <div class="parallax"><img src="../img/embroidery_machines.png" alt="embroidery machines"></div>
     <h1 class="white-text ps2 ts">Custom Garments</h1>
     <h4 class="ps2 white-text ts">Get your logo on your uniforms and clothing.</h5>
       <a href="/garments/embroidery.php"
@@ -26,8 +26,8 @@
     <nav class="yellow darken-1 m2a">
       <div class="nav-wrapper ms2">
         <div class="col s12">
-          <a href="/index.php" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
-          <a href="/garments.php" class="breadcrumb black-text">Garments</a>
+          <a href="/" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
+          <a href="" class="breadcrumb black-text">Garments</a>
         </div>
       </div>
     </nav>
@@ -37,7 +37,7 @@
       <h4>Advertise Everywhere You Go.</h4>
       <div class="row">
         <div class="col s6">
-          <img src="img/shirt_front_print_2.png" alt="a custom silkscreened logo on a shirt front"
+          <img src="../img/shirt_front_print_2.png" alt="a custom silkscreened logo on a shirt front"
             class="responsive-img">
         </div>
         <div class="col s6">
@@ -126,4 +126,4 @@
 
 </div> <!-- END CONTAINER -->
 
-<?php include 'footer.php' ?>
+<?php include '../footer.php' ?>
