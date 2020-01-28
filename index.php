@@ -69,7 +69,8 @@
       <div class="col s12">
         <ul class="tabs">
           <li class="tab col s3 active"><a href="#category1" class="black-text">LARGE FORMAT</a></li>
-          <li class="tab col s3"><a href="#category2" class="black-text">OFFSET</a></li>
+          <!-- <li class="tab col s3"><a href="#category2" class="black-text">OFFSET</a></li> -->
+          <li class="tab col s3"><a href="#category2" class="black-text">BUSINESS CARDS</a></li>
           <li class="tab col s3"><a href="#category3" class="black-text">GARMENTS</a></li>
           <li class="tab col s3"><a href="#category4" class="black-text">WEBSITES</a></li>
         </ul>
@@ -90,24 +91,24 @@
               <a href="/large_format/banners.php" class="black-text waves-effect waves-light collection-item">
                 <li>Banners</li>
               </a>
-              <a href="/large_format/magnets.php" class="collection-item black-text waves-effect waves-light">
+              <!-- <a href="/large_format/magnets.php" class="collection-item black-text waves-effect waves-light">
                 <li>Magnets</li>
-              </a>
+              </a> -->
               <a href="/large_format/decals.php" class="collection-item black-text waves-effect waves-light">
                 <li>Decals</li>
               </a>
-              <a href="/large_format/vehicle_wraps.php" class="collection-item black-text waves-effect waves-light">
+              <!-- <a href="/large_format/vehicle_wraps.php" class="collection-item black-text waves-effect waves-light">
                 <li>Vehicle Wraps</li>
-              </a>
-              <a href="/large_format/window_perf.php" class="collection-item black-text waves-effect waves-light">
+              </a> -->
+              <!-- <a href="/large_format/window_perf.php" class="collection-item black-text waves-effect waves-light">
                 <li>Window Perf</li>
-              </a>
-              <a href="/large_format/displays.php" class="collection-item black-text waves-effect waves-light">
+              </a> -->
+              <!-- <a href="/large_format/displays.php" class="collection-item black-text waves-effect waves-light">
                 <li>Displays</li>
-              </a>
-              <a href="/large_format/signage.php" class="collection-item black-text waves-effect waves-light">
+              </a> -->
+              <!-- <a href="/large_format/signage.php" class="collection-item black-text waves-effect waves-light">
                 <li>Signage</li>
-              </a>
+              </a> -->
               <a href="/large_format/posters.php" class="collection-item black-text waves-effect waves-light">
                 <li>Posters</li>
               </a>
@@ -117,13 +118,15 @@
       </div>
       <div id="category2" class="col s12">
         <div class="col s12">
-          <p>Offset | Business Cards, Flyers, and More</p>
+          <!-- <p>Offset | Business Cards, Flyers, and More</p> -->
+          <p>Offset | Business Cards</p>
         </div>
         <div class="row">
           <div class="col s6">
             <img src="img/premium-business-card-1-card.png" alt="fancy business cards" class="responsive-img">
-            <p>Never miss a connection opportunity. Be sure to have your business cards at all times. Create a
-              personalized postcard or mailer.</p>
+            <!-- <p>Never miss a connection opportunity. Be sure to have your business cards at all times. Create a
+              personalized postcard or mailer.</p> -->
+            <p>Never miss a connection opportunity. Be sure to have your business cards at all times.</p>
           </div>
           <div class="col s6">
             <ul class="collection">
@@ -132,7 +135,7 @@
                   Business Cards
                 </li>
               </a>
-              <a href="/offset/postcards.php" class="collection-item black-text waves-effect waves-light">
+              <!-- <a href="/offset/postcards.php" class="collection-item black-text waves-effect waves-light">
                 <li>
                   Postcards
                 </li>
@@ -151,7 +154,7 @@
                 <li>
                   Menus
                 </li>
-              </a>
+              </a> -->
             </ul>
           </div>
         </div>
@@ -167,7 +170,7 @@
           </div>
           <div class="col s6">
             <ul class="collection">
-              <a href="/garments/silk_screen.php" class="collection-item black-text waves-effect waves-light">
+              <!-- <a href="/garments/silk_screen.php" class="collection-item black-text waves-effect waves-light">
                 <li>Silk Screen Printing</li>
               </a>
               <a href="/garments/embroidery.php" class="collection-item black-text waves-effect waves-light">
@@ -175,6 +178,9 @@
               </a>
               <a href="/garments/vinyl.php" class="collection-item black-text waves-effect waves-light">
                 <li>Vinyl</li>
+              </a> -->
+              <a href="/garments/" class="collection-item black-text waves-effect waves-light">
+                <li>Garments</li>
               </a>
             </ul>
           </div>
@@ -192,7 +198,7 @@
           </div>
           <div class="col s6">
             <ul class="collection">
-              <a href="/websites/static_sites.php" class="collection-item black-text waves-effect waves-light">
+              <!-- <a href="/websites/static_sites.php" class="collection-item black-text waves-effect waves-light">
                 <li>Static Sites</li>
               </a>
               <a href="/websites/dynamic_sites.php" class="collection-item black-text waves-effect waves-light">
@@ -209,6 +215,9 @@
               </a>
               <a href="/websites/applications.php" class="collection-item black-text waves-effect waves-light">
                 <li>Apps</li>
+              </a> -->
+              <a href="/websites/" class="collection-item black-text waves-effect waves-light">
+                <li>Websites</li>
               </a>
             </ul>
           </div>
@@ -262,13 +271,12 @@
 
               <ul>
                 <li>Banners</li>
-                <li>Vehicle Wraps</li>
-                <li>Window Perf</li>
-                <li>and more...</li>
+                <li>Posters</li>
+                <li>Decals</li>
               </ul>
             </div>
             <div class="card-action yellow darken-1">
-              <a href="large_format.php" class="black-text">Shop&nbsp;here</a>
+              <a href="/large_format/" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -285,13 +293,12 @@
 
               <ul>
                 <li>Business Cards</li>
-                <li>Postcards</li>
-                <li>Flyers</li>
-                <li>and more...</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
               </ul>
             </div>
             <div class="card-action yellow darken-1">
-              <a href="offset.php" class="black-text">Shop&nbsp;here</a>
+              <a href="/offset/business_cards.php" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
@@ -310,7 +317,6 @@
                 <li>Silk Screening</li>
                 <li>Embroidery</li>
                 <li>Vinyl</li>
-                <li>and more...</li>
               </ul>
             </div>
             <div class="card-action yellow darken-1">
@@ -331,12 +337,11 @@
               <ul>
                 <li>Static Sites</li>
                 <li>Dynamic Sites</li>
-                <li>E-commerce</li>
                 <li>and more...</li>
               </ul>
             </div>
             <div class="card-action yellow darken-1">
-              <a href="website.php" class="black-text">Shop&nbsp;here</a>
+              <a href="/websites/" class="black-text">Shop&nbsp;here</a>
             </div>
           </div>
         </a>
