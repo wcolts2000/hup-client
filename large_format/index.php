@@ -48,16 +48,16 @@
             <a href="/large_format/decals.php" class="collection-item black-text waves-effect waves-light">
               <li>Decals</li>
             </a>
-            <a href="/large_format/displays.php" class="collection-item black-text waves-effect waves-light">
+            <!-- <a href="/large_format/displays.php" class="collection-item black-text waves-effect waves-light">
               <li>Displays</li>
-            </a>
-            <a href="/large_format/magnets.php" class="collection-item black-text waves-effect waves-light">
+            </a> -->
+            <!-- <a href="/large_format/magnets.php" class="collection-item black-text waves-effect waves-light">
               <li>Magnets</li>
-            </a>
+            </a> -->
             <a href="/large_format/posters.php" class="collection-item black-text waves-effect waves-light">
               <li>Posters</li>
             </a>
-            <a href="/large_format/signage.php" class="collection-item black-text waves-effect waves-light">
+            <!-- <a href="/large_format/signage.php" class="collection-item black-text waves-effect waves-light">
               <li>Signage</li>
             </a>
             <a href="/large_format/vehicle_wraps.php" class="collection-item black-text waves-effect waves-light">
@@ -65,7 +65,7 @@
             </a>
             <a href="/large_format/window_perf.php" class="collection-item black-text waves-effect waves-light">
               <li>Window Perf</li>
-            </a>
+            </a> -->
           </ul>
         </div>
       </div>

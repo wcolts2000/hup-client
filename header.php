@@ -54,21 +54,28 @@
         </a>
       </li>
       <li>
-        <a data-activates='off-dropdown' class='dropdown-button black-text' href='#!'>
+        <!-- <a data-activates='off-dropdown' class='dropdown-button black-text' href='#!'>
           Offset
           <i class='material-icons right'>arrow_drop_down</i>
-        </a>
+        </a> -->
+        <a class='black-text' href="/offset/business_cards.php">Business Cards</a>
       </li>
       <li>
-        <a data-activates='gar-dropdown' class='dropdown-button black-text' href='#!'>
+        <!-- <a data-activates='gar-dropdown' class='dropdown-button black-text' href='#!'>
           Garments
           <i class='material-icons right'>arrow_drop_down</i>
+        </a> -->
+        <a class='black-text' href='/garments/'>
+          Garments
         </a>
       </li>
       <li>
-        <a data-activates='web-dropdown' class='dropdown-button black-text' href='#!'>
+        <!-- <a data-activates='web-dropdown' class='dropdown-button black-text' href='#!'>
           Websites
           <i class='material-icons right'>arrow_drop_down</i>
+        </a> -->
+        <a class='black-text' href='/websites/'>
+          Websites
         </a>
       </li>
       <li>
@@ -130,7 +137,7 @@
       <li>
         <ul class='collapsible collapsible-accordion'>
           <li>
-            <a class='black-text collapsible-header' href='#!'>
+            <a class='black-text collapsible-header active' href='#!'>
               <i class='material-icons left'>aspect_ratio</i>
               Large Format
             </a>
@@ -139,12 +146,12 @@
                 <li class='yellow '><a href='/large_format/'>Large Format</a></li>
                 <li><a href='/large_format/banners.php'>Banners</a></li>
                 <li><a href='/large_format/decals.php'>Decals</a></li>
-                <li><a href='/large_format/displays.php'>Displays</a></li>
-                <li><a href='/large_format/magnets.php'>Magnets</a></li>
+                <!-- <li><a href='/large_format/displays.php'>Displays</a></li> -->
+                <!-- <li><a href='/large_format/magnets.php'>Magnets</a></li> -->
                 <li><a href='/large_format/posters.php'>Posters</a></li>
-                <li><a href='/large_format/signage.php'>Signage</a></li>
-                <li><a href='/large_format/vehicle_wraps.php'>Vehicle Wraps</a></li>
-                <li><a href='/large_format/window_perf.php'>Window Perf</a></li>
+                <!-- <li><a href='/large_format/signage.php'>Signage</a></li> -->
+                <!-- <li><a href='/large_format/vehicle_wraps.php'>Vehicle Wraps</a></li> -->
+                <!-- <li><a href='/large_format/window_perf.php'>Window Perf</a></li> -->
               </ul>
             </div>
           </li>
@@ -153,7 +160,7 @@
 
       <!-- OFFSET -->
       <li>
-        <ul class='collapsible collapsible-accordion'>
+        <!-- <ul class='collapsible collapsible-accordion'>
           <li>
             <a class='black-text collapsible-header' href='#!'>
               <i class='material-icons left'>print</i>
@@ -170,12 +177,16 @@
               </ul>
             </div>
           </li>
-        </ul>
+        </ul> -->
+        <a class='black-text collapsible-header' href='/offset/business_cards.php'>
+          <i class='material-icons left'>print</i>
+          Business Cards
+        </a>
       </li>
 
       <!-- GARMENTS -->
       <li>
-        <ul class='collapsible collapsible-accordion'>
+        <!-- <ul class='collapsible collapsible-accordion'>
           <li>
             <a class='black-text collapsible-header' href='#!'>
               <i class='material-icons left'>style</i>
@@ -190,12 +201,16 @@
               </ul>
             </div>
           </li>
-        </ul>
+        </ul> -->
+        <a class='black-text collapsible-header' href='/garments/'>
+          <i class='material-icons left'>style</i>
+          Garments
+        </a>
       </li>
 
       <!-- WEBSITES -->
       <li>
-        <ul class='collapsible collapsible-accordion'>
+        <!-- <ul class='collapsible collapsible-accordion'>
           <li>
             <a class='black-text collapsible-header' href='#!'>
               <i class='material-icons left'>important_devices</i>
@@ -213,7 +228,11 @@
               </ul>
             </div>
           </li>
-        </ul>
+        </ul> -->
+        <a class='black-text collapsible-header' href='/websites/'>
+          <i class='material-icons left'>important_devices</i>
+          Websites
+        </a>
       </li>
     </ul>
 
@@ -226,14 +245,14 @@
   <li class='yellow '><a href='/large_format/'>Large Format</a></li>
   <li><a href='/large_format/banners.php'>Banners</a></li>
   <li><a href='/large_format/decals.php'>Decals</a></li>
-  <li><a href='/large_format/displays.php'>Displays</a></li>
-  <li><a href='/large_format/magnets.php'>Magnets</a></li>
+  <!-- <li><a href='/large_format/displays.php'>Displays</a></li> -->
+  <!-- <li><a href='/large_format/magnets.php'>Magnets</a></li> -->
   <li><a href='/large_format/posters.php'>Posters</a></li>
-  <li><a href='/large_format/signage.php'>Signage</a></li>
-  <li><a href='/large_format/vehicle_wraps.php'>Vehicle Wraps</a></li>
-  <li><a href='/large_format/window_perf.php'>Window Perf</a></li>
+  <!-- <li><a href='/large_format/signage.php'>Signage</a></li> -->
+  <!-- <li><a href='/large_format/vehicle_wraps.php'>Vehicle Wraps</a></li> -->
+  <!-- <li><a href='/large_format/window_perf.php'>Window Perf</a></li> -->
 </ul>
-<ul id='off-dropdown' class='dropdown-content'>
+<!-- <ul id='off-dropdown' class='dropdown-content'>
   <li class='yellow '><a href='/offset/'>Offset</a></li>
   <li><a href='/offset/business_cards.php'>Business Cards</a></li>
   <li><a href='/offset/flyers.php'>Flyers</a></li>
@@ -255,7 +274,7 @@
   <li><a href='/websites/e-commerce_sites.php'>E-commerce Sites</a></li>
   <li><a href='/websites/restaurant_sites.php'>Restaurant Sites</a></li>
   <li><a href='/websites/static_sites.php'>Static Websites</a></li>
-</ul>
+</ul> -->
 <ul id='acct-dropdown' class='dropdown-content'>
   <?php
   if (isset($_SESSION['email'])) {
