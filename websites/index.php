@@ -43,7 +43,7 @@
         </div>
         <div class="col s6">
           <ul class="collection">
-            <a href="/websites/applications.php" class="collection-item black-text waves-effect waves-light">
+            <!-- <a href="/websites/applications.php" class="collection-item black-text waves-effect waves-light">
               <li>Applications</li>
             </a>
             <a href="/websites/blog_sites.php" class="collection-item black-text waves-effect waves-light">
@@ -60,9 +60,27 @@
             </a>
             <a href="/websites/static_sites.php" class="collection-item black-text waves-effect waves-light">
               <li>Static Sites</li>
-            </a>
+            </a> -->
+            <li class="collection-item black-text">Apps</li>
+            <li class="collection-item black-text">Blog Sites</li>
+            <li class="collection-item black-text">Dynamic Sites</li>
+            <li class="collection-item black-text">E-commerce Sites</li>
+            <li class="collection-item black-text">Restaurant Sites</li>
+            <li class="collection-item black-text">Static Sites</li>
           </ul>
         </div>
+        <p class="col s12">We can build out any site or application you can dream of. Have you started a business or
+          already
+          have one
+          running but need
+          a website still? Don't miss out on the opportunity to advertise world wide and expand into what you are meant
+          to be. A website is so much more
+          than just a digital business card, it can help you grow to your full potential and reach everyone.
+        </p>
+        <a href="/websites/request_form.php"
+          class="round-border btn waves-effect waves-light yellow darken-1 black-text">Request Web Services
+          <i class="material-icons black-text right">chevron_right</i>
+        </a>
       </div>
 
 

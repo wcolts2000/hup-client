@@ -9,9 +9,8 @@
     <div class="parallax"><img src="../img/embroidery_machines.png" alt="embroidery machines"></div>
     <h1 class="white-text ps2 ts">Custom Garments</h1>
     <h4 class="ps2 white-text ts">Get your logo on your uniforms and clothing.</h5>
-      <a href="/garments/embroidery.php"
-        class="round-border btn waves-effect waves-light yellow darken-1 black-text m2c">Embroidery Here
-        <i class="material-icons black-text right">chevron_right</i>
+      <a href="tel:7757423138" class="round-border btn waves-effect waves-light yellow darken-1 black-text m2c">CALL FOR
+        DETAILS
       </a>
   </div>
 </div>
@@ -42,7 +41,7 @@
         </div>
         <div class="col s6">
           <ul class="collection">
-            <a href="/garments/embroidery.php" class="collection-item black-text waves-effect waves-light">
+            <!-- <a href="/garments/embroidery.php" class="collection-item black-text waves-effect waves-light">
               <li>Embroidery</li>
             </a>
             <a href="/garments/silk_screen.php" class="collection-item black-text waves-effect waves-light">
@@ -50,8 +49,13 @@
             </a>
             <a href="/garments/vinyl.php" class="collection-item black-text waves-effect waves-light">
               <li>Vinyl</li>
-            </a>
+            </a> -->
+            <li class="collection-item black-text">Embroidery</li>
+            <li class="collection-item black-text">Silk Screen Printing</li>
+            <li class="collection-item black-text">Vinyl</li>
           </ul>
+          <p>Call for pricing and order inquiries</p>
+          <a class="btn waves-effect waves-light yellow black-text" href="tel:7757423138">CALL NOW</a>
         </div>
       </div>
     </div> <!-- END PRODUCTS -->
@@ -82,12 +86,12 @@
             front and backs done?</div>
           <div class="collapsible-body"><span>Depending on the garment, most areas are able to be printed or
               embroidered on, but each location is charged accordingly.
-              if there is a size difference needed on prints between garments, additional fees may apply</span></div>
+              If there is a size difference needed on prints between garments, additional fees may apply</span></div>
         </li>
         <li>
           <div class="collapsible-header"><i class="material-icons teal-text">arrow_drop_down_circle</i>What colors
             are offered?</div>
-          <div class="collapsible-body"><span>We can get nearly any color, but some metallics and specialty inks or
+          <div class="collapsible-body"><span>We can get nearly any color, but some metallic and specialty inks or
               threads will add prices and require a custom quote.</span></div>
         </li>
       </ul>

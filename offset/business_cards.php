@@ -9,7 +9,7 @@
     <div class="nav-wrapper ms2">
       <div class="col s12">
         <a href="/" class="breadcrumb grey-text text-lighten-1"><i class="material-icons">home</i></a>
-        <a href="/offset/" class="breadcrumb grey-text text-lighten-1">Offset</a>
+        <!-- <a href="/offset/" class="breadcrumb grey-text text-lighten-1">Offset</a> -->
         <a class="breadcrumb black-text">Business Cards</a>
       </div>
     </div>
