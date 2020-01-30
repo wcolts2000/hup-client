@@ -19,46 +19,54 @@
     <div class="row">
 
       <!-- LEFT SIDE -->
-      <div class='col s12 m12 l4 product-left'>
+      <div class='col s12 m12 l6 product-left'>
         <img src='../img/bcards.jpg' alt='business card' class='responsive-img p2'>
         <p>Standard 16pt Business Cards 3.5"w x 2"h</p>
       </div>
 
       <!-- RIGHT SIDE -->
-      <form action="bcard_order.inc.php" class="col s12 m12 l8 product-right mb2" id="bcard-form" method="POST">
+      <form action="bcard_order.inc.php" class="col s12 m12 l6 product-right mb2" id="bcard-form" method="POST">
         <input type='text' hidden id='userId' name='userId' value="<?php
                                                                     if (isset($_SESSION['id'])) {
                                                                       echo $_SESSION['id'];
                                                                     }
                                                                     ?>">
-        <select name="sides" id="sides">
-          <option value="single">Front only</option>
-          <option value="double">Front and Back</option>
+        <div class="input-field col s12">
+          <select name="sides" id="sides">
+            <option value="single">Front only</option>
+            <option value="double">Front and Back</option>
+          </select>
           <label># of sides</label>
-        </select>
-        <select name="corners" id="corners">
-          <option value="no">No rounded corners</option>
-          <option value="quarter">1/4" rounded corners</option>
-          <option value="eighth">1/8" rounded corners</option>
+        </div>
+        <div class="input-field col s12">
+          <select name="corners" id="corners">
+            <option value="no">No rounded corners</option>
+            <option value="quarter">1/4" rounded corners</option>
+            <option value="eighth">1/8" rounded corners</option>
+          </select>
           <label>Rounded Corners</label>
-        </select>
-        <select name="quantity" id="quantity">
-          <option value="500">500</option>
-          <option value="1000">1,000</option>
-          <option value="1000">2,000</option>
-          <option value="1000">3,000</option>
-          <option value="1000">4,000</option>
-          <option value="1000">5,000</option>
-          <option value="1000">10,000</option>
+        </div>
+        <div class="input-field col s12">
+          <select name="quantity" id="quantity">
+            <option value="500">500</option>
+            <option value="1000">1,000</option>
+            <option value="1000">2,000</option>
+            <option value="1000">3,000</option>
+            <option value="1000">4,000</option>
+            <option value="1000">5,000</option>
+            <option value="1000">10,000</option>
+          </select>
           <label>Quantity</label>
-        </select>
-        <select name="finishing" id="finishing">
-          <option value="gloss-aq">Gloss Aqueous Coating</option>
-          <option value="matte-aq">Matte Aqueous Coating</option>
-          <option value="uv1">High Gloss UV (front only)</option>
-          <option value="uv2">High Gloss UV (Both sides)</option>
+        </div>
+        <div class="input-field col s12">
+          <select name="finishing" id="finishing">
+            <option value="gloss-aq">Gloss Aqueous Coating</option>
+            <option value="matte-aq">Matte Aqueous Coating</option>
+            <option value="uv1">High Gloss UV (front only)</option>
+            <option value="uv2">High Gloss UV (Both sides)</option>
+          </select>
           <label>Finishing</label>
-        </select>
+        </div>
         <?php
         if (isset($_SESSION['id'])) {
           echo "
