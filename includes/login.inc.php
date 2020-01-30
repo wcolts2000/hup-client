@@ -9,6 +9,7 @@ if (isset($_POST['login-submit']) || isset($_POST['login-submit-lf'])) {
   $password = $_POST['pwd'];
   $webservice = $_POST['webservice'];
   $currPage = $_POST['currPage'];
+  $bcard = $_POST['bcard'];
 
 
   if (empty($email) || empty($password)) {
@@ -42,6 +43,10 @@ if (isset($_POST['login-submit']) || isset($_POST['login-submit-lf'])) {
           }
           if (!empty($currPage)) {
             header("Location: ../large_format/" . $currPage . ".php");
+            exit();
+          }
+          if (!empty($bcard)) {
+            header("Location: ../offset/business_cards.php");
             exit();
           }
           header("Location: ../index.php?login=success");
