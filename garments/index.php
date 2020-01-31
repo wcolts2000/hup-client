@@ -58,6 +58,10 @@
           <a class="btn waves-effect waves-light yellow black-text" href="tel:7757423138">CALL NOW</a>
         </div>
       </div>
+      <p>Need that customized shirt, apron, jacket or hats? No problem. At Hurry Up Print, we can handle silk screening,
+        embroidery, and
+        vinyl for your garments ro hats. Call our shop to talk to a representative about your next custom order.
+      </p>
     </div> <!-- END PRODUCTS -->
 
   </main>

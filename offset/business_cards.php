@@ -20,17 +20,22 @@
 
       <!-- LEFT SIDE -->
       <div class='col s12 m12 l6 product-left'>
-        <img src='../img/bcards.jpg' alt='business card' class='responsive-img p2'>
+        <img src='../img/bcards.jpg' alt='business card' class='responsive-img'>
         <p>Standard 16pt Business Cards 3.5"w x 2"h</p>
+        <p><b>Leave the right impression and get that call back.</b> Don't get caught without your
+          business card, missing that opportunity to connect. You never know when you will have a chance
+          meeting with someone and when you are prepared with all your contact info on a professional card,
+          you will stand out.
+        </p>
       </div>
 
       <!-- RIGHT SIDE -->
       <form action="bcard_order.inc.php" class="col s12 m12 l6 product-right mb2" id="bcard-form" method="POST">
-        <input type='text' hidden id='userId' name='userId' value="<?php
-                                                                    if (isset($_SESSION['id'])) {
-                                                                      echo $_SESSION['id'];
-                                                                    }
-                                                                    ?>">
+        <input readonly locked type='text' hidden id='userId' name='userId' value="<?php
+                                                                                    if (isset($_SESSION['id'])) {
+                                                                                      echo $_SESSION['id'];
+                                                                                    }
+                                                                                    ?>">
         <div class="input-field col s12">
           <select name="sides" id="sides">
             <option value="single">Front only</option>
