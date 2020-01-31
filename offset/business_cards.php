@@ -36,10 +36,11 @@
                                                                                       echo $_SESSION['id'];
                                                                                     }
                                                                                     ?>">
+        <h5 id='totalStr'>Total: $55.00</h5>
         <div class="input-field col s12">
           <select name="sides" id="sides">
             <option value="single">Front only</option>
-            <option value="double">Front and Back</option>
+            <option selected value="double">Front and Back</option>
           </select>
           <label># of sides</label>
         </div>
@@ -54,7 +55,7 @@
         <div class="input-field col s12">
           <select name="quantity" id="quantity">
             <option value="500">500</option>
-            <option value="1000">1,000</option>
+            <option selected value="1000">1,000</option>
             <option value="1000">2,000</option>
             <option value="1000">3,000</option>
             <option value="1000">4,000</option>
@@ -68,7 +69,7 @@
             <option value="gloss-aq">Gloss Aqueous Coating</option>
             <option value="matte-aq">Matte Aqueous Coating</option>
             <option value="uv1">High Gloss UV (front only)</option>
-            <option value="uv2">High Gloss UV (Both sides)</option>
+            <option selected value="uv2">High Gloss UV (Both sides)</option>
           </select>
           <label>Finishing</label>
         </div>
