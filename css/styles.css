@@ -384,3 +384,30 @@ textarea.materialize-textarea {
   border-radius: 50px;
   line-height: initial;
 }
+
+.cart-header,
+.cart-footer {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+
+.cart-header {
+  justify-content: space-between;
+}
+
+.cart-heading {
+  font-size: 1rem;
+}
+
+.cart-footer {
+  justify-content: flex-end;
+}
+
+.cart-subtotal {
+  padding-right: 1rem;
+}
+
+.cart-right p {
+  text-align: right;
+}
