@@ -51,7 +51,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
                                                                   ?>">
       <input type='text' hidden id='total' name='total'>
       <input type='text' hidden id='cost' name='cost' value="<?php echo $cost ?>">
-      <input type="hidden" id="currPage" name="currPage" value="<?php echo $productName ?>">
+      <input type="hidden" name="currPage" value="<?php echo $productName ?>">
       <div class='row'>
         <h5 id='totalStr'>Total: $20.00</h5>
         <p class='red-text'>* Required Fields</p>
@@ -190,7 +190,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
                 <label for="password">Password</label>
                 <input type="password" id="password" name="pwd" placeholder="$k8vG3p09aB%77hn2^" class="validate">
               </div>
-              <input type="hidden" id="currPage" name="currPage" value="<?php echo $productName ?>">
+              <input type="hidden" name="currPage" value="<?php echo $productName ?>">
               <div class="row">
                 <button type="submit" name="login-submit-lf"
                   class="modal-close btn yellow darken-1 black-text waves-effect waves-light">Login</button>

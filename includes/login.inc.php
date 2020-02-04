@@ -31,6 +31,7 @@ if (isset($_POST['login-submit']) || isset($_POST['login-submit-lf'])) {
           header("Location: ../login.php?error=incorrectcredentials");
           exit();
         } else if ($pwdCheck == true) {
+          ini_set("session.cookie_samesite", "lax");
           session_start();
           if ($row["admin"] === 1) {
             $_SESSION['admin'] = $row['admin'];
